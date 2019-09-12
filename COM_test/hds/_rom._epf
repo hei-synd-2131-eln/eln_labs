@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom serialPort
+DEFAULT_FILE atom serialPort.vhd

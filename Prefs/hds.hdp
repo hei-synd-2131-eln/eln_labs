@@ -1,0 +1,102 @@
+[Concat]
+COM_test = $HDS_PROJECT_DIR/../COM_test/concat
+[ModelSim]
+ADD = $SCRATCH_DIR/ElN/ADD/work
+ADD_test = $SCRATCH_DIR/ElN/ADD_test/work
+ALU = $SCRATCH_DIR/ElN/ALU/work
+ALU_test = $SCRATCH_DIR/ElN/ALU_test/work
+CNT = $SCRATCH_DIR/ElN/CNT/work
+CNT_test = $SCRATCH_DIR/ElN/CNT_test/work
+COM = $SCRATCH_DIR/ElN/COM/work
+COM_test = $SCRATCH_DIR/ElN/COM_test/work
+common = $SCRATCH_DIR/ElN/Libraries/Common/work
+COR = $SCRATCH_DIR/ElN/COR/work
+COR_test = $SCRATCH_DIR/ElN/COR_test/work
+gates = $SCRATCH_DIR/ElN/Libraries/Gates/work
+IND = $SCRATCH_DIR/ElN/IND/work
+IND_test = $SCRATCH_DIR/ElN/IND_test/work
+IO = $SCRATCH_DIR/ElN/Libraries/IO/work
+MIB = $SCRATCH_DIR/ElN/MIB/work
+MIB_test = $SCRATCH_DIR/ElN/MIB_test/work
+MUL = $SCRATCH_DIR/ElN/MUL/work
+MUL_test = $SCRATCH_DIR/ElN/MUL_test/work
+NUM = $SCRATCH_DIR/ElN/NUM/work
+NUM_test = $SCRATCH_DIR/ElN/NUM_test/work
+operators = $SCRATCH_DIR/ElN/Libraries/Operators/work
+PHA = $SCRATCH_DIR/ElN/PHA/work
+PHA_test = $SCRATCH_DIR/ElN/PHA_test/work
+PHD = $SCRATCH_DIR/ElN/PHD/work
+PHD_test = $SCRATCH_DIR/ElN/PHD_test/work
+PWM = $SCRATCH_DIR/ElN/PWM/work
+PWM_test = $SCRATCH_DIR/ElN/PWM_test/work
+sequential = $SCRATCH_DIR/ElN/Libraries/Sequential/work
+[hdl]
+ADD = $HDS_PROJECT_DIR/../ADD/hdl
+ADD_test = $HDS_PROJECT_DIR/../ADD_test/hdl
+ALU = $HDS_PROJECT_DIR/../ALU/hdl
+ALU_test = $HDS_PROJECT_DIR/../ALU_test/hdl
+CNT = $HDS_PROJECT_DIR/../CNT/hdl
+CNT_test = $HDS_PROJECT_DIR/../CNT_test/hdl
+COM = $HDS_PROJECT_DIR/../COM/hdl
+COM_test = $HDS_PROJECT_DIR/../COM_test/hdl
+common = $HEI_LIBS_DIR/Common/hdl
+COR = $HDS_PROJECT_DIR/../COR/hdl
+COR_test = $HDS_PROJECT_DIR/../COR_test/hdl
+gates = $HEI_LIBS_DIR/Gates/hdl
+IND = $HDS_PROJECT_DIR/../IND/hdl
+IND_test = $HDS_PROJECT_DIR/../IND_test/hdl
+IO = $HEI_LIBS_DIR/IO/hdl
+MIB = $HDS_PROJECT_DIR/../MIB/hdl
+MIB_test = $HDS_PROJECT_DIR/../MIB_test/hdl
+MUL = $HDS_PROJECT_DIR/../MUL/hdl
+MUL_test = $HDS_PROJECT_DIR/../MUL_test/hdl
+NUM = $HDS_PROJECT_DIR/../NUM/hdl
+NUM_test = $HDS_PROJECT_DIR/../NUM_test/hdl
+operators = $HEI_LIBS_DIR/Operators/hdl
+PHA = $HDS_PROJECT_DIR/../PHA/hdl
+PHA_test = $HDS_PROJECT_DIR/../PHA_test/hdl
+PHD = $HDS_PROJECT_DIR/../PHD/hdl
+PHD_test = $HDS_PROJECT_DIR/../PHD_test/hdl
+PWM = $HDS_PROJECT_DIR/../PWM/hdl
+PWM_test = $HDS_PROJECT_DIR/../PWM_test/hdl
+sequential = $HEI_LIBS_DIR/Sequential/hdl
+[hds]
+ADD = $HDS_PROJECT_DIR/../ADD/hds
+ADD_test = $HDS_PROJECT_DIR/../ADD_test/hds
+ALU = $HDS_PROJECT_DIR/../ALU/hds
+ALU_test = $HDS_PROJECT_DIR/../ALU_test/hds
+CNT = $HDS_PROJECT_DIR/../CNT/hds
+CNT_test = $HDS_PROJECT_DIR/../CNT_test/hds
+COM = $HDS_PROJECT_DIR/../COM/hds
+COM_test = $HDS_PROJECT_DIR/../COM_test/hds
+common = $HEI_LIBS_DIR/Common/hds
+COR = $HDS_PROJECT_DIR/../COR/hds
+COR_test = $HDS_PROJECT_DIR/../COR_test/hds
+gates = $HEI_LIBS_DIR/Gates/hds
+IND = $HDS_PROJECT_DIR/../IND/hds
+IND_test = $HDS_PROJECT_DIR/../IND_test/hds
+IO = $HEI_LIBS_DIR/IO/hds
+MIB = $HDS_PROJECT_DIR/../MIB/hds
+MIB_test = $HDS_PROJECT_DIR/../MIB_test/hds
+MUL = $HDS_PROJECT_DIR/../MUL/hds
+MUL_test = $HDS_PROJECT_DIR/../MUL_test/hds
+NUM = $HDS_PROJECT_DIR/../NUM/hds
+NUM_test = $HDS_PROJECT_DIR/../NUM_test/hds
+operators = $HEI_LIBS_DIR/Operators/hds
+PHA = $HDS_PROJECT_DIR/../PHA/hds
+PHA_test = $HDS_PROJECT_DIR/../PHA_test/hds
+PHD = $HDS_PROJECT_DIR/../PHD/hds
+PHD_test = $HDS_PROJECT_DIR/../PHD_test/hds
+PWM = $HDS_PROJECT_DIR/../PWM/hds
+PWM_test = $HDS_PROJECT_DIR/../PWM_test/hds
+sequential = $HEI_LIBS_DIR/Sequential/hds
+[hds_settings]
+design_root = .()
+[hds_standard_library]
+ieee = $HDS_HOME/hdl_libs/ieee
+[library_files_inclusion]
+COR = all
+[library_type]
+ieee = standard
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

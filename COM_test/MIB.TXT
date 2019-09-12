@@ -1,0 +1,266 @@
+Serial out
+
+LOAD    s3, FF          ; load stop bit
+OUTPUT  s3              ; output stop bit
+LOAD    s3, s3          ; no operation
+LOAD    s3, s3          ; no operation
+LOAD    s3, s3          ; no operation
+LOAD    s3, s3          ; no operation
+LOAD    s0, 00          ; load start bit
+OUTPUT  s0              ; output start bit
+INPUT   s1              ; load word to send
+OUTPUT  s1              ; output word, LSB is considered
+SR0     s1              ; shift word, bit 1 -> LSB
+OUTPUT  s1              ; output bit 1
+SR0     s1              ; bit 2 -> LSB
+OUTPUT  s1              ; output bit 2
+SR0     s1              ; bit 3 -> LSB
+OUTPUT  s1              ; output bit 3
+SR0     s1              ; bit 4 -> LSB
+OUTPUT  s1              ; output bit 4
+SR0     s1              ; bit 5 -> LSB
+OUTPUT  s1              ; output bit 5
+SR0     s1              ; bit 6 -> LSB
+OUTPUT  s1              ; output bit 6
+SR0     s1              ; bit 7 -> LSB
+OUTPUT  s1              ; output bit 7
+LOAD    s3, s3          ; no operation
+OUTPUT  s3              ; output stop bit
+
+--------------------------------------------------------------------------------
+
+16 bit addition
+
+LOAD    s0, C0          ; load operand 1 LSB
+LOAD    s1, 0F          ; load operand 1 MSB
+INPUT   s2              ; load operand 2 LSB
+INPUT   s3              ; load operand 2 MSB
+ADD     s0, s2          ; add LSBs
+ADDCY   s1, s3          ; add MSBs
+OUTPUT  s0              ; output result LSB
+OUTPUT  s1              ; output result MSB
+
+--------------------------------------------------------------------------------
+
+Multiplication
+
+LOAD    s0, 0A          ; load operand 2
+INPUT   s1              ; load operand 1
+LOAD    s2, 00          ; initialize result
+SR0     s0              ; output operand 2 bit 0
+JUMP    NC <+2>         ; no addition if bit is zero
+ADD     s2, s1          ; add operand 1
+SL0     s1              ; shift operand 1 by 1 bit
+SR0     s0              ; output operand 2 bit 0
+JUMP    NC <+2>         ; no addition if bit is zero
+ADD     s2, s1          ; add operand 1
+SL0     s1              ; shift operand 1 by 1 bit
+SR0     s0              ; output operand 2 bit 0
+JUMP    NC <+2>         ; no addition if bit is zero
+ADD     s2, s1          ; add operand 1
+SL0     s1              ; shift operand 1 by 1 bit
+SR0     s0              ; output operand 2 bit 0
+JUMP    NC <+2>         ; no addition if bit is zero
+ADD     s2, s1          ; add operand 1
+SL0     s1              ; shift operand 1 by 1 bit
+SR0     s0              ; output operand 2 bit 0
+JUMP    NC <+2>         ; no addition if bit is zero
+ADD     s2, s1          ; add operand 1
+SL0     s1              ; shift operand 1 by 1 bit
+SR0     s0              ; output operand 2 bit 0
+JUMP    NC <+2>         ; no addition if bit is zero
+ADD     s2, s1          ; add operand 1
+SL0     s1              ; shift operand 1 by 1 bit
+SR0     s0              ; output operand 2 bit 0
+JUMP    NC <+2>         ; no addition if bit is zero
+ADD     s2, s1          ; add operand 1
+SL0     s1              ; shift operand 1 by 1 bit
+SR0     s0              ; output operand 2 bit 0
+JUMP    NC <+2>         ; no addition if bit is zero
+ADD     s2, s1          ; add operand 1
+SL0     s1              ; shift operand 1 by 1 bit
+OUTPUT  s2              ; output result
+
+--------------------------------------------------------------------------------
+
+Parity
+
+LOAD    s0, 00          ; initialize result
+INPUT   s1              ; load word to calculate parity from
+LOAD    s2, s1          ; copy s1 before mask
+AND     s2, 01          ; mask all but LSB
+XOR     s0, s2          ; parity, bit 0
+SR0     s1              ; shift word for next bit
+LOAD    s2, s1          ; copy s1 before mask
+AND     s2, 01          ; mask all but LSB
+XOR     s0, s2          ; parity, bit 1
+SR0     s1              ; shift word for next bit
+LOAD    s2, s1          ; copy s1 before mask
+AND     s2, 01          ; mask all but LSB
+XOR     s0, s2          ; parity, bit 2
+SR0     s1              ; shift word for next bit
+LOAD    s2, s1          ; copy s1 before mask
+AND     s2, 01          ; mask all but LSB
+XOR     s0, s2          ; parity, bit 3
+SR0     s1              ; shift word for next bit
+LOAD    s2, s1          ; copy s1 before mask
+AND     s2, 01          ; mask all but LSB
+XOR     s0, s2          ; parity, bit 4
+SR0     s1              ; shift word for next bit
+LOAD    s2, s1          ; copy s1 before mask
+AND     s2, 01          ; mask all but LSB
+XOR     s0, s2          ; parity, bit 5
+SR0     s1              ; shift word for next bit
+LOAD    s2, s1          ; copy s1 before mask
+AND     s2, 01          ; mask all but LSB
+XOR     s0, s2          ; parity, bit 6
+SR0     s1              ; shift word for next bit
+LOAD    s2, s1          ; copy s1 before mask
+AND     s2, 01          ; mask all but LSB
+XOR     s0, s2          ; parity, bit 7
+OUTPUT  s0              ; output parity bit
+
+--------------------------------------------------------------------------------
+
+Random number generator (LFSR)
+
+LOAD    s0, 70          ; load mask
+INPUT   s1              ; initialize shift register (seed)
+RR      s1              ; shift word for next value, LSB to cout
+JUMP    NC <+2>         ; no XOR if bit is zero
+XOR     s1, s0          ; invert selected bits
+OUTPUT  s1              ; output new value
+RR      s1              ; shift word for next value, LSB to cout
+JUMP    NC <+2>         ; no XOR if bit is zero
+XOR     s1, s0          ; invert selected bits
+OUTPUT  s1              ; output new value
+RR      s1              ; shift word for next value, LSB to cout
+JUMP    NC <+2>         ; no XOR if bit is zero
+XOR     s1, s0          ; invert selected bits
+OUTPUT  s1              ; output new value
+RR      s1              ; shift word for next value, LSB to cout
+JUMP    NC <+2>         ; no XOR if bit is zero
+XOR     s1, s0          ; invert selected bits
+OUTPUT  s1              ; output new value
+RR      s1              ; shift word for next value, LSB to cout
+JUMP    NC <+2>         ; no XOR if bit is zero
+XOR     s1, s0          ; invert selected bits
+OUTPUT  s1              ; output new value
+RR      s1              ; shift word for next value, LSB to cout
+JUMP    NC <+2>         ; no XOR if bit is zero
+XOR     s1, s0          ; invert selected bits
+OUTPUT  s1              ; output new value
+RR      s1              ; shift word for next value, LSB to cout
+JUMP    NC <+2>         ; no XOR if bit is zero
+XOR     s1, s0          ; invert selected bits
+OUTPUT  s1              ; output new value
+RR      s1              ; shift word for next value, LSB to cout
+JUMP    NC <+2>         ; no XOR if bit is zero
+XOR     s1, s0          ; invert selected bits
+OUTPUT  s1              ; output new value
+
+--------------------------------------------------------------------------------
+
+Mean value with offset
+
+LOAD    s0, 04          ; load offset
+INPUT   s1              ; read sample 1
+ADD     s0, s1          ; accumulate
+INPUT   s1              ; read sample 2
+ADD     s0, s1          ; accumulate
+INPUT   s1              ; read sample 3
+ADD     s0, s1          ; accumulate
+INPUT   s1              ; read sample 4
+ADD     s0, s1          ; accumulate
+SR0     s0              ; divide by 2
+SR0     s0              ; divide by 2
+OUTPUT  s0              ; output mean value
+
+--------------------------------------------------------------------------------
+
+Division by 10, (quotient and) remainder
+
+LOAD    s0, 0A          ; load divisor
+INPUT   s1              ; load dividend
+LOAD    s2, 00          ; initialize 4-bit word
+LOAD    s3, 00          ; initialize quotient (for quotient)
+SL0     s1              ; push MSB to CY
+SLA     s2              ; push CY to LSB
+SL0     s1              ; push MSB-1 to CY
+SLA     s2              ; push CY to LSB
+SL0     s1              ; push MSB-2 to CY
+SLA     s2              ; push CY to LSB
+SL0     s1              ; push MSB-3 to CY
+SLA     s2              ; push CY to LSB
+SUB     s2, s0          ; substract divider
+JUMP    NC <+n>         ; jump if positive
+ADD     s2, s0          ; add back if negative
+JUMP    <+2>            ; and don't increment quotient (for quotient)
+ADD     s3, 01          ; increment quotient if positive (for quotient)
+SL0     s3              ; shift partial quotient up (for quotient)
+SL0     s1              ; push MSB-4 to CY
+SLA     s2              ; push CY to LSB
+SUB     s2, s0          ; substract divider
+JUMP    NC <+n>         ; jump if positive
+ADD     s2, s0          ; add back if negative
+JUMP    <+2>            ; and don't increment quotient (for quotient)
+ADD     s3, 01          ; increment quotient if positive (for quotient)
+SL0     s3              ; shift partial quotient up (for quotient)
+SL0     s1              ; push MSB-4 to CY
+SLA     s2              ; push CY to LSB
+SUB     s2, s0          ; substract divider
+JUMP    NC <+n>         ; jump if positive
+ADD     s2, s0          ; add back if negative
+JUMP    <+2>            ; and don't increment quotient (for quotient)
+ADD     s3, 01          ; increment quotient if positive (for quotient)
+SL0     s3              ; shift partial quotient up (for quotient)
+SL0     s1              ; push MSB-4 to CY
+SLA     s2              ; push CY to LSB
+SUB     s2, s0          ; substract divider
+JUMP    NC <+n>         ; jump if positive
+ADD     s2, s0          ; add back if negative
+JUMP    <+2>            ; and don't increment quotient (for quotient)
+ADD     s3, 01          ; increment quotient if positive (for quotient)
+SL0     s3              ; shift partial quotient up (for quotient)
+SL0     s1              ; push MSB-4 to CY
+SLA     s2              ; push CY to LSB
+SUB     s2, s0          ; substract divider
+JUMP    NC <+2>         ; check if positive
+ADD     s2, s0          ; add back if negative
+JUMP    <+2>            ; and don't increment quotient (for quotient)
+ADD     s3, 01          ; increment quotient if positive (for quotient)
+OUTPUT  s2              ; output remainder
+OUTPUT  s3              ; output quotient (for quotient)
+
+--------------------------------------------------------------------------------
+
+Frequency generator, DDS
+
+LOAD    s0, 00          ; initialize counter
+INPUT   s1              ; load step
+LOAD    s2, 00          ; initialize carry read register
+ADD     s0, s1          ; increment counter
+OUTPUT  s0              ; output MSB
+ADD     s0, s1          ; increment counter
+OUTPUT  s0              ; output MSB
+ADD     s0, s1          ; increment counter
+OUTPUT  s0              ; output MSB
+ADD     s0, s1          ; increment counter
+OUTPUT  s0              ; output MSB
+ADD     s0, s1          ; increment counter
+OUTPUT  s0              ; output MSB
+ADD     s0, s1          ; increment counter
+OUTPUT  s0              ; output MSB
+ADD     s0, s1          ; increment counter
+OUTPUT  s0              ; output MSB
+ADD     s0, s1          ; increment counter
+OUTPUT  s0              ; output MSB
+ADD     s0, s1          ; increment counter
+OUTPUT  s0              ; output MSB
+
+
+
+
+
+récepteur RS232
+générateur de fréquence (diviseur)
