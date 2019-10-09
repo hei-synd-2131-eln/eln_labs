@@ -1,2 +1,2 @@
-DEFAULT_FILE atom add1/master@version.bd
+DEFAULT_FILE atom add1/student@version.bd
 DEFAULT_ARCHITECTURE atom studentVersion

@@ -1,2 +1,2 @@
-DEFAULT_FILE atom phase@unwarp/master@version.bd
-DEFAULT_ARCHITECTURE atom master@version
+DEFAULT_FILE atom phase@unwarp/student@version.bd
+DEFAULT_ARCHITECTURE atom student@version
