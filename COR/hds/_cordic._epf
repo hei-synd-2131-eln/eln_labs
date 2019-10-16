@@ -1,3 +1,0 @@
-DEFAULT_FILE atom cordic/student@version.bd
-DEFAULT_ARCHITECTURE atom studentVersion
-TOP_MARKER atom 1
