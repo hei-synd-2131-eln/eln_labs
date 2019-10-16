@@ -1,0 +1,3 @@
+DEFAULT_ARCHITECTURE atom studentVersion
+DEFAULT_FILE atom alu@and@registers/student@version.bd
+TOP_MARKER atom 1

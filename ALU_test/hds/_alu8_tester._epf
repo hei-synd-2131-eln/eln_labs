@@ -1,0 +1,2 @@
+DEFAULT_FILE atom ALU8_tester_studentVersion.vhd
+DEFAULT_ARCHITECTURE atom studentVersion

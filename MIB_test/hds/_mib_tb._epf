@@ -1,0 +1,3 @@
+DEFAULT_ARCHITECTURE atom serialPort
+DEFAULT_FILE atom @m@i@b_tb/serial@port.bd
+TOP_MARKER atom 1

@@ -1,0 +1,3 @@
+DEFAULT_FILE atom led@display/student@version.bd
+DEFAULT_ARCHITECTURE atom studentVersion
+TOP_MARKER atom 1

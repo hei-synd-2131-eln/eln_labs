@@ -1,0 +1,3 @@
+TOP_MARKER atom 0
+DEFAULT_ARCHITECTURE atom studentVersion
+DEFAULT_FILE atom cordicAddSub_RTL.vhd
