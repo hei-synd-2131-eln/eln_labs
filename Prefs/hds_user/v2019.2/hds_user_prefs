@@ -4331,7 +4331,7 @@ hdsWorkspaceLocation ""
 relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
-logWindowGeometry "600x200-0+0"
+logWindowGeometry "600x200+1311+41"
 diagramBrowserTabNo 0
 showInsertPortHint 0
 showContentFirstTime 0
@@ -5224,22 +5224,18 @@ theList "Design Units"
 columns [
 (TreeListVPData_Column
 name "Type"
-displayName ""
 width 140
 )
 (TreeListVPData_Column
 name "Extends"
-displayName ""
 width 100
 )
 (TreeListVPData_Column
 name "Language"
-displayName ""
 width 100
 )
 (TreeListVPData_Column
 name "Time Stamp"
-displayName ""
 width 120
 )
 ]
@@ -6336,6 +6332,26 @@ declHierarchy [
 ]
 activeViewpointIdx 0
 )
+(WorkTab
+name "CNT_test"
+showingHierarchy 0
+openLibs [
+"CNT_test"
+]
+declHierarchy [
+]
+activeViewpointIdx 0
+)
+(WorkTab
+name "IND_test"
+showingHierarchy 0
+openLibs [
+"IND_test"
+]
+declHierarchy [
+]
+activeViewpointIdx 0
+)
 ]
 ViewpointsOnOutlookBar [
 "Requirements"
@@ -6358,11 +6374,12 @@ size 180
 )
 ]
 displayHierarchy 0
-xPos 909
-yPos 287
-width 1070
+xPos 0
+yPos 43
+width 1068
 height 838
 activeSidePanelTab 2
+activeLibraryTab 2
 sidePanelSize 278
 showUnixHiddenFiles 0
 componentBrowserXpos 569

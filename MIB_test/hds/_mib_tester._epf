@@ -1,2 +1,2 @@
-DEFAULT_ARCHITECTURE atom serialPort
-DEFAULT_FILE atom MIB_tester_serialPort.vhd
+DEFAULT_ARCHITECTURE atom studentVersion
+DEFAULT_FILE atom MIB_tester_studentVersion.vhd
