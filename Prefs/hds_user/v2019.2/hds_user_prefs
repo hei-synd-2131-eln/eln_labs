@@ -6333,20 +6333,9 @@ declHierarchy [
 activeViewpointIdx 0
 )
 (WorkTab
-name "CNT_test"
+name "<Empty>"
 showingHierarchy 0
 openLibs [
-"CNT_test"
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "IND_test"
-showingHierarchy 0
-openLibs [
-"IND_test"
 ]
 declHierarchy [
 ]
@@ -6379,7 +6368,6 @@ yPos 43
 width 1068
 height 838
 activeSidePanelTab 2
-activeLibraryTab 2
 sidePanelSize 278
 showUnixHiddenFiles 0
 componentBrowserXpos 569
