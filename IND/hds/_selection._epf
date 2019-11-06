@@ -1,3 +1,3 @@
 DEFAULT_ARCHITECTURE atom studentVersion
-DEFAULT_FILE atom selection/student@version.bd
+DEFAULT_FILE atom selection/master@version.bd
 TOP_MARKER atom 1

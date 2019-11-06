@@ -21,6 +21,7 @@ BEGIN
       else
         add_sub <= '0';
       end if;
+                                    -- test angle incrementation / decrementation
       for atanIndex in phaseMin to phaseMax loop
         stepAngle_int <= to_signed(atanIndex, stepAngle'length);
         wait for operatorDelay*9/10;
@@ -36,6 +37,7 @@ BEGIN
         wait for operatorDelay/10;
       end loop;
       if abs(phaseIndex) = 1 then
+                      -- test x- and y-coordinate incrementation / decrementation
         for amplitudeIndex in amplitudeMin to amplitudeMax loop
           xIn_int <= to_unsigned(amplitudeIndex, xIn_int'length);
           yIn_int <= to_unsigned(amplitudeIndex, yIn_int'length);
@@ -63,6 +65,19 @@ BEGIN
         end loop;
       end if;
     end loop;
+
+    ----------------------------------------------------------------------------
+                                                              -- stop simulation
+    wait for 6.01 ms - now;
+    assert false
+      report cr &
+             "----------------------------------------" &
+             "----------------------------------------" &
+             "----------------------------------------" &
+             cr &
+             "End of tests." &
+             cr & cr
+      severity failure;
     wait;
   end process;
 

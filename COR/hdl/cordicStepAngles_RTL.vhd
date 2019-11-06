@@ -11,7 +11,10 @@ ARCHITECTURE masterVersion OF cordicStepAngles IS
     variable phaseIncrement: phaseArrayType;
   begin
     for index in phaseIncrement'range loop
-      phaseIncrement(index) := to_signed(integer( arctan(1.0/2.0**index) / math_pi * 2.0**(phaseBitNb-1) ), phaseType'length);
+      phaseIncrement(index) := to_signed(
+        integer( arctan(1.0/2.0**index) / math_pi * 2.0**(phaseBitNb-1) ),
+        phaseType'length
+      );
     end loop;
     return phaseIncrement;
   end initPhaseArray;

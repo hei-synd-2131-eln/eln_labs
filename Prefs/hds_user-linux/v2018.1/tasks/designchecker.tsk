@@ -24,6 +24,8 @@ settingsMap [
 "1"
 "promptForRunSettings"
 "0"
+"runMethod"
+"gui"
 "runnableObject"
 "HdsLintPlugin"
 "runnableObjectType"

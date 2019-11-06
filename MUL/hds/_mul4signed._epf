@@ -1,3 +1,3 @@
 TOP_MARKER atom 1
-DEFAULT_ARCHITECTURE atom student@version
-DEFAULT_FILE atom mul4@signed/student@version.bd
+DEFAULT_ARCHITECTURE atom master@version
+DEFAULT_FILE atom mul4@signed/master@version.bd

@@ -83,6 +83,10 @@ first "NEdit"
 second "nedit +%(l) '%(p)'"
 )
 (pair
+first "Sublime"
+second "subl %(p):%(l)"
+)
+(pair
 first "Textedit"
 second "textedit '%(p)'"
 )
@@ -103,6 +107,10 @@ second "nedit -read +%(l) '%(p)'"
 (pair
 first "NEdit (using server)"
 second "nc -noask  -read +%(l) '%(p)'"
+)
+(pair
+first "Sublime"
+second "subl '%(p)':%(l)"
 )
 (pair
 first "Textedit"
@@ -180,7 +188,7 @@ second "uedit32.exe \"%(p)/%(l)\" /r"
 defaultTextPrintingCmd "Enscript"
 win32DefaultEditor "Builtin"
 win32DefaultViewer "Builtin"
-unixDefaultEditor "Atom"
+unixDefaultEditor "Sublime"
 unixDefaultViewer "Builtin"
 defaultVerilogDialect 5
 verilogSearchPath ""
@@ -216,7 +224,6 @@ toolbarVisibility [
 "StdWindow:CommentGraphics"
 "FcWindow:CommentGraphics"
 "BdWindow:Appearance"
-"TabularWindow:Appearance"
 "SymbolWindow:Appearance"
 "AsmWindow:Appearance"
 "StdWindow:Appearance"
@@ -248,6 +255,8 @@ projectPaths [
 "/home/francois/Documents/HEVs/SVN/ElN_cursor/Prefs/ElN_cursor.hdp"
 "/home/francois/Favorites/ElN_local/Labs/ElN_cursor/Prefs/hds.hdp"
 "/home/francois/Documents/HEVs/SVN/ElN_cursor/Prefs/hds.hdp"
+"/home/francois/Documents/HEVs/ElN/Labs/ElN_labs_SI/Prefs/hds.hdp"
+"/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds.hdp"
 ]
 libMappingsRootDir ""
 teamLibMappingsRootDir ""
@@ -379,6 +388,14 @@ second ""
 first "task_VCSPath"
 second ""
 )
+]
+defaultCategoryTemplates [
+1
+"architecture.vhd"
+]
+defaultCategoryTemplatesPrefs [
+1
+0
 ]
 tasksOrder [
 "USER:Generate"
@@ -2330,7 +2347,7 @@ hdsWorkspaceLocation ""
 relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
-logWindowGeometry "600x918-0+0"
+logWindowGeometry "899x918--1+57"
 diagramBrowserTabNo 0
 showContentFirstTime 0
 )
@@ -5253,7 +5270,6 @@ WorkTabs [
 name "Cursor"
 showingHierarchy 0
 openLibs [
-"Cursor"
 ]
 declHierarchy [
 ]
@@ -5263,7 +5279,6 @@ activeViewpointIdx 0
 name "Cursor_test"
 showingHierarchy 0
 openLibs [
-"Cursor_test"
 ]
 declHierarchy [
 ]
@@ -5273,7 +5288,26 @@ activeViewpointIdx 0
 name "Board"
 showingHierarchy 0
 openLibs [
-"Board"
+]
+declHierarchy [
+]
+activeViewpointIdx 0
+)
+(WorkTab
+name "COR"
+showingHierarchy 0
+openLibs [
+"COR"
+]
+declHierarchy [
+]
+activeViewpointIdx 0
+)
+(WorkTab
+name "COR_test"
+showingHierarchy 0
+openLibs [
+"COR_test"
 ]
 declHierarchy [
 ]
@@ -5301,15 +5335,20 @@ size 59
 )
 ]
 displayHierarchy 0
-xPos 59
-yPos 138
-width 1177
-height 860
+xPos 1744
+yPos 57
+width 1066
+height 937
 activeSidePanelTab 2
-activeLibraryTab 2
 sidePanelSize 280
 showUnixHiddenFiles 0
+componentBrowserXpos 59
+componentBrowserYpos 18
+componentBrowserWidth 413
+componentBrowserHeight 846
 componentBrowserLibraryNames [
+"PHA"
+"gates"
 ]
 )
 (SmPreferences

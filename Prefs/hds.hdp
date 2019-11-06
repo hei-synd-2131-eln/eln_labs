@@ -1,5 +1,7 @@
 [Concat]
 COM_test = $HDS_PROJECT_DIR/../COM_test/concat
+[DesignChecker]
+COR_test = $HDS_PROJECT_DIR/../COR_test/designcheck
 [ModelSim]
 ADD = $SCRATCH_DIR/ElN/ADD/work
 ADD_test = $SCRATCH_DIR/ElN/ADD_test/work
