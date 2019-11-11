@@ -1,6 +1,7 @@
 DocumentHdrVersion "1.1"
 Header (DocumentHdr
 version 2
+dialect 11
 dmPackageRefs [
 (DmPackageRef
 library "ieee"
@@ -15,8 +16,8 @@ libraryRefs [
 "ieee"
 ]
 )
-version "24.1"
-appVersion "2009.2 (Build 10)"
+version "27.1"
+appVersion "2019.2 (Build 5)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
@@ -602,23 +603,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "D:\\Labs\\SEm_labs\\..\\Libs\\NanoBlaze\\hdl"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "D:\\Labs\\SEm_labs\\..\\Libs\\NanoBlaze\\hds"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "D:\\Labs\\SEm_labs\\..\\Libs\\NanoBlaze\\hds\\nano@blaze\\symbol.sb.info"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nano@blaze\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "D:\\Labs\\SEm_labs\\..\\Libs\\NanoBlaze\\hds\\nano@blaze\\symbol.sb.user"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nano@blaze\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "D:\\Labs\\SEm_labs\\..\\Libs\\NanoBlaze\\hds"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds"
 )
 (vvPair
 variable "appl"
@@ -642,27 +643,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "D:\\Labs\\SEm_labs\\..\\Libs\\NanoBlaze\\hds\\nano@blaze"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nano@blaze"
 )
 (vvPair
 variable "d_logical"
-value "D:\\Labs\\SEm_labs\\..\\Libs\\NanoBlaze\\hds\\nanoBlaze"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nanoBlaze"
 )
 (vvPair
 variable "date"
-value "08.04.2015"
+value "11.11.2019"
 )
 (vvPair
 variable "day"
-value "mer."
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "mercredi"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "08"
+value "11"
 )
 (vvPair
 variable "designName"
@@ -689,12 +690,32 @@ variable "f_noext"
 value "symbol"
 )
 (vvPair
+variable "graphical_source_author"
+value "silvan.zahno"
+)
+(vvPair
+variable "graphical_source_date"
+value "11.11.2019"
+)
+(vvPair
+variable "graphical_source_group"
+value "UNKNOWN"
+)
+(vvPair
+variable "graphical_source_host"
+value "WE6996"
+)
+(vvPair
+variable "graphical_source_time"
+value "07:38:43"
+)
+(vvPair
 variable "group"
 value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE3673"
+value "WE6996"
 )
 (vvPair
 variable "language"
@@ -722,7 +743,7 @@ value "D:\\Users\\ELN_labs\\VHDL_comp"
 )
 (vvPair
 variable "library_downstream_ModelSimCompiler"
-value "$SCRATCH_DIR/SEm/NanoBlaze/work"
+value "$SCRATCH_DIR/ElN/Libraries/NanoBlaze/work"
 )
 (vvPair
 variable "library_downstream_SpyGlass"
@@ -730,7 +751,7 @@ value "U:\\ELN_Board\\Synthesis"
 )
 (vvPair
 variable "mm"
-value "04"
+value "11"
 )
 (vvPair
 variable "module_name"
@@ -738,19 +759,19 @@ value "nanoBlaze"
 )
 (vvPair
 variable "month"
-value "avr."
+value "Nov"
 )
 (vvPair
 variable "month_long"
-value "avril"
+value "November"
 )
 (vvPair
 variable "p"
-value "D:\\Labs\\SEm_labs\\..\\Libs\\NanoBlaze\\hds\\nano@blaze\\symbol.sb"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nano@blaze\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "D:\\Labs\\SEm_labs\\..\\Libs\\NanoBlaze\\hds\\nanoBlaze\\symbol.sb"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nanoBlaze\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -758,7 +779,7 @@ value "<Undefined Variable>"
 )
 (vvPair
 variable "project_name"
-value "hds-beamer"
+value "hds"
 )
 (vvPair
 variable "series"
@@ -830,7 +851,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "09:04:29"
+value "07:38:43"
 )
 (vvPair
 variable "unit"
@@ -838,11 +859,11 @@ value "nanoBlaze"
 )
 (vvPair
 variable "user"
-value "francois"
+value "silvan.zahno"
 )
 (vvPair
 variable "version"
-value "2009.2 (Build 10)"
+value "2019.2 (Build 5)"
 )
 (vvPair
 variable "view"
@@ -850,15 +871,15 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2015"
+value "2019"
 )
 (vvPair
 variable "yy"
-value "15"
+value "19"
 )
 ]
 )
-LanguageMgr "VhdlLangMgr"
+LanguageMgr "Vhdl2008LangMgr"
 uid 51,0
 optionalChildren [
 *83 (SymbolBody
@@ -1337,17 +1358,17 @@ first (Text
 uid 11,0
 va (VaSet
 )
-xt "47100,31700,51200,32700"
+xt "47100,31700,53100,32900"
 st "NanoBlaze"
-blo "47100,32500"
+blo "47100,32700"
 )
 second (Text
 uid 12,0
 va (VaSet
 )
-xt "47100,32700,51000,33700"
+xt "47100,32900,52900,34100"
 st "nanoBlaze"
-blo "47100,33500"
+blo "47100,33900"
 )
 )
 gi *94 (GenericInterface
@@ -1436,7 +1457,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "61200,65000,71200,66000"
+xt "61200,65500,61200,65500"
 st "
 by %user on %dd %month %year
 "
@@ -1466,7 +1487,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "78200,61000,81200,62000"
+xt "78200,61500,78200,61500"
 st "
 Project:
 "
@@ -1496,7 +1517,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "61200,63000,71200,64000"
+xt "61200,63500,61200,63500"
 st "
 <enter diagram title here>
 "
@@ -1526,7 +1547,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "57200,63000,59300,64000"
+xt "57200,63500,57200,63500"
 st "
 Title:
 "
@@ -1556,7 +1577,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "78200,62200,87400,63200"
+xt "78200,62200,92300,63400"
 st "
 <enter comments here>
 "
@@ -1585,7 +1606,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "82200,61000,92300,62000"
+xt "82200,61500,82200,61500"
 st "
 <enter project name here>
 "
@@ -1614,7 +1635,7 @@ uid 158,0
 va (VaSet
 fg "32768,0,0"
 )
-xt "64150,61500,70850,62500"
+xt "62350,61400,72650,62600"
 st "
 <company name>
 "
@@ -1645,7 +1666,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "57200,64000,59300,65000"
+xt "57200,64500,57200,64500"
 st "
 Path:
 "
@@ -1675,7 +1696,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "57200,65000,59900,66000"
+xt "57200,65500,57200,65500"
 st "
 Edited:
 "
@@ -1705,7 +1726,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "61200,64000,72300,65000"
+xt "61200,64500,61200,64500"
 st "
 %library/%unit/%view
 "
@@ -1805,7 +1826,7 @@ text (MLText
 va (VaSet
 fg "0,0,32768"
 )
-xt "200,200,2000,1200"
+xt "200,200,3200,1400"
 st "
 Text
 "
@@ -1813,6 +1834,34 @@ tm "CommentText"
 wrapOption 3
 visibleHeight 4600
 visibleWidth 14600
+)
+)
+defaultRequirementText (RequirementText
+shape (ZoomableIcon
+layer 0
+va (VaSet
+vasetType 1
+fg "59904,39936,65280"
+lineColor "0,0,32768"
+)
+xt "0,0,1500,1750"
+iconName "reqTracerRequirement.bmp"
+iconMaskName "reqTracerRequirement.msk"
+)
+autoResize 1
+text (MLText
+va (VaSet
+fg "0,0,32768"
+font "arial,8,0"
+)
+xt "500,2150,1400,3150"
+st "
+Text
+"
+tm "RequirementText"
+wrapOption 3
+visibleHeight 1350
+visibleWidth 1100
 )
 )
 defaultPanel (Panel
@@ -1907,7 +1956,7 @@ f (Text
 va (VaSet
 font "Verdana,12,0"
 )
-xt "0,750,2100,2150"
+xt "0,750,2900,2150"
 st "In0"
 blo "0,1950"
 tm "CptPortNameMgr"
@@ -1919,6 +1968,7 @@ font "Courier New,8,0"
 )
 )
 thePort (LogicalPort
+lang 11
 decl (Decl
 n "In0"
 t "unsigned"
@@ -1944,7 +1994,7 @@ f (Text
 va (VaSet
 font "Verdana,12,0"
 )
-xt "0,750,4500,2150"
+xt "0,750,5300,2150"
 st "Buffer0"
 blo "0,1950"
 tm "CptPortNameMgr"
@@ -1956,6 +2006,7 @@ font "Courier New,8,0"
 )
 )
 thePort (LogicalPort
+lang 11
 m 3
 decl (Decl
 n "Buffer0"
@@ -2023,7 +2074,7 @@ xt "0,9400,0,9400"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 2474,0
+lastUid 2497,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"

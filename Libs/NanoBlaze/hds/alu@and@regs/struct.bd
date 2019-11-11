@@ -1,6 +1,7 @@
 DocumentHdrVersion "1.1"
 Header (DocumentHdr
 version 2
+dialect 11
 dmPackageRefs [
 (DmPackageRef
 library "ieee"
@@ -79,31 +80,31 @@ libraryRefs [
 "ieee"
 ]
 )
-version "29.1"
-appVersion "2009.2 (Build 10)"
+version "32.1"
+appVersion "2019.2 (Build 5)"
 noEmbeddedEditors 1
 model (BlockDiag
 VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hdl"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\alu@and@regs\\struct.bd.info"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\alu@and@regs\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\alu@and@regs\\struct.bd.user"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\alu@and@regs\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds"
 )
 (vvPair
 variable "appl"
@@ -127,27 +128,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\alu@and@regs"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\alu@and@regs"
 )
 (vvPair
 variable "d_logical"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\aluAndRegs"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\aluAndRegs"
 )
 (vvPair
 variable "date"
-value "02.04.2015"
+value "11.11.2019"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "02"
+value "11"
 )
 (vvPair
 variable "designName"
@@ -174,12 +175,32 @@ variable "f_noext"
 value "struct"
 )
 (vvPair
+variable "graphical_source_author"
+value "silvan.zahno"
+)
+(vvPair
+variable "graphical_source_date"
+value "11.11.2019"
+)
+(vvPair
+variable "graphical_source_group"
+value "UNKNOWN"
+)
+(vvPair
+variable "graphical_source_host"
+value "WE6996"
+)
+(vvPair
+variable "graphical_source_time"
+value "07:38:44"
+)
+(vvPair
 variable "group"
 value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE3673"
+value "WE6996"
 )
 (vvPair
 variable "language"
@@ -195,11 +216,11 @@ value "$HDS_PROJECT_DIR/../NanoBlaze/designcheck"
 )
 (vvPair
 variable "library_downstream_ModelSimCompiler"
-value "$SCRATCH_DIR/$DESIGN_NAME/NanoBlaze/work"
+value "$SCRATCH_DIR/ElN/Libraries/NanoBlaze/work"
 )
 (vvPair
 variable "mm"
-value "04"
+value "11"
 )
 (vvPair
 variable "module_name"
@@ -207,19 +228,19 @@ value "aluAndRegs"
 )
 (vvPair
 variable "month"
-value "avr."
+value "Nov"
 )
 (vvPair
 variable "month_long"
-value "avril"
+value "November"
 )
 (vvPair
 variable "p"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\alu@and@regs\\struct.bd"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\alu@and@regs\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\aluAndRegs\\struct.bd"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\aluAndRegs\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -287,7 +308,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "15:35:08"
+value "07:38:44"
 )
 (vvPair
 variable "unit"
@@ -295,11 +316,11 @@ value "aluAndRegs"
 )
 (vvPair
 variable "user"
-value "francois"
+value "silvan.zahno"
 )
 (vvPair
 variable "version"
-value "2009.2 (Build 10)"
+value "2019.2 (Build 5)"
 )
 (vvPair
 variable "view"
@@ -307,15 +328,15 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2015"
+value "2019"
 )
 (vvPair
 variable "yy"
-value "15"
+value "19"
 )
 ]
 )
-LanguageMgr "VhdlLangMgr"
+LanguageMgr "Vhdl2008LangMgr"
 uid 356,0
 optionalChildren [
 *1 (PortIoIn
@@ -1490,7 +1511,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "96200,98000,106700,99000"
+xt "96200,98500,96200,98500"
 st "
 by %user on %dd %month %year
 "
@@ -1521,7 +1542,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "113200,94000,116200,95000"
+xt "113200,94500,113200,94500"
 st "
 Project:
 "
@@ -1552,7 +1573,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "96200,96000,106200,97000"
+xt "96200,96500,96200,96500"
 st "
 <enter diagram title here>
 "
@@ -1583,7 +1604,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "92200,96000,94300,97000"
+xt "92200,96500,92200,96500"
 st "
 Title:
 "
@@ -1614,7 +1635,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "113200,95200,122400,96200"
+xt "113200,95200,127300,96400"
 st "
 <enter comments here>
 "
@@ -1644,7 +1665,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "117200,94000,122000,95000"
+xt "117200,94500,117200,94500"
 st "
 %project_name
 "
@@ -1674,7 +1695,7 @@ uid 335,0
 va (VaSet
 fg "32768,0,0"
 )
-xt "99150,94500,105850,95500"
+xt "97350,94400,107650,95600"
 st "
 <company name>
 "
@@ -1706,7 +1727,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "92200,97000,94300,98000"
+xt "92200,97500,92200,97500"
 st "
 Path:
 "
@@ -1737,7 +1758,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "92200,98000,94900,99000"
+xt "92200,98500,92200,98500"
 st "
 Edited:
 "
@@ -1768,7 +1789,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "96200,97000,107600,98000"
+xt "96200,97500,96200,97500"
 st "
 %library/%unit/%view
 "
@@ -1953,7 +1974,7 @@ text (MLText
 uid 1440,0
 va (VaSet
 )
-xt "101200,44200,107700,46200"
+xt "101200,44200,111300,46600"
 st "
 portOut <= opA;
 spadOut <= opA;
@@ -2041,7 +2062,7 @@ text (MLText
 uid 1450,0
 va (VaSet
 )
-xt "101200,30200,112500,36200"
+xt "101200,30200,112600,37400"
 st "
 portAddr <= resize(unsigned(registerFileIn), portAddressBitNb);
 scratchpadAddr <= resize(unsigned(registerFileIn), scratchpadAddressBitNb);
@@ -4394,7 +4415,7 @@ blo "-14000,800"
 uid 347,0
 va (VaSet
 )
-xt "-14000,1000,-2700,4000"
+xt "-14000,1000,3500,4600"
 st "LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;"
@@ -4431,7 +4452,7 @@ uid 351,0
 va (VaSet
 isHidden 1
 )
-xt "20000,2000,27500,4000"
+xt "20000,2000,32100,4400"
 st "`resetall
 `timescale 1ns/10ps"
 tm "BdCompilerDirectivesTextMgr"
@@ -4500,7 +4521,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-14000,0"
-lastUid 2022,0
+lastUid 2057,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -4515,7 +4536,7 @@ text (MLText
 va (VaSet
 fg "0,0,32768"
 )
-xt "200,200,2000,1200"
+xt "200,200,3200,1400"
 st "
 Text
 "
@@ -4523,6 +4544,34 @@ tm "CommentText"
 wrapOption 3
 visibleHeight 4600
 visibleWidth 14600
+)
+)
+defaultRequirementText (RequirementText
+shape (ZoomableIcon
+layer 0
+va (VaSet
+vasetType 1
+fg "59904,39936,65280"
+lineColor "0,0,32768"
+)
+xt "0,0,1500,1750"
+iconName "reqTracerRequirement.bmp"
+iconMaskName "reqTracerRequirement.msk"
+)
+autoResize 1
+text (MLText
+va (VaSet
+fg "0,0,32768"
+font "arial,8,0"
+)
+xt "500,2150,1400,3150"
+st "
+Text
+"
+tm "RequirementText"
+wrapOption 3
+visibleHeight 1350
+visibleWidth 1100
 )
 )
 defaultPanel (Panel
@@ -4933,7 +4982,7 @@ xt "0,0,18000,5000"
 text (MLText
 va (VaSet
 )
-xt "200,200,2000,1200"
+xt "200,200,3200,1400"
 st "
 Text
 "
@@ -4955,7 +5004,6 @@ radius 1000
 )
 name (Text
 va (VaSet
-font "Verdana,9,0"
 )
 xt "-750,-600,750,600"
 st "G"
@@ -5229,7 +5277,7 @@ tm "BundleNameMgr"
 second (MLText
 va (VaSet
 )
-xt "0,1000,1000,2000"
+xt "0,1000,1500,2200"
 st "()"
 tm "BundleContentsMgr"
 )
@@ -5252,12 +5300,10 @@ ps "BottomRightOffsetStrategy"
 stg "VerticalLayoutStrategy"
 first (MLText
 va (VaSet
-font "Verdana,9,0"
 )
 )
 second (MLText
 va (VaSet
-font "Verdana,9,0"
 )
 tm "PortMapTextMgr"
 )
@@ -5279,7 +5325,7 @@ ps "TopLeftStrategy"
 text (MLText
 va (VaSet
 )
-xt "0,-1100,12600,-100"
+xt "0,-1100,18500,100"
 st "g0: FOR i IN 0 TO n GENERATE"
 tm "FrameTitleTextMgr"
 )
@@ -5339,7 +5385,7 @@ ps "TopLeftStrategy"
 text (MLText
 va (VaSet
 )
-xt "0,-1100,7400,-100"
+xt "0,-1100,11000,100"
 st "b0: BLOCK (guard)"
 tm "FrameTitleTextMgr"
 )
@@ -5399,7 +5445,6 @@ ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
 va (VaSet
-font "Verdana,9,0"
 )
 xt "0,750,2800,1950"
 st "Port"
@@ -5428,7 +5473,6 @@ ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
 va (VaSet
-font "Verdana,9,0"
 )
 xt "0,750,2800,1950"
 st "Port"

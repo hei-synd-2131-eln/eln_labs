@@ -1,6 +1,7 @@
 DocumentHdrVersion "1.1"
 Header (DocumentHdr
 version 2
+dialect 11
 dmPackageRefs [
 (DmPackageRef
 library "ieee"
@@ -212,8 +213,8 @@ libraryRefs [
 "ieee"
 ]
 )
-version "29.1"
-appVersion "2009.2 (Build 10)"
+version "32.1"
+appVersion "2019.2 (Build 5)"
 noEmbeddedEditors 1
 model (BlockDiag
 VExpander (VariableExpander
@@ -224,23 +225,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hdl"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\nano@processor\\struct.bd.info"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nano@processor\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\nano@processor\\struct.bd.user"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nano@processor\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds"
 )
 (vvPair
 variable "appl"
@@ -264,27 +265,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\nano@processor"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nano@processor"
 )
 (vvPair
 variable "d_logical"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\nanoProcessor"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nanoProcessor"
 )
 (vvPair
 variable "date"
-value "02.04.2015"
+value "11.11.2019"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "02"
+value "11"
 )
 (vvPair
 variable "designName"
@@ -311,12 +312,32 @@ variable "f_noext"
 value "struct"
 )
 (vvPair
+variable "graphical_source_author"
+value "silvan.zahno"
+)
+(vvPair
+variable "graphical_source_date"
+value "11.11.2019"
+)
+(vvPair
+variable "graphical_source_group"
+value "UNKNOWN"
+)
+(vvPair
+variable "graphical_source_host"
+value "WE6996"
+)
+(vvPair
+variable "graphical_source_time"
+value "07:38:43"
+)
+(vvPair
 variable "group"
 value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE3673"
+value "WE6996"
 )
 (vvPair
 variable "language"
@@ -344,7 +365,7 @@ value "D:\\Users\\ELN_labs\\VHDL_comp"
 )
 (vvPair
 variable "library_downstream_ModelSimCompiler"
-value "$SCRATCH_DIR/$DESIGN_NAME/NanoBlaze/work"
+value "$SCRATCH_DIR/ElN/Libraries/NanoBlaze/work"
 )
 (vvPair
 variable "library_downstream_SpyGlass"
@@ -352,7 +373,7 @@ value "U:\\ELN_Board\\Synthesis"
 )
 (vvPair
 variable "mm"
-value "04"
+value "11"
 )
 (vvPair
 variable "module_name"
@@ -360,19 +381,19 @@ value "nanoProcessor"
 )
 (vvPair
 variable "month"
-value "avr."
+value "Nov"
 )
 (vvPair
 variable "month_long"
-value "avril"
+value "November"
 )
 (vvPair
 variable "p"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\nano@processor\\struct.bd"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nano@processor\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "D:\\Labs\\Projects\\NanoBlaze\\..\\..\\Libs\\NanoBlaze\\hds\\nanoProcessor\\struct.bd"
+value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Libs\\NanoBlaze\\hds\\nanoProcessor\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -448,7 +469,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:22:33"
+value "07:38:43"
 )
 (vvPair
 variable "unit"
@@ -456,11 +477,11 @@ value "nanoProcessor"
 )
 (vvPair
 variable "user"
-value "francois"
+value "silvan.zahno"
 )
 (vvPair
 variable "version"
-value "2009.2 (Build 10)"
+value "2019.2 (Build 5)"
 )
 (vvPair
 variable "view"
@@ -468,15 +489,15 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2015"
+value "2019"
 )
 (vvPair
 variable "yy"
-value "15"
+value "19"
 )
 ]
 )
-LanguageMgr "VhdlLangMgr"
+LanguageMgr "Vhdl2008LangMgr"
 uid 41,0
 optionalChildren [
 *1 (Grouping
@@ -500,7 +521,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "156200,202500,166300,203500"
+xt "156200,202400,171600,203600"
 st "
 <enter project name here>
 "
@@ -561,7 +582,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "129200,208500,139200,209500"
+xt "129200,208400,147600,209600"
 st "
 by %user on %dd %month %year
 "
@@ -591,7 +612,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "150200,202500,153200,203500"
+xt "150200,202400,154900,203600"
 st "
 Project:
 "
@@ -621,7 +642,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "129200,204500,139200,205500"
+xt "129200,204400,144400,205600"
 st "
 <enter diagram title here>
 "
@@ -651,7 +672,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "124200,204500,126300,205500"
+xt "124200,204400,127600,205600"
 st "
 Title:
 "
@@ -681,7 +702,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "124200,206500,126300,207500"
+xt "124200,206400,127600,207600"
 st "
 Path:
 "
@@ -711,7 +732,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "150200,204200,159400,205200"
+xt "150200,204200,164300,205400"
 st "
 <enter comments here>
 "
@@ -740,7 +761,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "129200,206500,135700,207500"
+xt "129200,206400,139100,207600"
 st "
 
 %library/%unit/%view
@@ -772,7 +793,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "124200,208500,126900,209500"
+xt "124200,208400,128500,209600"
 st "
 Edited:
 "
@@ -1515,7 +1536,7 @@ uid 17292,0
 decl (Decl
 n "registerFileSel"
 t "std_ulogic"
-o 35
+o 36
 suid 167,0
 )
 declText (MLText
@@ -1549,7 +1570,7 @@ uid 17308,0
 decl (Decl
 n "portInSel"
 t "std_ulogic"
-o 28
+o 29
 suid 169,0
 )
 declText (MLText
@@ -1566,7 +1587,7 @@ uid 17316,0
 decl (Decl
 n "scratchpadSel"
 t "std_ulogic"
-o 36
+o 37
 suid 170,0
 )
 declText (MLText
@@ -1617,7 +1638,7 @@ uid 17340,0
 decl (Decl
 n "zero"
 t "std_ulogic"
-o 47
+o 48
 suid 173,0
 )
 declText (MLText
@@ -1635,7 +1656,7 @@ decl (Decl
 n "intCode"
 t "std_ulogic_vector"
 b "( intCodeBitNb-1 DOWNTO 0 )"
-o 23
+o 24
 suid 174,0
 )
 declText (MLText
@@ -1653,7 +1674,7 @@ decl (Decl
 n "opCode"
 t "std_ulogic_vector"
 b "( opCodeBitNb-1 DOWNTO 0 )"
-o 26
+o 27
 suid 176,0
 )
 declText (MLText
@@ -1902,7 +1923,7 @@ uid 18205,0
 decl (Decl
 n "loadStoredPC"
 t "std_ulogic"
-o 25
+o 26
 suid 186,0
 )
 declText (MLText
@@ -1919,7 +1940,7 @@ uid 18213,0
 decl (Decl
 n "loadInstrAddress"
 t "std_ulogic"
-o 24
+o 25
 suid 187,0
 )
 declText (MLText
@@ -1954,7 +1975,7 @@ decl (Decl
 n "storedProgCounter"
 t "unsigned"
 b "( programCounterBitNb-1 DOWNTO 0 )"
-o 45
+o 46
 suid 189,0
 )
 declText (MLText
@@ -1971,7 +1992,7 @@ uid 18288,0
 decl (Decl
 n "storePC"
 t "std_ulogic"
-o 44
+o 45
 suid 191,0
 )
 declText (MLText
@@ -2005,7 +2026,7 @@ text (MLText
 uid 18605,0
 va (VaSet
 )
-xt "133200,102200,149000,104200"
+xt "133200,102200,148300,107000"
 st "
 dataAddress <= portInstrAddress when portIndexedSel = '0' else portRegAddress;
 "
@@ -2057,7 +2078,7 @@ uid 18630,0
 decl (Decl
 n "scratchpadWrite"
 t "std_ulogic"
-o 37
+o 38
 suid 200,0
 )
 declText (MLText
@@ -2074,7 +2095,7 @@ uid 18872,0
 decl (Decl
 n "regWrite"
 t "std_ulogic"
-o 34
+o 35
 suid 203,0
 )
 declText (MLText
@@ -2108,7 +2129,7 @@ text (MLText
 uid 18999,0
 va (VaSet
 )
-xt "133200,126200,147600,128200"
+xt "133200,126200,149000,131000"
 st "
 dataOut <= std_ulogic_vector(portOut);
 portIn <= signed(dataIn);
@@ -2162,7 +2183,7 @@ decl (Decl
 n "portOut"
 t "signed"
 b "( registerBitNb-1 DOWNTO 0 )"
-o 31
+o 32
 suid 204,0
 )
 declText (MLText
@@ -2180,7 +2201,7 @@ decl (Decl
 n "portIn"
 t "signed"
 b "( registerBitNb-1 DOWNTO 0 )"
-o 27
+o 28
 suid 205,0
 )
 declText (MLText
@@ -2198,7 +2219,7 @@ decl (Decl
 n "spadIn"
 t "signed"
 b "(registerBitNb-1 DOWNTO 0)"
-o 39
+o 40
 suid 207,0
 )
 declText (MLText
@@ -2216,7 +2237,7 @@ decl (Decl
 n "spadOut"
 t "signed"
 b "(registerBitNb-1 DOWNTO 0)"
-o 42
+o 43
 suid 208,0
 )
 declText (MLText
@@ -2233,7 +2254,7 @@ uid 19800,0
 decl (Decl
 n "portIndexedSel"
 t "std_ulogic"
-o 29
+o 30
 suid 209,0
 )
 declText (MLText
@@ -2251,7 +2272,7 @@ decl (Decl
 n "portInstrAddress"
 t "unsigned"
 b "(addressBitNb-1 DOWNTO 0)"
-o 30
+o 31
 suid 210,0
 )
 declText (MLText
@@ -2269,7 +2290,7 @@ decl (Decl
 n "spadInstrAddress"
 t "unsigned"
 b "(scratchpadAddressBitNb-1 DOWNTO 0)"
-o 41
+o 42
 suid 212,0
 )
 declText (MLText
@@ -2286,7 +2307,7 @@ uid 19966,0
 decl (Decl
 n "spadIndexedSel"
 t "std_ulogic"
-o 40
+o 41
 suid 213,0
 )
 declText (MLText
@@ -2320,7 +2341,7 @@ text (MLText
 uid 19982,0
 va (VaSet
 )
-xt "133200,144200,148200,147200"
+xt "133200,144200,148700,149000"
 st "
 spadAddress <= spadInstrAddress when spadIndexedSel = '0' else spadRegAddress;
 "
@@ -2373,7 +2394,7 @@ decl (Decl
 n "spadRegAddress"
 t "unsigned"
 b "(scratchpadAddressBitNb-1 DOWNTO 0)"
-o 43
+o 44
 suid 216,0
 )
 declText (MLText
@@ -2391,7 +2412,7 @@ decl (Decl
 n "portRegAddress"
 t "unsigned"
 b "(addressBitNb-1 DOWNTO 0)"
-o 32
+o 33
 suid 218,0
 )
 declText (MLText
@@ -2409,7 +2430,7 @@ decl (Decl
 n "spadAddress"
 t "unsigned"
 b "(scratchpadAddressBitNb-1 DOWNTO 0)"
-o 38
+o 39
 suid 219,0
 )
 declText (MLText
@@ -2802,7 +2823,7 @@ uid 21555,0
 decl (Decl
 n "twoRegInstr"
 t "std_ulogic"
-o 46
+o 47
 suid 221,0
 )
 declText (MLText
@@ -4095,7 +4116,7 @@ uid 22145,0
 decl (Decl
 n "prevPC"
 t "std_ulogic"
-o 33
+o 34
 suid 222,0
 )
 declText (MLText
@@ -4127,7 +4148,7 @@ text (MLText
 uid 22471,0
 va (VaSet
 )
-xt "87350,153500,109050,154500"
+xt "87350,153500,119850,154700"
 st "g_scratchpad: IF scratchpadAddressBitNb > 0 GENERATE"
 tm "FrameTitleTextMgr"
 )
@@ -5938,7 +5959,7 @@ text (MLText
 uid 22862,0
 va (VaSet
 )
-xt "132200,-4800,156100,9200"
+xt "132200,-4800,156100,8400"
 st "
 -- pragma translate_off
 
@@ -6217,7 +6238,7 @@ decl (Decl
 n "instrString"
 t "string"
 b "(1 TO 16)"
-o 48
+o 23
 suid 223,0
 )
 declText (MLText
@@ -8493,7 +8514,7 @@ blo "24000,-11200"
 uid 574,0
 va (VaSet
 )
-xt "24000,-11000,35300,-8000"
+xt "24000,-11000,41500,-7400"
 st "LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;"
@@ -8603,7 +8624,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "24000,-12000"
-lastUid 23119,0
+lastUid 23261,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -8618,7 +8639,7 @@ text (MLText
 va (VaSet
 fg "65535,0,0"
 )
-xt "200,200,2000,1200"
+xt "200,200,3200,1400"
 st "
 Text
 "
@@ -8626,6 +8647,34 @@ tm "CommentText"
 wrapOption 3
 visibleHeight 4600
 visibleWidth 14600
+)
+)
+defaultRequirementText (RequirementText
+shape (ZoomableIcon
+layer 0
+va (VaSet
+vasetType 1
+fg "59904,39936,65280"
+lineColor "0,0,32768"
+)
+xt "0,0,1500,1750"
+iconName "reqTracerRequirement.bmp"
+iconMaskName "reqTracerRequirement.msk"
+)
+autoResize 1
+text (MLText
+va (VaSet
+fg "0,0,32768"
+font "arial,8,0"
+)
+xt "500,2150,1400,3150"
+st "
+Text
+"
+tm "RequirementText"
+wrapOption 3
+visibleHeight 1350
+visibleWidth 1100
 )
 )
 defaultPanel (Panel
@@ -8665,7 +8714,6 @@ stg "VerticalLayoutStrategy"
 textVec [
 *263 (Text
 va (VaSet
-font "Verdana,9,0"
 )
 xt "2100,3000,6700,4200"
 st "<library>"
@@ -8674,7 +8722,6 @@ tm "BdLibraryNameMgr"
 )
 *264 (Text
 va (VaSet
-font "Verdana,9,0"
 )
 xt "2100,4200,6200,5400"
 st "<block>"
@@ -8683,7 +8730,6 @@ tm "BlkNameMgr"
 )
 *265 (Text
 va (VaSet
-font "Verdana,9,0"
 )
 xt "2100,5400,3300,6600"
 st "I0"
@@ -8973,7 +9019,7 @@ xt "0,0,18000,5000"
 text (MLText
 va (VaSet
 )
-xt "200,200,2000,1200"
+xt "200,200,3200,1400"
 st "
 Text
 "
@@ -9299,7 +9345,7 @@ tm "BundleNameMgr"
 second (MLText
 va (VaSet
 )
-xt "0,1000,1000,2000"
+xt "0,1000,1500,2200"
 st "()"
 tm "BundleContentsMgr"
 )
@@ -9323,13 +9369,13 @@ stg "VerticalLayoutStrategy"
 first (MLText
 va (VaSet
 )
-xt "0,0,3100,1000"
+xt "0,0,5000,1200"
 st "Auto list"
 )
 second (MLText
 va (VaSet
 )
-xt "0,1000,6300,2000"
+xt "0,1000,9600,2200"
 st "User defined list"
 tm "PortMapTextMgr"
 )
@@ -9351,7 +9397,7 @@ ps "TopLeftStrategy"
 text (MLText
 va (VaSet
 )
-xt "0,-1300,12600,-300"
+xt "0,-1300,18500,-100"
 st "g0: FOR i IN 0 TO n GENERATE"
 tm "FrameTitleTextMgr"
 )
@@ -9411,7 +9457,7 @@ ps "TopLeftStrategy"
 text (MLText
 va (VaSet
 )
-xt "0,-1300,7400,-300"
+xt "0,-1300,11000,-100"
 st "b0: BLOCK (guard)"
 tm "FrameTitleTextMgr"
 )
@@ -9753,7 +9799,7 @@ m 4
 decl (Decl
 n "registerFileSel"
 t "std_ulogic"
-o 35
+o 36
 suid 167,0
 )
 )
@@ -9777,7 +9823,7 @@ m 4
 decl (Decl
 n "portInSel"
 t "std_ulogic"
-o 28
+o 29
 suid 169,0
 )
 )
@@ -9789,7 +9835,7 @@ m 4
 decl (Decl
 n "scratchpadSel"
 t "std_ulogic"
-o 36
+o 37
 suid 170,0
 )
 )
@@ -9825,7 +9871,7 @@ m 4
 decl (Decl
 n "zero"
 t "std_ulogic"
-o 47
+o 48
 suid 173,0
 )
 )
@@ -9838,7 +9884,7 @@ decl (Decl
 n "intCode"
 t "std_ulogic_vector"
 b "( intCodeBitNb-1 DOWNTO 0 )"
-o 23
+o 24
 suid 174,0
 )
 )
@@ -9851,7 +9897,7 @@ decl (Decl
 n "opCode"
 t "std_ulogic_vector"
 b "( opCodeBitNb-1 DOWNTO 0 )"
-o 26
+o 27
 suid 176,0
 )
 )
@@ -9953,7 +9999,7 @@ m 4
 decl (Decl
 n "loadStoredPC"
 t "std_ulogic"
-o 25
+o 26
 suid 186,0
 )
 )
@@ -9965,7 +10011,7 @@ m 4
 decl (Decl
 n "loadInstrAddress"
 t "std_ulogic"
-o 24
+o 25
 suid 187,0
 )
 )
@@ -9990,7 +10036,7 @@ decl (Decl
 n "storedProgCounter"
 t "unsigned"
 b "( programCounterBitNb-1 DOWNTO 0 )"
-o 45
+o 46
 suid 189,0
 )
 )
@@ -10002,7 +10048,7 @@ m 4
 decl (Decl
 n "storePC"
 t "std_ulogic"
-o 44
+o 45
 suid 191,0
 )
 )
@@ -10014,7 +10060,7 @@ m 4
 decl (Decl
 n "scratchpadWrite"
 t "std_ulogic"
-o 37
+o 38
 suid 200,0
 )
 )
@@ -10026,7 +10072,7 @@ m 4
 decl (Decl
 n "regWrite"
 t "std_ulogic"
-o 34
+o 35
 suid 203,0
 )
 )
@@ -10039,7 +10085,7 @@ decl (Decl
 n "portOut"
 t "signed"
 b "( registerBitNb-1 DOWNTO 0 )"
-o 31
+o 32
 suid 204,0
 )
 )
@@ -10052,7 +10098,7 @@ decl (Decl
 n "portIn"
 t "signed"
 b "( registerBitNb-1 DOWNTO 0 )"
-o 27
+o 28
 suid 205,0
 )
 )
@@ -10065,7 +10111,7 @@ decl (Decl
 n "spadIn"
 t "signed"
 b "(registerBitNb-1 DOWNTO 0)"
-o 39
+o 40
 suid 207,0
 )
 )
@@ -10078,7 +10124,7 @@ decl (Decl
 n "spadOut"
 t "signed"
 b "(registerBitNb-1 DOWNTO 0)"
-o 42
+o 43
 suid 208,0
 )
 )
@@ -10090,7 +10136,7 @@ m 4
 decl (Decl
 n "portIndexedSel"
 t "std_ulogic"
-o 29
+o 30
 suid 209,0
 )
 )
@@ -10103,7 +10149,7 @@ decl (Decl
 n "portInstrAddress"
 t "unsigned"
 b "(addressBitNb-1 DOWNTO 0)"
-o 30
+o 31
 suid 210,0
 )
 )
@@ -10116,7 +10162,7 @@ decl (Decl
 n "spadInstrAddress"
 t "unsigned"
 b "(scratchpadAddressBitNb-1 DOWNTO 0)"
-o 41
+o 42
 suid 212,0
 )
 )
@@ -10128,7 +10174,7 @@ m 4
 decl (Decl
 n "spadIndexedSel"
 t "std_ulogic"
-o 40
+o 41
 suid 213,0
 )
 )
@@ -10141,7 +10187,7 @@ decl (Decl
 n "spadRegAddress"
 t "unsigned"
 b "(scratchpadAddressBitNb-1 DOWNTO 0)"
-o 43
+o 44
 suid 216,0
 )
 )
@@ -10154,7 +10200,7 @@ decl (Decl
 n "portRegAddress"
 t "unsigned"
 b "(addressBitNb-1 DOWNTO 0)"
-o 32
+o 33
 suid 218,0
 )
 )
@@ -10167,7 +10213,7 @@ decl (Decl
 n "spadAddress"
 t "unsigned"
 b "(scratchpadAddressBitNb-1 DOWNTO 0)"
-o 38
+o 39
 suid 219,0
 )
 )
@@ -10192,7 +10238,7 @@ m 4
 decl (Decl
 n "twoRegInstr"
 t "std_ulogic"
-o 46
+o 47
 suid 221,0
 )
 )
@@ -10204,7 +10250,7 @@ m 4
 decl (Decl
 n "prevPC"
 t "std_ulogic"
-o 33
+o 34
 suid 222,0
 )
 )
@@ -10217,7 +10263,7 @@ decl (Decl
 n "instrString"
 t "string"
 b "(1 TO 16)"
-o 48
+o 23
 suid 223,0
 )
 )
