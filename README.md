@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">Labor Files for ELN Laboratories practical sessions <a href="https://cyberlearn.hes-so.ch/course/view.php?id=11900" target="_blank">Moodle Cyberlearn</a>.</h4>
+<h4 align="center">Labor Files for ELN Laboratories practical sessions <a href="https://cyberlearn.hes-so.ch" target="_blank">Moodle Cyberlearn</a>.</h4>
 
 # Table of contents
 <p align="center">
@@ -24,6 +24,9 @@
 [(Back to top)](#table-of-contents)
 
 Laboratory file for course 2131-eln for first year bachelor students.
+
+Moodle Link
+* [Moodle SYND](https://cyberlearn.hes-so.ch/course/view.php?id=14276)
 
 ## How To Use
 [(Back to top)](#table-of-contents)
