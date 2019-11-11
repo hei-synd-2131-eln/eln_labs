@@ -5248,22 +5248,18 @@ theList "HDL Files"
 columns [
 (TreeListVPData_Column
 name "Type"
-displayName ""
 width 140
 )
 (TreeListVPData_Column
 name "Extends"
-displayName ""
 width 100
 )
 (TreeListVPData_Column
 name "Size"
-displayName ""
 width 100
 )
 (TreeListVPData_Column
 name "Time Stamp"
-displayName ""
 width 120
 )
 ]
@@ -6262,6 +6258,15 @@ activeViewpointIdx 0
 )
 (WorkTab
 name "LCD"
+showingHierarchy 0
+openLibs [
+]
+declHierarchy [
+]
+activeViewpointIdx 0
+)
+(WorkTab
+name "<Empty>"
 showingHierarchy 0
 openLibs [
 ]

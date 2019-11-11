@@ -32,6 +32,7 @@ PHD_test = $SCRATCH_DIR/ElN/PHD_test/work
 PWM = $SCRATCH_DIR/ElN/PWM/work
 PWM_test = $SCRATCH_DIR/ElN/PWM_test/work
 sequential = $SCRATCH_DIR/ElN/Libraries/Sequential/work
+
 [hdl]
 ADD = $HDS_PROJECT_DIR/../ADD/hdl
 ADD_test = $HDS_PROJECT_DIR/../ADD_test/hdl
@@ -62,6 +63,7 @@ PHD_test = $HDS_PROJECT_DIR/../PHD_test/hdl
 PWM = $HDS_PROJECT_DIR/../PWM/hdl
 PWM_test = $HDS_PROJECT_DIR/../PWM_test/hdl
 sequential = $HEI_LIBS_DIR/Sequential/hdl
+
 [hds]
 ADD = $HDS_PROJECT_DIR/../ADD/hds
 ADD_test = $HDS_PROJECT_DIR/../ADD_test/hds
@@ -92,6 +94,7 @@ PHD_test = $HDS_PROJECT_DIR/../PHD_test/hds
 PWM = $HDS_PROJECT_DIR/../PWM/hds
 PWM_test = $HDS_PROJECT_DIR/../PWM_test/hds
 sequential = $HEI_LIBS_DIR/Sequential/hds
+
 [hds_settings]
 design_root = .()
 [hds_standard_library]
