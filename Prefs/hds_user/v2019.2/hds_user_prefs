@@ -1688,7 +1688,7 @@ width 1168
 height 1614
 )
 (PageSizeInfo
-name "FinePrint 2 Seiten Letter"
+name "FinePrint 2-up Letter"
 type 257
 width 783
 height 1210
@@ -4331,7 +4331,7 @@ hdsWorkspaceLocation ""
 relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
-logWindowGeometry "600x200+1311+41"
+logWindowGeometry "600x200+2349+55"
 diagramBrowserTabNo 0
 showInsertPortHint 0
 showContentFirstTime 0
@@ -6346,6 +6346,15 @@ declHierarchy [
 ]
 activeViewpointIdx 0
 )
+(WorkTab
+name "<Empty>"
+showingHierarchy 0
+openLibs [
+]
+declHierarchy [
+]
+activeViewpointIdx 0
+)
 ]
 ViewpointsOnOutlookBar [
 "Requirements"
@@ -6369,10 +6378,11 @@ size 180
 ]
 displayHierarchy 0
 xPos 0
-yPos 43
+yPos 57
 width 1068
 height 838
 activeSidePanelTab 2
+activeLibraryTab 1
 sidePanelSize 278
 showUnixHiddenFiles 0
 componentBrowserXpos 569

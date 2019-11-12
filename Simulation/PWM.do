@@ -4,9 +4,7 @@ add wave -noupdate -divider {Group: XXX}
 add wave -noupdate -expand -group {Reset and clock} /pwm_tb/reset
 add wave -noupdate -expand -group {Reset and clock} /pwm_tb/clock
 add wave -noupdate -divider {Input amplitude}
-add wave -noupdate -format Analog-Step -height 50 -max 255.0 -radix unsigned /pwm_tb/parallelIn
-add wave -noupdate -divider Internals
-add wave -noupdate -format Analog-Step -height 50 -max 255.0 -radix unsigned /pwm_tb/I_DUT/sawtooth
+add wave -noupdate -format Analog-Step -height 50 -max 1023.0 -radix unsigned /pwm_tb/parallelIn
 add wave -noupdate -divider {Output PWM}
 add wave -noupdate -expand -group PWM /pwm_tb/pwm1
 add wave -noupdate -expand -group PWM /pwm_tb/pwm1_n

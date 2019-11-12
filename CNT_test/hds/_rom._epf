@@ -1,2 +1,2 @@
-DEFAULT_ARCHITECTURE atom withLoops
-DEFAULT_FILE atom rom_withLoops.vhd
+DEFAULT_ARCHITECTURE atom linear
+DEFAULT_FILE atom rom_linear.vhd

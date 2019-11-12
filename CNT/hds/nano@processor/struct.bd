@@ -135,8 +135,8 @@ libraryRefs [
 "ieee"
 ]
 )
-version "31.1"
-appVersion "2018.1 (Build 12)"
+version "32.1"
+appVersion "2019.2 (Build 5)"
 noEmbeddedEditors 1
 model (BlockDiag
 VExpander (VariableExpander
@@ -191,19 +191,19 @@ value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\CNT\\
 )
 (vvPair
 variable "date"
-value "11.09.2019"
+value "12.11.2019"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Tue"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Tuesday"
 )
 (vvPair
 variable "dd"
-value "11"
+value "12"
 )
 (vvPair
 variable "designName"
@@ -235,7 +235,7 @@ value "silvan.zahno"
 )
 (vvPair
 variable "graphical_source_date"
-value "11.09.2019"
+value "12.11.2019"
 )
 (vvPair
 variable "graphical_source_group"
@@ -247,7 +247,7 @@ value "WE6996"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:33:21"
+value "12:30:53"
 )
 (vvPair
 variable "group"
@@ -291,7 +291,7 @@ value "U:\\ELN_Board\\Synthesis"
 )
 (vvPair
 variable "mm"
-value "09"
+value "11"
 )
 (vvPair
 variable "module_name"
@@ -299,11 +299,11 @@ value "nanoProcessor"
 )
 (vvPair
 variable "month"
-value "Sep"
+value "Nov"
 )
 (vvPair
 variable "month_long"
-value "September"
+value "November"
 )
 (vvPair
 variable "p"
@@ -395,7 +395,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "14:33:21"
+value "12:30:53"
 )
 (vvPair
 variable "unit"
@@ -407,7 +407,7 @@ value "silvan.zahno"
 )
 (vvPair
 variable "version"
-value "2018.1 (Build 12)"
+value "2019.2 (Build 5)"
 )
 (vvPair
 variable "view"
@@ -5162,8 +5162,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "114,32,1365,894"
-viewArea "81483,-5815,160544,44806"
+windowSize "-7,40,967,1087"
+viewArea "66848,-8516,156601,98923"
 cachedDiagramExtent "20000,-12000,216700,112000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\SUN\\PREA309_HPLJ3005DN.PRINTERS.SYSTEM.SION.HEVs,winspool,"
@@ -5187,7 +5187,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "24000,-12000"
-lastUid 23982,0
+lastUid 24022,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
