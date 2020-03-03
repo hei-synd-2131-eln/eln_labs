@@ -5979,6 +5979,18 @@ process(instruction)
   begin
     return (bitNb-1)/bitsPerHexDigit+1;
   end function hexDigitNb;
+    
+  function to01(nineValued : unsigned) return unsigned is
+    variable twoValued : unsigned(nineValued'range);
+  begin
+    twoValued := (others => '0');
+    for index in nineValued'range loop
+      if (nineValued(index) = '1') or (nineValued(index) = 'H') then
+        twoValued(index) := '1';
+      end if;
+    end loop;
+    return twoValued;
+  end function to01;
 
   variable opCode : unsigned(1+opCodeBitNb-1 downto 0);
   variable destRegister : unsigned(registerAddressBitNb-1 downto 0);
@@ -5996,9 +6008,9 @@ process(instruction)
   function toHexDigit(binary : unsigned(bitsPerHexDigit-1 downto 0)) return character is
   begin
     if binary <= 9 then
-      return character'val(character'pos('0') + to_integer(to_01(binary)));
+      return character'val(character'pos('0') + to_integer(to01(binary)));
     else
-      return character'val(character'pos('A') + to_integer(to_01(binary)) - 10);
+      return character'val(character'pos('A') + to_integer(to01(binary)) - 10);
     end if;
   end function toHexDigit;
 
