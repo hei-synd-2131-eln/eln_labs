@@ -1,2 +1,2 @@
-DEFAULT_FILE atom cordicStepAngles_RTL.vhd
+DEFAULT_FILE atom cordicStepAngles_masterversion.vhd
 DEFAULT_ARCHITECTURE atom studentVersion

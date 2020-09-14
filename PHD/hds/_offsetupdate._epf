@@ -1,2 +1,2 @@
-DEFAULT_FILE atom phaseAdd_RTL.vhd
+DEFAULT_FILE atom offsetUpdate_masterversion.vhd
 DEFAULT_ARCHITECTURE atom studentVersion

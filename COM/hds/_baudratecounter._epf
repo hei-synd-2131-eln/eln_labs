@@ -1,2 +1,2 @@
 DEFAULT_ARCHITECTURE atom studentVersion
-DEFAULT_FILE atom baudrate@counter/student@version.bd
+DEFAULT_FILE atom baudrateCounter_masterversion.vhd

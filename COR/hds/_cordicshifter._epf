@@ -1,2 +1,2 @@
-DEFAULT_FILE atom cordicShifter_RTL.vhd
+DEFAULT_FILE atom cordicShifter_masterversion.vhd
 DEFAULT_ARCHITECTURE atom studentVersion
