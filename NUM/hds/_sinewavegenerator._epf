@@ -1,2 +1,2 @@
 DEFAULT_ARCHITECTURE atom studentVersion
-DEFAULT_FILE atom sinewaveGenerator_masterversion.vhd
+DEFAULT_FILE atom sinewaveGenerator_studentversion.vhd
