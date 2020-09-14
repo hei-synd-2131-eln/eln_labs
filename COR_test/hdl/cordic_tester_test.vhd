@@ -12,4 +12,19 @@ BEGIN
   phase_int <= phase_int+1 after clockPeriod;
   phase <= phase_int;
 
+  stopSimulation: process
+  begin
+    wait for 1.501ms - now;
+    assert false
+      report cr &
+             "----------------------------------------" &
+             "----------------------------------------" &
+             "----------------------------------------" &
+             cr &
+             "End of simulation." &
+             cr & cr
+      severity failure;
+    wait;
+  end process stopSimulation;
+
 END ARCHITECTURE test;
