@@ -2,15 +2,16 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate -divider {Group: XXX}
 add wave -noupdate -divider {Phase difference}
-add wave -noupdate -format Analog-Step -height 50 -max 255.0 -radix unsigned -subitemconfig {/pha_tb/phasediff(7) {-height 15 -radix unsigned} /pha_tb/phasediff(6) {-height 15 -radix unsigned} /pha_tb/phasediff(5) {-height 15 -radix unsigned} /pha_tb/phasediff(4) {-height 15 -radix unsigned} /pha_tb/phasediff(3) {-height 15 -radix unsigned} /pha_tb/phasediff(2) {-height 15 -radix unsigned} /pha_tb/phasediff(1) {-height 15 -radix unsigned} /pha_tb/phasediff(0) {-height 15 -radix unsigned}} -expand -subitemconfig {/pha_tb/phasediff(7) {-height 15 -radix unsigned} /pha_tb/phasediff(6) {-height 15 -radix unsigned} /pha_tb/phasediff(5) {-height 15 -radix unsigned} /pha_tb/phasediff(4) {-height 15 -radix unsigned} /pha_tb/phasediff(3) {-height 15 -radix unsigned} /pha_tb/phasediff(2) {-height 15 -radix unsigned} /pha_tb/phasediff(1) {-height 15 -radix unsigned} /pha_tb/phasediff(0) {-height 15 -radix unsigned}} /pha_tb/phasediff
+add wave -noupdate -format Analog-Step -height 100 -max 255.0 -radix unsigned -childformat {{/pha_tb/phaseDiff(7) -radix unsigned} {/pha_tb/phaseDiff(6) -radix unsigned} {/pha_tb/phaseDiff(5) -radix unsigned} {/pha_tb/phaseDiff(4) -radix unsigned} {/pha_tb/phaseDiff(3) -radix unsigned} {/pha_tb/phaseDiff(2) -radix unsigned} {/pha_tb/phaseDiff(1) -radix unsigned} {/pha_tb/phaseDiff(0) -radix unsigned}} -radixshowbase 0 -expand -subitemconfig {/pha_tb/phaseDiff(7) {-radix unsigned} /pha_tb/phaseDiff(6) {-radix unsigned} /pha_tb/phaseDiff(5) {-radix unsigned} /pha_tb/phaseDiff(4) {-radix unsigned} /pha_tb/phaseDiff(3) {-radix unsigned} /pha_tb/phaseDiff(2) {-radix unsigned} /pha_tb/phaseDiff(1) {-radix unsigned} /pha_tb/phaseDiff(0) {-radix unsigned}} /pha_tb/phaseDiff
 add wave -noupdate -divider conditions
-add wave -noupdate /pha_tb/i_dut/condition_c
-add wave -noupdate /pha_tb/i_dut/condition_b
-add wave -noupdate /pha_tb/i_dut/condition_a
+add wave -noupdate /pha_tb/I_DUT/condition_c
+add wave -noupdate /pha_tb/I_DUT/condition_b
+add wave -noupdate /pha_tb/I_DUT/condition_a
 add wave -noupdate -divider LEDs
-add wave -noupdate -expand /pha_tb/leds
+add wave -noupdate -radix binary -radixshowbase 0 -expand /pha_tb/leds
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+WaveRestoreCursors {{Cursor 1} {0 ns} 0}
+quietly wave cursor active 1
 configure wave -namecolwidth 186
 configure wave -valuecolwidth 64
 configure wave -justifyvalue left
@@ -25,4 +26,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {3070854 ps}
+WaveRestoreZoom {0 ns} {3070 ns}
