@@ -10,11 +10,11 @@ Prefs/hds.info/
 *.lck
 *.vhd.info
 default_view
-*_entity.vhd
-*_struct.vhd
 *_fsm.vhd
 *.vhg
-*.DS_STORE
+*.vhg._fpf
+*_entity.vhd
+*_struct.vhd
 *.xrf/
 
 # Ignore verilog and c files
@@ -24,3 +24,6 @@ default_view
 *.c
 *.cpp
 *.psl
+
+# Ignore Mac OS files
+*.DS_STORE

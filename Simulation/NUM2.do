@@ -1,12 +1,12 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate -divider -height 50 {Group: XXX}
-add wave -noupdate -format Analog-Step -height 50 -label sine -max 130.0 -min -130.0 -radix decimal /toplevel_tb/i0/sine
+add wave -noupdate -format Analog-Step -height 50 -label sine -max 130.0 -min -130.0 -radix decimal /sinewave_tb/I_DUT/sine
 add wave -noupdate -divider {Operation results}
-add wave -noupdate -format Analog-Step -height 50 -label {sine inverted} -max 130.0 -min -130.0 -radix decimal /toplevel_tb/i0/sineinverted
-add wave -noupdate -format Analog-Step -height 50 -label {sine added} -max 130.0 -min -130.0 -radix decimal /toplevel_tb/i0/sineadded
-add wave -noupdate -format Analog-Step -height 100 -label {sine multiplied} -max 33000.0 -min -33000.0 -radix decimal /toplevel_tb/i0/sinemultiplied
-add wave -noupdate -format Analog-Step -height 100 -label {sine concatenated} -max 33000.0 -min -33000.0 -radix decimal /toplevel_tb/i0/sineconcatenated
+add wave -noupdate -format Analog-Step -height 50 -label {sine inverted} -max 130.0 -min -130.0 -radix decimal /sinewave_tb/sineinverted
+add wave -noupdate -format Analog-Step -height 50 -label {sine added} -max 130.0 -min -130.0 -radix decimal /sinewave_tb/sineadded
+add wave -noupdate -format Analog-Step -height 100 -label {sine multiplied} -max 33000.0 -min -33000.0 -radix decimal /sinewave_tb/sinemultiplied
+add wave -noupdate -format Analog-Step -height 100 -label {sine concatenated} -max 33000.0 -min -33000.0 -radix decimal /sinewave_tb/sineconcatenated
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {405000 ps} 0}
 configure wave -namecolwidth 175

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom comb
+DEFAULT_FILE atom opMultiply_comb.vhd

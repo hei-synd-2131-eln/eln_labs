@@ -14,93 +14,93 @@ unitName "numeric_std"
 ]
 instances [
 (Instance
-name "I0"
-duLibraryName "NUM"
-duName "counter"
-elements [
-(GiElement
-name "nbBits"
-type "positive"
-value "phaseNbBits"
-)
-]
-mwi 0
-uid 1472,0
-)
-(Instance
-name "I1"
+name "I_sin"
 duLibraryName "NUM"
 duName "sinewaveGenerator"
 elements [
 (GiElement
-name "phaseNbBits"
+name "phaseBitNb"
 type "positive"
-value "phaseNbBits"
+value "phaseBitNb"
 )
 (GiElement
-name "sineNbBits"
+name "sineBitNb"
 type "positive"
-value "sineNbBits"
+value "sineBitNb"
 )
 ]
 mwi 0
-uid 1587,0
+uid 1879,0
 )
 (Instance
-name "I2"
+name "I_phase"
 duLibraryName "NUM"
-duName "opInvert"
+duName "counter"
 elements [
 (GiElement
-name "nbBits"
+name "BitNb"
 type "positive"
-value "sineNbBits"
+value "phaseBitNb"
 )
 ]
 mwi 0
-uid 1604,0
+uid 1900,0
 )
 (Instance
-name "I3"
-duLibraryName "NUM"
-duName "opAdd"
-elements [
-(GiElement
-name "nbBits"
-type "positive"
-value "sineNbBits"
-)
-]
-mwi 0
-uid 1625,0
-)
-(Instance
-name "I4"
+name "I_mult"
 duLibraryName "NUM"
 duName "opMultiply"
 elements [
 (GiElement
-name "nbBits"
+name "bitNb"
 type "positive"
-value "sineNbBits"
+value "sineBitNb"
 )
 ]
 mwi 0
-uid 1646,0
+uid 2143,0
 )
 (Instance
-name "I5"
+name "I_concat"
 duLibraryName "NUM"
 duName "opConcatenate"
 elements [
 (GiElement
-name "nbBits"
+name "bitNb"
 type "positive"
-value "sineNbBits"
+value "sineBitNb"
 )
 ]
 mwi 0
-uid 1667,0
+uid 2164,0
+)
+(Instance
+name "I_add"
+duLibraryName "NUM"
+duName "opAdd"
+elements [
+(GiElement
+name "bitNb"
+type "positive"
+value "sineBitNb"
+)
+]
+mwi 0
+uid 2185,0
+)
+(Instance
+name "I_inv"
+duLibraryName "NUM"
+duName "opInvert"
+elements [
+(GiElement
+name "bitNb"
+type "positive"
+value "sineBitNb"
+)
+]
+mwi 0
+uid 2202,0
 )
 ]
 embeddedInstances [
@@ -121,8 +121,8 @@ libraryRefs [
 "ieee"
 ]
 )
-version "31.1"
-appVersion "2018.1 (Build 12)"
+version "32.1"
+appVersion "2019.3 (Build 4)"
 noEmbeddedEditors 1
 model (BlockDiag
 VExpander (VariableExpander
@@ -133,23 +133,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hdl"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\top@level\\struct.bd.info"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/top@level/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\top@level\\struct.bd.user"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/top@level/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds"
 )
 (vvPair
 variable "appl"
@@ -169,27 +169,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\top@level"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/top@level"
 )
 (vvPair
 variable "d_logical"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\topLevel"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/topLevel"
 )
 (vvPair
 variable "date"
-value "11.09.2019"
+value "09/22/20"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Tue"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Tuesday"
 )
 (vvPair
 variable "dd"
-value "11"
+value "22"
 )
 (vvPair
 variable "designName"
@@ -217,31 +217,31 @@ value "struct"
 )
 (vvPair
 variable "graphical_source_author"
-value "silvan.zahno"
+value "francois"
 )
 (vvPair
 variable "graphical_source_date"
-value "11.09.2019"
+value "09/22/20"
 )
 (vvPair
 variable "graphical_source_group"
-value "UNKNOWN"
+value "francois"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE6996"
+value "Aphelia"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:36:56"
+value "13:46:39"
 )
 (vvPair
 variable "group"
-value "UNKNOWN"
+value "francois"
 )
 (vvPair
 variable "host"
-value "WE6996"
+value "Aphelia"
 )
 (vvPair
 variable "language"
@@ -285,11 +285,11 @@ value "September"
 )
 (vvPair
 variable "p"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\top@level\\struct.bd"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/top@level/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\topLevel\\struct.bd"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/topLevel/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -329,7 +329,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "$MODELSIM_HOME\\win32"
+value "/usr/opt/Modelsim/modeltech/bin"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -361,7 +361,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "14:36:56"
+value "13:46:39"
 )
 (vvPair
 variable "unit"
@@ -369,11 +369,11 @@ value "topLevel"
 )
 (vvPair
 variable "user"
-value "silvan.zahno"
+value "francois"
 )
 (vvPair
 variable "version"
-value "2018.1 (Build 12)"
+value "2019.3 (Build 4)"
 )
 (vvPair
 variable "view"
@@ -381,11 +381,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2019"
+value "2020"
 )
 (vvPair
 variable "yy"
-value "19"
+value "20"
 )
 ]
 )
@@ -413,7 +413,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "117200,110400,132600,111600"
+xt "117200,110500,132800,111500"
 st "
 <enter project name here>
 "
@@ -441,9 +441,9 @@ text (MLText
 uid 16,0
 va (VaSet
 fg "32768,0,0"
-font "Arial,12,1"
+font "courier,12,1"
 )
-xt "92250,110250,103750,111750"
+xt "92750,110350,103250,111650"
 st "
 <company name>
 "
@@ -474,7 +474,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "90200,116400,108500,117600"
+xt "90200,116500,106400,117500"
 st "
 by %user on %dd %month %year
 "
@@ -504,7 +504,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "111200,110400,115900,111600"
+xt "111200,110500,116000,111500"
 st "
 Project:
 "
@@ -534,7 +534,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "90200,112400,105400,113600"
+xt "90200,112500,106400,113500"
 st "
 <enter diagram title here>
 "
@@ -564,7 +564,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "85200,112400,88600,113600"
+xt "85200,112500,88800,113500"
 st "
 Title:
 "
@@ -594,7 +594,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "85200,114400,88600,115600"
+xt "85200,114500,88200,115500"
 st "
 Path:
 "
@@ -624,7 +624,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "111200,112200,125300,113400"
+xt "111200,112200,124400,113200"
 st "
 <enter comments here>
 "
@@ -653,7 +653,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "90200,114400,102200,115600"
+xt "90200,114500,102200,115500"
 st "
 %library/%unit/%view
 "
@@ -683,7 +683,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "85200,116400,89500,117600"
+xt "85200,116500,89400,117500"
 st "
 Edited:
 "
@@ -743,18 +743,18 @@ f (Text
 uid 1359,0
 va (VaSet
 isHidden 1
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "12200,39300,16000,40700"
+xt "12500,39300,16000,40600"
 st "clock"
 ju 2
-blo "16000,40500"
+blo "16000,40300"
 tm "WireNameMgr"
 )
 s (Text
 uid 1360,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
 xt "12200,40700,12200,40700"
 ju 2
@@ -798,18 +798,18 @@ f (Text
 uid 1365,0
 va (VaSet
 isHidden 1
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "11900,41300,16000,42700"
+xt "12500,41300,16000,42600"
 st "reset"
 ju 2
-blo "16000,42500"
+blo "16000,42300"
 tm "WireNameMgr"
 )
 s (Text
 uid 1366,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
 xt "11900,42700,11900,42700"
 ju 2
@@ -843,7 +843,7 @@ text (MLText
 uid 344,0
 va (VaSet
 )
-xt "51200,51200,67400,52400"
+xt "51200,51200,67400,52200"
 st "
 offset <= \"0010\" & \"0000\";
 "
@@ -873,21 +873,21 @@ textVec [
 *16 (Text
 uid 339,0
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
-xt "49950,54400,52750,55900"
+xt "49950,54400,52050,55700"
 st "eb1"
-blo "49950,55600"
+blo "49950,55400"
 tm "HdlTextNameMgr"
 )
 *17 (Text
 uid 340,0
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
-xt "49950,55900,51350,57400"
+xt "49950,55900,50650,57200"
 st "1"
-blo "49950,57100"
+blo "49950,56900"
 tm "HdlTextNumberMgr"
 )
 ]
@@ -928,20 +928,20 @@ f (Text
 uid 1371,0
 va (VaSet
 isHidden 1
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "105000,31300,133000,32700"
-st "sineInverted : (sineNbBits-1 DOWNTO 0)"
-blo "105000,32500"
+xt "105000,31300,131600,32600"
+st "sineInverted : (sineBitNb-1 DOWNTO 0)"
+blo "105000,32300"
 tm "WireNameMgr"
 )
 s (Text
 uid 1372,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "105000,32700,105000,32700"
-blo "105000,32700"
+xt "105000,32600,105000,32600"
+blo "105000,32600"
 tm "SignalTypeMgr"
 )
 )
@@ -981,20 +981,20 @@ f (Text
 uid 1377,0
 va (VaSet
 isHidden 1
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "105000,49300,131600,50700"
-st "sineAdded : (sineNbBits-1 DOWNTO 0)"
-blo "105000,50500"
+xt "105000,49300,129500,50600"
+st "sineAdded : (sineBitNb-1 DOWNTO 0)"
+blo "105000,50300"
 tm "WireNameMgr"
 )
 s (Text
 uid 1378,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "105000,50700,105000,50700"
-blo "105000,50700"
+xt "105000,50600,105000,50600"
+blo "105000,50600"
 tm "SignalTypeMgr"
 )
 )
@@ -1034,20 +1034,20 @@ f (Text
 uid 1383,0
 va (VaSet
 isHidden 1
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "105000,69300,135900,70700"
-st "sineMultiplied : (2*sineNbBits-1 DOWNTO 0)"
-blo "105000,70500"
+xt "105000,69300,134400,70600"
+st "sineMultiplied : (2*sineBitNb-1 DOWNTO 0)"
+blo "105000,70300"
 tm "WireNameMgr"
 )
 s (Text
 uid 1384,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "105000,70700,105000,70700"
-blo "105000,70700"
+xt "105000,70600,105000,70600"
+blo "105000,70600"
 tm "SignalTypeMgr"
 )
 )
@@ -1087,20 +1087,20 @@ f (Text
 uid 1389,0
 va (VaSet
 isHidden 1
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "105000,89300,138900,90700"
-st "sineConcatenated : (2*sineNbBits-1 DOWNTO 0)"
-blo "105000,90500"
+xt "105000,89300,135800,90600"
+st "sineConcatenated : (2*sineBitNb-1 DOWNTO 0)"
+blo "105000,90300"
 tm "WireNameMgr"
 )
 s (Text
 uid 1390,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "105000,90700,105000,90700"
-blo "105000,90700"
+xt "105000,90600,105000,90600"
+blo "105000,90600"
 tm "SignalTypeMgr"
 )
 )
@@ -1117,7 +1117,7 @@ declText (MLText
 uid 778,0
 va (VaSet
 )
-xt "-9000,62200,5200,63400"
+xt "-9000,62000,9000,63000"
 st "reset            : std_ulogic"
 )
 )
@@ -1133,7 +1133,7 @@ declText (MLText
 uid 786,0
 va (VaSet
 )
-xt "-9000,61000,5300,62200"
+xt "-9000,61000,9000,62000"
 st "clock            : std_ulogic"
 )
 )
@@ -1142,7 +1142,7 @@ uid 803,0
 decl (Decl
 n "phase"
 t "unsigned"
-b "(phaseNbBits-1 DOWNTO 0)"
+b "(phaseBitNb-1 DOWNTO 0)"
 o 10
 suid 3,0
 )
@@ -1150,8 +1150,8 @@ declText (MLText
 uid 804,0
 va (VaSet
 )
-xt "-9000,75000,24800,76200"
-st "SIGNAL phase            : unsigned(phaseNbBits-1 DOWNTO 0)"
+xt "-9000,72000,25800,73000"
+st "SIGNAL phase            : unsigned(phaseBitNb-1 DOWNTO 0)"
 )
 )
 *25 (Net
@@ -1159,7 +1159,7 @@ uid 1028,0
 decl (Decl
 n "sine"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 11
 suid 4,0
 )
@@ -1167,8 +1167,8 @@ declText (MLText
 uid 1029,0
 va (VaSet
 )
-xt "-9000,76200,22100,77400"
-st "SIGNAL sine             : signed(sineNbBits-1 DOWNTO 0)"
+xt "-9000,73000,24000,74000"
+st "SIGNAL sine             : signed(sineBitNb-1 DOWNTO 0)"
 )
 )
 *26 (Net
@@ -1176,7 +1176,7 @@ uid 1064,0
 decl (Decl
 n "sineInverted"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 5
 suid 5,0
 )
@@ -1184,8 +1184,8 @@ declText (MLText
 uid 1065,0
 va (VaSet
 )
-xt "-9000,65800,19500,67000"
-st "sineInverted     : signed(sineNbBits-1 DOWNTO 0)"
+xt "-9000,65000,19800,66000"
+st "sineInverted     : signed(sineBitNb-1 DOWNTO 0)"
 )
 )
 *27 (Net
@@ -1193,7 +1193,7 @@ uid 1108,0
 decl (Decl
 n "sineAdded"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 3
 suid 6,0
 )
@@ -1201,8 +1201,8 @@ declText (MLText
 uid 1109,0
 va (VaSet
 )
-xt "-9000,63400,19300,64600"
-st "sineAdded        : signed(sineNbBits-1 DOWNTO 0)"
+xt "-9000,63000,19800,64000"
+st "sineAdded        : signed(sineBitNb-1 DOWNTO 0)"
 )
 )
 *28 (Net
@@ -1210,7 +1210,7 @@ uid 1110,0
 decl (Decl
 n "offset"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 9
 suid 7,0
 )
@@ -1218,8 +1218,8 @@ declText (MLText
 uid 1111,0
 va (VaSet
 )
-xt "-9000,73800,22200,75000"
-st "SIGNAL offset           : signed(sineNbBits-1 DOWNTO 0)"
+xt "-9000,71000,24000,72000"
+st "SIGNAL offset           : signed(sineBitNb-1 DOWNTO 0)"
 )
 )
 *29 (Net
@@ -1227,7 +1227,7 @@ uid 1120,0
 decl (Decl
 n "gain"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 8
 suid 8,0
 )
@@ -1235,8 +1235,8 @@ declText (MLText
 uid 1121,0
 va (VaSet
 )
-xt "-9000,72600,22100,73800"
-st "SIGNAL gain             : signed(sineNbBits-1 DOWNTO 0)"
+xt "-9000,70000,24000,71000"
+st "SIGNAL gain             : signed(sineBitNb-1 DOWNTO 0)"
 )
 )
 *30 (HdlText
@@ -1264,7 +1264,7 @@ text (MLText
 uid 1172,0
 va (VaSet
 )
-xt "51200,71200,66700,72400"
+xt "51200,71200,66200,72200"
 st "
 gain <= \"0100\" & \"0000\";
 "
@@ -1294,21 +1294,21 @@ textVec [
 *32 (Text
 uid 1167,0
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
-xt "49950,74400,52750,75900"
+xt "49950,74400,52050,75700"
 st "eb2"
-blo "49950,75600"
+blo "49950,75400"
 tm "HdlTextNameMgr"
 )
 *33 (Text
 uid 1168,0
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
-xt "49950,75900,51350,77400"
+xt "49950,75900,50650,77200"
 st "2"
-blo "49950,77100"
+blo "49950,76900"
 tm "HdlTextNumberMgr"
 )
 ]
@@ -1319,7 +1319,7 @@ uid 1173,0
 decl (Decl
 n "sineMultiplied"
 t "signed"
-b "(2*sineNbBits-1 DOWNTO 0)"
+b "(2*sineBitNb-1 DOWNTO 0)"
 o 6
 suid 9,0
 )
@@ -1327,8 +1327,8 @@ declText (MLText
 uid 1174,0
 va (VaSet
 )
-xt "-9000,67000,20900,68200"
-st "sineMultiplied   : signed(2*sineNbBits-1 DOWNTO 0)"
+xt "-9000,66000,21000,67000"
+st "sineMultiplied   : signed(2*sineBitNb-1 DOWNTO 0)"
 )
 )
 *35 (Net
@@ -1336,7 +1336,7 @@ uid 1175,0
 decl (Decl
 n "sineConcatenated"
 t "signed"
-b "(2*sineNbBits-1 DOWNTO 0)"
+b "(2*sineBitNb-1 DOWNTO 0)"
 o 4
 suid 10,0
 )
@@ -1344,8 +1344,8 @@ declText (MLText
 uid 1176,0
 va (VaSet
 )
-xt "-9000,64600,22400,65800"
-st "sineConcatenated : signed(2*sineNbBits-1 DOWNTO 0)"
+xt "-9000,64000,21000,65000"
+st "sineConcatenated : signed(2*sineBitNb-1 DOWNTO 0)"
 )
 )
 *36 (Net
@@ -1353,7 +1353,7 @@ uid 1177,0
 decl (Decl
 n "concatenate"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 7
 suid 11,0
 )
@@ -1361,8 +1361,8 @@ declText (MLText
 uid 1178,0
 va (VaSet
 )
-xt "-9000,71400,24100,72600"
-st "SIGNAL concatenate      : signed(sineNbBits-1 DOWNTO 0)"
+xt "-9000,69000,24000,70000"
+st "SIGNAL concatenate      : signed(sineBitNb-1 DOWNTO 0)"
 )
 )
 *37 (HdlText
@@ -1390,7 +1390,7 @@ text (MLText
 uid 1250,0
 va (VaSet
 )
-xt "47200,91200,66800,92400"
+xt "47200,91200,66400,92200"
 st "
 concatenate <= \"0001\" & \"0000\";
 "
@@ -1420,201 +1420,174 @@ textVec [
 *39 (Text
 uid 1245,0
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
-xt "46950,88400,49750,89900"
+xt "46950,88400,49050,89700"
 st "eb3"
-blo "46950,89600"
+blo "46950,89400"
 tm "HdlTextNameMgr"
 )
 *40 (Text
 uid 1246,0
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
-xt "46950,89900,48350,91400"
+xt "46950,89900,47650,91200"
 st "3"
-blo "46950,91100"
+blo "46950,90900"
 tm "HdlTextNumberMgr"
 )
 ]
 )
 )
 *41 (SaComponent
-uid 1472,0
+uid 1879,0
 optionalChildren [
 *42 (CptPort
-uid 1460,0
+uid 1871,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 1461,0
+uid 1872,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "25250,39625,26000,40375"
+xt "49250,39625,50000,40375"
 )
 tg (CPTG
-uid 1462,0
+uid 1873,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 1463,0
+uid 1874,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "27000,39300,30800,40700"
-st "clock"
-blo "27000,40500"
+xt "51000,39300,54500,40600"
+st "phase"
+blo "51000,40300"
 )
 )
 thePort (LogicalPort
 decl (Decl
-n "clock"
-t "std_ulogic"
-o 1
+n "phase"
+t "unsigned"
+b "(phaseBitNb-1 DOWNTO 0)"
+o 11
+suid 1,0
 )
 )
 )
 *43 (CptPort
-uid 1464,0
+uid 1875,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 1465,0
+uid 1876,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "38000,39625,38750,40375"
+xt "62000,39625,62750,40375"
 )
 tg (CPTG
-uid 1466,0
+uid 1877,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 1467,0
+uid 1878,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "31400,39300,38000,40700"
-st "countOut"
+xt "58200,39300,61000,40600"
+st "sine"
 ju 2
-blo "38000,40500"
+blo "61000,40300"
 )
 )
 thePort (LogicalPort
 m 1
 decl (Decl
-n "countOut"
-t "unsigned"
-b "(nbBits-1 DOWNTO 0)"
-o 2
-)
-)
-)
-*44 (CptPort
-uid 1468,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 1469,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "25250,41625,26000,42375"
-)
-tg (CPTG
-uid 1470,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 1471,0
-va (VaSet
-font "Verdana,12,0"
-)
-xt "27000,41300,31100,42700"
-st "reset"
-blo "27000,42500"
-)
-)
-thePort (LogicalPort
-decl (Decl
-n "reset"
-t "std_ulogic"
-o 3
+n "sine"
+t "signed"
+b "(sineBitNb-1 DOWNTO 0)"
+o 4
+suid 2,0
 )
 )
 )
 ]
 shape (Rectangle
-uid 1473,0
+uid 1880,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 lineColor "0,32768,0"
 lineWidth 2
 )
-xt "26000,36000,38000,44000"
+xt "50000,36000,62000,44000"
 )
-oxt "-850,0,8850,10000"
+oxt "36000,8000,48000,16000"
 ttg (MlTextGroup
-uid 1474,0
+uid 1881,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*45 (Text
-uid 1475,0
+*44 (Text
+uid 1882,0
 va (VaSet
-isHidden 1
 )
-xt "26300,43400,29500,44600"
+xt "50000,44400,51800,45400"
 st "NUM"
-blo "26300,44400"
+blo "50000,45200"
 tm "BdLibraryNameMgr"
 )
-*46 (Text
-uid 1476,0
+*45 (Text
+uid 1883,0
 va (VaSet
 )
-xt "26300,44600,30800,45800"
-st "counter"
-blo "26300,45600"
+xt "50000,45400,60800,46400"
+st "sinewaveGenerator"
+blo "50000,46200"
 tm "CptNameMgr"
 )
-*47 (Text
-uid 1477,0
+*46 (Text
+uid 1884,0
 va (VaSet
 )
-xt "26300,45800,28200,47000"
-st "I0"
-blo "26300,46800"
+xt "50000,46400,53000,47400"
+st "I_sin"
+blo "50000,47200"
 tm "InstanceNameMgr"
 )
 ]
 )
 ga (GenericAssociation
-uid 1478,0
+uid 1885,0
 ps "EdgeToEdgeStrategy"
 matrix (Matrix
-uid 1479,0
+uid 1886,0
 text (MLText
-uid 1480,0
+uid 1887,0
 va (VaSet
-font "Courier New,10,0"
 )
-xt "22000,46800,46000,48000"
-st "nbBits = phaseNbBits    ( positive ) "
+xt "50000,48200,75200,50200"
+st "phaseBitNb = phaseBitNb    ( positive )  
+sineBitNb  = sineBitNb     ( positive )  "
 )
 header ""
 )
 elements [
 (GiElement
-name "nbBits"
+name "phaseBitNb"
 type "positive"
-value "phaseNbBits"
+value "phaseBitNb"
+)
+(GiElement
+name "sineBitNb"
+type "positive"
+value "sineBitNb"
 )
 ]
 )
@@ -1626,159 +1599,187 @@ sIVOD 1
 )
 archFileType "UNKNOWN"
 )
-*48 (SaComponent
-uid 1587,0
+*47 (SaComponent
+uid 1900,0
 optionalChildren [
-*49 (CptPort
-uid 1579,0
+*48 (CptPort
+uid 1888,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 1580,0
+uid 1889,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "49250,39625,50000,40375"
+xt "25250,39625,26000,40375"
 )
 tg (CPTG
-uid 1581,0
+uid 1890,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 1582,0
+uid 1891,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "51000,39300,55700,40700"
-st "phase"
-blo "51000,40500"
+xt "27000,39300,30500,40600"
+st "clock"
+blo "27000,40300"
 )
 )
 thePort (LogicalPort
 decl (Decl
-n "phase"
-t "unsigned"
-b "(phaseNbBits-1 DOWNTO 0)"
-o 11
+n "clock"
+t "std_ulogic"
+o 1
 suid 1,0
 )
 )
 )
-*50 (CptPort
-uid 1583,0
+*49 (CptPort
+uid 1892,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 1584,0
+uid 1893,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "62000,39625,62750,40375"
+xt "42000,39625,42750,40375"
 )
 tg (CPTG
-uid 1585,0
+uid 1894,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 1586,0
+uid 1895,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "57600,39300,61000,40700"
-st "sine"
+xt "35400,39300,41000,40600"
+st "countOut"
 ju 2
-blo "61000,40500"
+blo "41000,40300"
 )
 )
 thePort (LogicalPort
 m 1
 decl (Decl
-n "sine"
-t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
-o 4
+n "countOut"
+t "unsigned"
+b "(bitNb-1 DOWNTO 0)"
+o 2
 suid 2,0
+)
+)
+)
+*50 (CptPort
+uid 1896,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 1897,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "25250,41625,26000,42375"
+)
+tg (CPTG
+uid 1898,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 1899,0
+va (VaSet
+font "courier,12,0"
+)
+xt "27000,41300,30500,42600"
+st "reset"
+blo "27000,42300"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "reset"
+t "std_ulogic"
+o 3
+suid 3,0
 )
 )
 )
 ]
 shape (Rectangle
-uid 1588,0
+uid 1901,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 lineColor "0,32768,0"
 lineWidth 2
 )
-xt "50000,36000,62000,44000"
+xt "26000,36000,42000,44000"
 )
-oxt "41000,0,53000,8000"
+oxt "22000,14000,38000,22000"
 ttg (MlTextGroup
-uid 1589,0
+uid 1902,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
 *51 (Text
-uid 1590,0
+uid 1903,0
 va (VaSet
-isHidden 1
 )
-xt "50000,43400,53200,44600"
+xt "26300,44400,28100,45400"
 st "NUM"
-blo "50000,44400"
+blo "26300,45200"
 tm "BdLibraryNameMgr"
 )
 *52 (Text
-uid 1591,0
+uid 1904,0
 va (VaSet
 )
-xt "50000,44600,61000,45800"
-st "sinewaveGenerator"
-blo "50000,45600"
+xt "26300,45400,30500,46400"
+st "counter"
+blo "26300,46200"
 tm "CptNameMgr"
 )
 *53 (Text
-uid 1592,0
+uid 1905,0
 va (VaSet
 )
-xt "50000,45800,51900,47000"
-st "I1"
-blo "50000,46800"
+xt "26300,46400,30500,47400"
+st "I_phase"
+blo "26300,47200"
 tm "InstanceNameMgr"
 )
 ]
 )
 ga (GenericAssociation
-uid 1593,0
+uid 1906,0
 ps "EdgeToEdgeStrategy"
 matrix (Matrix
-uid 1594,0
+uid 1907,0
 text (MLText
-uid 1595,0
+uid 1908,0
 va (VaSet
-font "Courier New,10,0"
 )
-xt "45000,46600,73200,49000"
-st "phaseNbBits = phaseNbBits    ( positive )  
-sineNbBits  = sineNbBits     ( positive )  "
+xt "26000,47400,48200,48400"
+st "BitNb = phaseBitNb    ( positive )  
+"
 )
 header ""
 )
 elements [
 (GiElement
-name "phaseNbBits"
+name "BitNb"
 type "positive"
-value "phaseNbBits"
-)
-(GiElement
-name "sineNbBits"
-type "positive"
-value "sineNbBits"
+value "phaseBitNb"
 )
 ]
 )
+connectByName 1
 portVis (PortSigDisplay
 sTC 0
 sT 1
@@ -1787,355 +1788,13 @@ sIVOD 1
 archFileType "UNKNOWN"
 )
 *54 (SaComponent
-uid 1604,0
+uid 2143,0
 optionalChildren [
 *55 (CptPort
-uid 1596,0
+uid 2131,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 1597,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "77250,31625,78000,32375"
-)
-tg (CPTG
-uid 1598,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 1599,0
-va (VaSet
-font "Verdana,12,0"
-)
-xt "79000,31400,82400,32800"
-st "sine"
-blo "79000,32600"
-)
-)
-thePort (LogicalPort
-decl (Decl
-n "sine"
-t "signed"
-b "(nbBits-1 DOWNTO 0)"
-o 4
-suid 1,0
-)
-)
-)
-*56 (CptPort
-uid 1600,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 1601,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "90000,31625,90750,32375"
-)
-tg (CPTG
-uid 1602,0
-ps "CptPortTextPlaceStrategy"
-stg "RightVerticalLayoutStrategy"
-f (Text
-uid 1603,0
-va (VaSet
-font "Verdana,12,0"
-)
-xt "83000,31400,89000,32800"
-st "inverted"
-ju 2
-blo "89000,32600"
-)
-)
-thePort (LogicalPort
-m 1
-decl (Decl
-n "inverted"
-t "signed"
-b "(nbBits-1 DOWNTO 0)"
-o 5
-suid 2,0
-)
-)
-)
-]
-shape (Rectangle
-uid 1605,0
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-lineColor "0,32768,0"
-lineWidth 2
-)
-xt "78000,28000,90000,36000"
-)
-oxt "38000,10000,50000,18000"
-ttg (MlTextGroup
-uid 1606,0
-ps "CenterOffsetStrategy"
-stg "VerticalLayoutStrategy"
-textVec [
-*57 (Text
-uid 1607,0
-va (VaSet
-)
-xt "78100,36400,81300,37600"
-st "NUM"
-blo "78100,37400"
-tm "BdLibraryNameMgr"
-)
-*58 (Text
-uid 1608,0
-va (VaSet
-)
-xt "78100,37600,83100,38800"
-st "opInvert"
-blo "78100,38600"
-tm "CptNameMgr"
-)
-*59 (Text
-uid 1609,0
-va (VaSet
-)
-xt "78100,38800,80000,40000"
-st "I2"
-blo "78100,39800"
-tm "InstanceNameMgr"
-)
-]
-)
-ga (GenericAssociation
-uid 1610,0
-ps "EdgeToEdgeStrategy"
-matrix (Matrix
-uid 1611,0
-text (MLText
-uid 1612,0
-va (VaSet
-font "Courier New,10,0"
-)
-xt "78000,40400,102000,41600"
-st "nbBits = sineNbBits    ( positive )  "
-)
-header ""
-)
-elements [
-(GiElement
-name "nbBits"
-type "positive"
-value "sineNbBits"
-)
-]
-)
-portVis (PortSigDisplay
-sTC 0
-sT 1
-sIVOD 1
-)
-archFileType "UNKNOWN"
-)
-*60 (SaComponent
-uid 1625,0
-optionalChildren [
-*61 (CptPort
-uid 1613,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 1614,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "77250,51625,78000,52375"
-)
-tg (CPTG
-uid 1615,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 1616,0
-va (VaSet
-font "Verdana,12,0"
-)
-xt "79000,51300,83400,52700"
-st "offset"
-blo "79000,52500"
-)
-)
-thePort (LogicalPort
-decl (Decl
-n "offset"
-t "signed"
-b "(nbBits-1 DOWNTO 0)"
-o 9
-suid 1,0
-)
-)
-)
-*62 (CptPort
-uid 1617,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 1618,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "77250,47625,78000,48375"
-)
-tg (CPTG
-uid 1619,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 1620,0
-va (VaSet
-font "Verdana,12,0"
-)
-xt "79000,47300,82400,48700"
-st "sine"
-blo "79000,48500"
-)
-)
-thePort (LogicalPort
-decl (Decl
-n "sine"
-t "signed"
-b "(nbBits-1 DOWNTO 0)"
-o 4
-suid 2,0
-)
-)
-)
-*63 (CptPort
-uid 1621,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 1622,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "90000,49625,90750,50375"
-)
-tg (CPTG
-uid 1623,0
-ps "CptPortTextPlaceStrategy"
-stg "RightVerticalLayoutStrategy"
-f (Text
-uid 1624,0
-va (VaSet
-font "Verdana,12,0"
-)
-xt "85600,49300,89000,50700"
-st "sum"
-ju 2
-blo "89000,50500"
-)
-)
-thePort (LogicalPort
-m 1
-decl (Decl
-n "sum"
-t "signed"
-b "(nbBits-1 DOWNTO 0)"
-o 6
-suid 3,0
-)
-)
-)
-]
-shape (Rectangle
-uid 1626,0
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-lineColor "0,32768,0"
-lineWidth 2
-)
-xt "78000,44000,90000,56000"
-)
-oxt "37000,7000,49000,19000"
-ttg (MlTextGroup
-uid 1627,0
-ps "CenterOffsetStrategy"
-stg "VerticalLayoutStrategy"
-textVec [
-*64 (Text
-uid 1628,0
-va (VaSet
-)
-xt "78600,56400,81800,57600"
-st "NUM"
-blo "78600,57400"
-tm "BdLibraryNameMgr"
-)
-*65 (Text
-uid 1629,0
-va (VaSet
-)
-xt "78600,57600,82500,58800"
-st "opAdd"
-blo "78600,58600"
-tm "CptNameMgr"
-)
-*66 (Text
-uid 1630,0
-va (VaSet
-)
-xt "78600,58800,80500,60000"
-st "I3"
-blo "78600,59800"
-tm "InstanceNameMgr"
-)
-]
-)
-ga (GenericAssociation
-uid 1631,0
-ps "EdgeToEdgeStrategy"
-matrix (Matrix
-uid 1632,0
-text (MLText
-uid 1633,0
-va (VaSet
-font "Courier New,10,0"
-)
-xt "78000,59400,102000,60600"
-st "nbBits = sineNbBits    ( positive )  "
-)
-header ""
-)
-elements [
-(GiElement
-name "nbBits"
-type "positive"
-value "sineNbBits"
-)
-]
-)
-portVis (PortSigDisplay
-sTC 0
-sT 1
-sIVOD 1
-)
-archFileType "UNKNOWN"
-)
-*67 (SaComponent
-uid 1646,0
-optionalChildren [
-*68 (CptPort
-uid 1634,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 1635,0
+uid 2132,0
 ro 90
 va (VaSet
 vasetType 1
@@ -2144,34 +1803,34 @@ fg "0,65535,0"
 xt "77250,71625,78000,72375"
 )
 tg (CPTG
-uid 1636,0
+uid 2133,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 1637,0
+uid 2134,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "79000,71400,82500,72800"
+xt "79000,71400,81800,72700"
 st "gain"
-blo "79000,72600"
+blo "79000,72400"
 )
 )
 thePort (LogicalPort
 decl (Decl
 n "gain"
 t "signed"
-b "(nbBits-1 DOWNTO 0)"
+b "(bitNb-1 DOWNTO 0)"
 o 10
 suid 1,0
 )
 )
 )
-*69 (CptPort
-uid 1638,0
+*56 (CptPort
+uid 2135,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 1639,0
+uid 2136,0
 ro 90
 va (VaSet
 vasetType 1
@@ -2180,34 +1839,34 @@ fg "0,65535,0"
 xt "77250,67625,78000,68375"
 )
 tg (CPTG
-uid 1640,0
+uid 2137,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 1641,0
+uid 2138,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "79000,67400,82400,68800"
+xt "79000,67400,81800,68700"
 st "sine"
-blo "79000,68600"
+blo "79000,68400"
 )
 )
 thePort (LogicalPort
 decl (Decl
 n "sine"
 t "signed"
-b "(nbBits-1 DOWNTO 0)"
+b "(bitNb-1 DOWNTO 0)"
 o 4
 suid 2,0
 )
 )
 )
-*70 (CptPort
-uid 1642,0
+*57 (CptPort
+uid 2139,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 1643,0
+uid 2140,0
 ro 90
 va (VaSet
 vasetType 1
@@ -2216,18 +1875,18 @@ fg "0,65535,0"
 xt "90000,69625,90750,70375"
 )
 tg (CPTG
-uid 1644,0
+uid 2141,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 1645,0
+uid 2142,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "83400,69400,89000,70800"
+xt "84100,69400,89000,70700"
 st "product"
 ju 2
-blo "89000,70600"
+blo "89000,70400"
 )
 )
 thePort (LogicalPort
@@ -2235,7 +1894,7 @@ m 1
 decl (Decl
 n "product"
 t "signed"
-b "(2*nbBits-1 DOWNTO 0)"
+b "(2*bitNb-1 DOWNTO 0)"
 o 7
 suid 3,0
 )
@@ -2243,7 +1902,7 @@ suid 3,0
 )
 ]
 shape (Rectangle
-uid 1647,0
+uid 2144,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
@@ -2254,62 +1913,62 @@ xt "78000,64000,90000,76000"
 )
 oxt "36000,7000,48000,19000"
 ttg (MlTextGroup
-uid 1648,0
+uid 2145,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*71 (Text
-uid 1649,0
+*58 (Text
+uid 2146,0
 va (VaSet
 )
-xt "78550,76400,81750,77600"
+xt "78550,76400,80350,77400"
 st "NUM"
-blo "78550,77400"
+blo "78550,77200"
 tm "BdLibraryNameMgr"
 )
-*72 (Text
-uid 1650,0
+*59 (Text
+uid 2147,0
 va (VaSet
 )
-xt "78550,77600,85150,78800"
+xt "78550,77400,85150,78400"
 st "opMultiply"
-blo "78550,78600"
+blo "78550,78200"
 tm "CptNameMgr"
 )
-*73 (Text
-uid 1651,0
+*60 (Text
+uid 2148,0
 va (VaSet
 )
-xt "78550,78800,80450,80000"
-st "I4"
-blo "78550,79800"
+xt "78550,78400,82150,79400"
+st "I_mult"
+blo "78550,79200"
 tm "InstanceNameMgr"
 )
 ]
 )
 ga (GenericAssociation
-uid 1652,0
+uid 2149,0
 ps "EdgeToEdgeStrategy"
 matrix (Matrix
-uid 1653,0
+uid 2150,0
 text (MLText
-uid 1654,0
+uid 2151,0
 va (VaSet
-font "Courier New,10,0"
 )
-xt "78000,80400,102000,81600"
-st "nbBits = sineNbBits    ( positive )  "
+xt "78000,80400,99600,81400"
+st "bitNb = sineBitNb    ( positive )  "
 )
 header ""
 )
 elements [
 (GiElement
-name "nbBits"
+name "bitNb"
 type "positive"
-value "sineNbBits"
+value "sineBitNb"
 )
 ]
 )
+connectByName 1
 portVis (PortSigDisplay
 sTC 0
 sT 1
@@ -2317,14 +1976,14 @@ sIVOD 1
 )
 archFileType "UNKNOWN"
 )
-*74 (SaComponent
-uid 1667,0
+*61 (SaComponent
+uid 2164,0
 optionalChildren [
-*75 (CptPort
-uid 1655,0
+*62 (CptPort
+uid 2152,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 1656,0
+uid 2153,0
 ro 90
 va (VaSet
 vasetType 1
@@ -2333,34 +1992,34 @@ fg "0,65535,0"
 xt "77250,91625,78000,92375"
 )
 tg (CPTG
-uid 1657,0
+uid 2154,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 1658,0
+uid 2155,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "79000,91400,85200,92800"
+xt "79000,91400,84600,92700"
 st "concatIn"
-blo "79000,92600"
+blo "79000,92400"
 )
 )
 thePort (LogicalPort
 decl (Decl
 n "concatIn"
 t "signed"
-b "(nbBits-1 DOWNTO 0)"
+b "(bitNb-1 DOWNTO 0)"
 o 11
 suid 1,0
 )
 )
 )
-*76 (CptPort
-uid 1659,0
+*63 (CptPort
+uid 2156,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 1660,0
+uid 2157,0
 ro 90
 va (VaSet
 vasetType 1
@@ -2369,34 +2028,34 @@ fg "0,65535,0"
 xt "77250,87625,78000,88375"
 )
 tg (CPTG
-uid 1661,0
+uid 2158,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 1662,0
+uid 2159,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "79000,87400,82400,88800"
+xt "79000,87400,81800,88700"
 st "sine"
-blo "79000,88600"
+blo "79000,88400"
 )
 )
 thePort (LogicalPort
 decl (Decl
 n "sine"
 t "signed"
-b "(nbBits-1 DOWNTO 0)"
+b "(bitNb-1 DOWNTO 0)"
 o 4
 suid 2,0
 )
 )
 )
-*77 (CptPort
-uid 1663,0
+*64 (CptPort
+uid 2160,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 1664,0
+uid 2161,0
 ro 90
 va (VaSet
 vasetType 1
@@ -2405,18 +2064,18 @@ fg "0,65535,0"
 xt "90000,89625,90750,90375"
 )
 tg (CPTG
-uid 1665,0
+uid 2162,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 1666,0
+uid 2163,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "81800,89300,89000,90700"
+xt "82700,89300,89000,90600"
 st "concatOut"
 ju 2
-blo "89000,90500"
+blo "89000,90300"
 )
 )
 thePort (LogicalPort
@@ -2424,7 +2083,7 @@ m 1
 decl (Decl
 n "concatOut"
 t "signed"
-b "(2*nbBits-1 DOWNTO 0)"
+b "(2*bitNb-1 DOWNTO 0)"
 o 8
 suid 3,0
 )
@@ -2432,7 +2091,7 @@ suid 3,0
 )
 ]
 shape (Rectangle
-uid 1668,0
+uid 2165,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
@@ -2443,62 +2102,404 @@ xt "78000,84000,90000,96000"
 )
 oxt "36000,6000,48000,18000"
 ttg (MlTextGroup
-uid 1669,0
+uid 2166,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*78 (Text
-uid 1670,0
+*65 (Text
+uid 2167,0
 va (VaSet
 )
-xt "78750,96400,81950,97600"
+xt "78750,96400,80550,97400"
 st "NUM"
-blo "78750,97400"
+blo "78750,97200"
 tm "BdLibraryNameMgr"
 )
-*79 (Text
-uid 1671,0
+*66 (Text
+uid 2168,0
 va (VaSet
 )
-xt "78750,97600,87750,98800"
+xt "78750,97400,87150,98400"
 st "opConcatenate"
-blo "78750,98600"
+blo "78750,98200"
 tm "CptNameMgr"
 )
-*80 (Text
-uid 1672,0
+*67 (Text
+uid 2169,0
 va (VaSet
 )
-xt "78750,98800,80650,100000"
-st "I5"
-blo "78750,99800"
+xt "78750,98400,83550,99400"
+st "I_concat"
+blo "78750,99200"
 tm "InstanceNameMgr"
 )
 ]
 )
 ga (GenericAssociation
-uid 1673,0
+uid 2170,0
 ps "EdgeToEdgeStrategy"
 matrix (Matrix
-uid 1674,0
+uid 2171,0
 text (MLText
-uid 1675,0
+uid 2172,0
 va (VaSet
-font "Courier New,10,0"
 )
-xt "78000,100400,102000,101600"
-st "nbBits = sineNbBits    ( positive )  "
+xt "78000,100400,99600,101400"
+st "bitNb = sineBitNb    ( positive )  "
 )
 header ""
 )
 elements [
 (GiElement
-name "nbBits"
+name "bitNb"
 type "positive"
-value "sineNbBits"
+value "sineBitNb"
 )
 ]
 )
+connectByName 1
+portVis (PortSigDisplay
+sTC 0
+sT 1
+sIVOD 1
+)
+archFileType "UNKNOWN"
+)
+*68 (SaComponent
+uid 2185,0
+optionalChildren [
+*69 (CptPort
+uid 2173,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 2174,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77250,51625,78000,52375"
+)
+tg (CPTG
+uid 2175,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 2176,0
+va (VaSet
+font "courier,12,0"
+)
+xt "79000,51300,83200,52600"
+st "offset"
+blo "79000,52300"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "offset"
+t "signed"
+b "(bitNb-1 DOWNTO 0)"
+o 9
+suid 1,0
+)
+)
+)
+*70 (CptPort
+uid 2177,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 2178,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77250,47625,78000,48375"
+)
+tg (CPTG
+uid 2179,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 2180,0
+va (VaSet
+font "courier,12,0"
+)
+xt "79000,47300,81800,48600"
+st "sine"
+blo "79000,48300"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "sine"
+t "signed"
+b "(bitNb-1 DOWNTO 0)"
+o 4
+suid 2,0
+)
+)
+)
+*71 (CptPort
+uid 2181,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 2182,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "90000,49625,90750,50375"
+)
+tg (CPTG
+uid 2183,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 2184,0
+va (VaSet
+font "courier,12,0"
+)
+xt "86900,49300,89000,50600"
+st "sum"
+ju 2
+blo "89000,50300"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "sum"
+t "signed"
+b "(bitNb-1 DOWNTO 0)"
+o 6
+suid 3,0
+)
+)
+)
+]
+shape (Rectangle
+uid 2186,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32768,0"
+lineWidth 2
+)
+xt "78000,44000,90000,56000"
+)
+oxt "37000,7000,49000,19000"
+ttg (MlTextGroup
+uid 2187,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*72 (Text
+uid 2188,0
+va (VaSet
+)
+xt "78600,56400,80400,57400"
+st "NUM"
+blo "78600,57200"
+tm "BdLibraryNameMgr"
+)
+*73 (Text
+uid 2189,0
+va (VaSet
+)
+xt "78600,57400,81600,58400"
+st "opAdd"
+blo "78600,58200"
+tm "CptNameMgr"
+)
+*74 (Text
+uid 2190,0
+va (VaSet
+)
+xt "78600,58400,81600,59400"
+st "I_add"
+blo "78600,59200"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 2191,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 2192,0
+text (MLText
+uid 2193,0
+va (VaSet
+)
+xt "78000,59400,99600,60400"
+st "bitNb = sineBitNb    ( positive )  "
+)
+header ""
+)
+elements [
+(GiElement
+name "bitNb"
+type "positive"
+value "sineBitNb"
+)
+]
+)
+connectByName 1
+portVis (PortSigDisplay
+sTC 0
+sT 1
+sIVOD 1
+)
+archFileType "UNKNOWN"
+)
+*75 (SaComponent
+uid 2202,0
+optionalChildren [
+*76 (CptPort
+uid 2194,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 2195,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "77250,31625,78000,32375"
+)
+tg (CPTG
+uid 2196,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 2197,0
+va (VaSet
+font "courier,12,0"
+)
+xt "79000,31400,81800,32700"
+st "sine"
+blo "79000,32400"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "sine"
+t "signed"
+b "(bitNb-1 DOWNTO 0)"
+o 4
+suid 1,0
+)
+)
+)
+*77 (CptPort
+uid 2198,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 2199,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "90000,31625,90750,32375"
+)
+tg (CPTG
+uid 2200,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 2201,0
+va (VaSet
+font "courier,12,0"
+)
+xt "83400,31400,89000,32700"
+st "inverted"
+ju 2
+blo "89000,32400"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "inverted"
+t "signed"
+b "(bitNb-1 DOWNTO 0)"
+o 5
+suid 2,0
+)
+)
+)
+]
+shape (Rectangle
+uid 2203,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32768,0"
+lineWidth 2
+)
+xt "78000,28000,90000,36000"
+)
+oxt "38000,10000,50000,18000"
+ttg (MlTextGroup
+uid 2204,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*78 (Text
+uid 2205,0
+va (VaSet
+)
+xt "78100,36400,79900,37400"
+st "NUM"
+blo "78100,37200"
+tm "BdLibraryNameMgr"
+)
+*79 (Text
+uid 2206,0
+va (VaSet
+)
+xt "78100,37400,82900,38400"
+st "opInvert"
+blo "78100,38200"
+tm "CptNameMgr"
+)
+*80 (Text
+uid 2207,0
+va (VaSet
+)
+xt "78100,38400,81100,39400"
+st "I_inv"
+blo "78100,39200"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 2208,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 2209,0
+text (MLText
+uid 2210,0
+va (VaSet
+)
+xt "78000,40400,99600,41400"
+st "bitNb = sineBitNb    ( positive )  "
+)
+header ""
+)
+elements [
+(GiElement
+name "bitNb"
+type "positive"
+value "sineBitNb"
+)
+]
+)
+connectByName 1
 portVis (PortSigDisplay
 sTC 0
 sT 1
@@ -2536,8 +2537,8 @@ pts [
 "77250,32000"
 ]
 )
-start &50
-end &55
+start &43
+end &76
 sat 32
 eat 32
 sty 1
@@ -2552,11 +2553,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 145,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "65000,37600,68400,39000"
+xt "65000,37600,67800,38900"
 st "sine"
-blo "65000,38800"
+blo "65000,38600"
 tm "WireNameMgr"
 )
 )
@@ -2588,7 +2589,7 @@ xt "69600,47600,70400,48400"
 radius 400
 )
 )
-end &62
+end &70
 sat 32
 eat 32
 sty 1
@@ -2605,9 +2606,9 @@ uid 203,0
 va (VaSet
 isHidden 1
 )
-xt "73000,47000,75800,48200"
+xt "73000,47000,75400,48000"
 st "sine"
-blo "73000,48000"
+blo "73000,47800"
 tm "WireNameMgr"
 )
 )
@@ -2639,7 +2640,7 @@ xt "69600,67600,70400,68400"
 radius 400
 )
 )
-end &69
+end &56
 sat 32
 eat 32
 sty 1
@@ -2656,9 +2657,9 @@ uid 213,0
 va (VaSet
 isHidden 1
 )
-xt "74000,67000,76800,68200"
+xt "74000,67000,76400,68000"
 st "sine"
-blo "74000,68000"
+blo "74000,67800"
 tm "WireNameMgr"
 )
 )
@@ -2684,7 +2685,7 @@ pts [
 ]
 )
 start &82
-end &76
+end &63
 sat 32
 eat 32
 sty 1
@@ -2701,9 +2702,9 @@ uid 223,0
 va (VaSet
 isHidden 1
 )
-xt "73000,87000,75800,88200"
+xt "73000,87000,75400,88000"
 st "sine"
-blo "73000,88000"
+blo "73000,87800"
 tm "WireNameMgr"
 )
 )
@@ -2723,7 +2724,7 @@ pts [
 "102000,32000"
 ]
 )
-start &56
+start &77
 end &18
 es 0
 sat 32
@@ -2740,11 +2741,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 237,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "94000,29600,103600,31000"
+xt "94000,29600,103100,30900"
 st "sineInverted"
-blo "94000,30800"
+blo "94000,30600"
 tm "WireNameMgr"
 )
 )
@@ -2764,7 +2765,7 @@ pts [
 "102000,50000"
 ]
 )
-start &63
+start &71
 end &19
 es 0
 sat 32
@@ -2781,11 +2782,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 249,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "95000,47600,102400,49000"
+xt "95000,47600,101300,48900"
 st "sineAdded"
-blo "95000,48800"
+blo "95000,48600"
 tm "WireNameMgr"
 )
 )
@@ -2805,7 +2806,7 @@ pts [
 "102000,70000"
 ]
 )
-start &70
+start &57
 end &20
 es 0
 sat 32
@@ -2822,11 +2823,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 261,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "94000,67600,104100,69000"
+xt "94000,67600,104500,68900"
 st "sineMultiplied"
-blo "94000,68800"
+blo "94000,68600"
 tm "WireNameMgr"
 )
 )
@@ -2846,7 +2847,7 @@ pts [
 "102000,90000"
 ]
 )
-start &77
+start &64
 end &21
 es 0
 sat 32
@@ -2863,11 +2864,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 273,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "93000,87600,106100,89000"
+xt "93000,87600,104900,88900"
 st "sineConcatenated"
-blo "93000,88800"
+blo "93000,88600"
 tm "WireNameMgr"
 )
 )
@@ -2888,7 +2889,7 @@ pts [
 ]
 )
 start &30
-end &68
+end &55
 sat 2
 eat 32
 sty 1
@@ -2903,11 +2904,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 313,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "73000,70600,76500,72000"
+xt "73000,70600,75800,71900"
 st "gain"
-blo "73000,71800"
+blo "73000,71600"
 tm "WireNameMgr"
 )
 )
@@ -2928,7 +2929,7 @@ pts [
 ]
 )
 start &37
-end &75
+end &62
 sat 2
 eat 32
 sty 1
@@ -2943,11 +2944,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 327,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "67000,90600,76400,92000"
+xt "67000,90600,75400,91900"
 st "concatenate"
-blo "67000,91800"
+blo "67000,91600"
 tm "WireNameMgr"
 )
 )
@@ -2967,7 +2968,7 @@ pts [
 ]
 )
 start &13
-end &44
+end &50
 sat 32
 eat 32
 stc 0
@@ -2981,11 +2982,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 782,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "19000,40600,23100,42000"
+xt "19000,40600,22500,41900"
 st "reset"
-blo "19000,41800"
+blo "19000,41600"
 tm "WireNameMgr"
 )
 )
@@ -3005,7 +3006,7 @@ pts [
 ]
 )
 start &12
-end &42
+end &48
 sat 32
 eat 32
 stc 0
@@ -3019,11 +3020,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 790,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "19000,38600,22800,40000"
+xt "19000,38600,22500,39900"
 st "clock"
-blo "19000,39800"
+blo "19000,39600"
 tm "WireNameMgr"
 )
 )
@@ -3037,14 +3038,14 @@ va (VaSet
 vasetType 3
 lineWidth 2
 )
-xt "38750,40000,49250,40000"
+xt "42750,40000,49250,40000"
 pts [
-"38750,40000"
+"42750,40000"
 "49250,40000"
 ]
 )
-start &43
-end &49
+start &49
+end &42
 sat 32
 eat 32
 sty 1
@@ -3059,11 +3060,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 800,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "41000,37600,45700,39000"
+xt "45000,37600,48500,38900"
 st "phase"
-blo "41000,38800"
+blo "45000,38600"
 tm "WireNameMgr"
 )
 )
@@ -3083,7 +3084,7 @@ pts [
 "66000,52000"
 ]
 )
-start &61
+start &69
 end &14
 sat 32
 eat 2
@@ -3099,11 +3100,11 @@ stg "STSignalDisplayStrategy"
 f (Text
 uid 1117,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "72000,50600,76400,52000"
+xt "72000,50600,76200,51900"
 st "offset"
-blo "72000,51800"
+blo "72000,51600"
 tm "WireNameMgr"
 )
 )
@@ -3129,7 +3130,7 @@ textVec [
 uid 1323,0
 va (VaSet
 )
-xt "-11000,18000,-5900,19000"
+xt "-11000,18000,-3200,19000"
 st "Package List"
 blo "-11000,18800"
 )
@@ -3137,7 +3138,7 @@ blo "-11000,18800"
 uid 1324,0
 va (VaSet
 )
-xt "-11000,19000,6500,22600"
+xt "-11000,19000,7600,22000"
 st "LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;"
@@ -3153,29 +3154,28 @@ textVec [
 uid 46,0
 va (VaSet
 isHidden 1
-font "arial,10,1"
+font "courier,10,1"
 )
-xt "20000,0,31000,1200"
+xt "20000,0,32000,1000"
 st "Compiler Directives"
-blo "20000,1000"
+blo "20000,800"
 )
 *102 (Text
 uid 47,0
 va (VaSet
 isHidden 1
-font "arial,10,1"
+font "courier,10,1"
 )
-xt "20000,1400,33000,2600"
+xt "20000,1400,33800,2400"
 st "Pre-module directives:"
-blo "20000,2400"
+blo "20000,2200"
 )
 *103 (MLText
 uid 48,0
 va (VaSet
 isHidden 1
-font "arial,10,0"
 )
-xt "20000,2800,30400,5400"
+xt "20000,2800,32000,4800"
 st "`resetall
 `timescale 1ns/10ps"
 tm "BdCompilerDirectivesTextMgr"
@@ -3184,17 +3184,16 @@ tm "BdCompilerDirectivesTextMgr"
 uid 49,0
 va (VaSet
 isHidden 1
-font "arial,10,1"
+font "courier,10,1"
 )
-xt "20000,5600,33500,6800"
+xt "20000,5600,34400,6600"
 st "Post-module directives:"
-blo "20000,6600"
+blo "20000,6400"
 )
 *105 (MLText
 uid 50,0
 va (VaSet
 isHidden 1
-font "arial,10,0"
 )
 xt "20000,7000,20000,7000"
 tm "BdCompilerDirectivesTextMgr"
@@ -3203,17 +3202,16 @@ tm "BdCompilerDirectivesTextMgr"
 uid 51,0
 va (VaSet
 isHidden 1
-font "arial,10,1"
+font "courier,10,1"
 )
-xt "20000,7200,33200,8400"
+xt "20000,7200,33800,8200"
 st "End-module directives:"
-blo "20000,8200"
+blo "20000,8000"
 )
 *107 (MLText
 uid 52,0
 va (VaSet
 isHidden 1
-font "arial,10,0"
 )
 xt "20000,1200,20000,1200"
 tm "BdCompilerDirectivesTextMgr"
@@ -3221,18 +3219,21 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "123,30,1354,892"
-viewArea "-13120,15743,138965,120038"
-cachedDiagramExtent "-11000,0,138900,118000"
+windowSize "91,54,1322,916"
+viewArea "-13200,15800,121200,104467"
+cachedDiagramExtent "-11000,0,136000,118000"
 pageSetupInfo (PageSetupInfo
 toPrinter 1
 xMargin 46
 yMargin 46
-paperWidth 761
-paperHeight 1077
+paperWidth 595
+paperHeight 842
+unixPaperWidth 595
+unixPaperHeight 842
 windowsPaperWidth 761
 windowsPaperHeight 1077
-paperType "A4"
+paperType "A4  (210mm x 297mm)"
+unixPaperName "A4  (210mm x 297mm)"
 windowsPaperName "A4"
 windowsPaperType 9
 scale 50
@@ -3244,7 +3245,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-11000,18000"
-lastUid 1820,0
+lastUid 2239,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -3260,7 +3261,7 @@ text (MLText
 va (VaSet
 fg "0,16384,32768"
 )
-xt "200,200,3200,1400"
+xt "200,200,2600,1200"
 st "
 Text
 "
@@ -3286,9 +3287,9 @@ autoResize 1
 text (MLText
 va (VaSet
 fg "0,0,32768"
-font "arial,8,0"
+font "courier,8,0"
 )
-xt "500,2150,1400,3150"
+xt "450,2150,1450,3050"
 st "
 Text
 "
@@ -3312,7 +3313,7 @@ title (TextAssociate
 ps "TopLeftStrategy"
 text (Text
 va (VaSet
-font "arial,10,1"
+font "courier,10,1"
 )
 xt "1000,1000,4400,2200"
 st "Panel0"
@@ -3337,7 +3338,7 @@ stg "VerticalLayoutStrategy"
 textVec [
 *108 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "1500,2550,6500,4050"
 st "<library>"
@@ -3346,7 +3347,7 @@ tm "BdLibraryNameMgr"
 )
 *109 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "1500,4050,6000,5550"
 st "<block>"
@@ -3355,7 +3356,7 @@ tm "BlkNameMgr"
 )
 *110 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "1500,5550,2500,7050"
 st "I0"
@@ -3370,7 +3371,6 @@ matrix (Matrix
 text (MLText
 va (VaSet
 isHidden 1
-font "Courier New,10,0"
 )
 xt "1500,12550,1500,12550"
 )
@@ -3396,7 +3396,7 @@ stg "VerticalLayoutStrategy"
 textVec [
 *111 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-700,2550,3300,4050"
 st "Library"
@@ -3404,7 +3404,7 @@ blo "-700,3750"
 )
 *112 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-700,4050,9400,5550"
 st "MWComponent"
@@ -3412,7 +3412,7 @@ blo "-700,5250"
 )
 *113 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-700,5550,300,7050"
 st "I0"
@@ -3427,7 +3427,6 @@ matrix (Matrix
 text (MLText
 va (VaSet
 isHidden 1
-font "Courier New,10,0"
 )
 xt "-7700,550,-7700,550"
 )
@@ -3460,7 +3459,7 @@ stg "VerticalLayoutStrategy"
 textVec [
 *114 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-350,2550,3650,4050"
 st "Library"
@@ -3469,7 +3468,7 @@ tm "BdLibraryNameMgr"
 )
 *115 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-350,4050,9050,5550"
 st "SaComponent"
@@ -3478,7 +3477,7 @@ tm "CptNameMgr"
 )
 *116 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-350,5550,650,7050"
 st "I0"
@@ -3493,7 +3492,6 @@ matrix (Matrix
 text (MLText
 va (VaSet
 isHidden 1
-font "Courier New,10,0"
 )
 xt "-7350,550,-7350,550"
 )
@@ -3518,7 +3516,7 @@ stg "VerticalLayoutStrategy"
 textVec [
 *117 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-850,2550,3150,4050"
 st "Library"
@@ -3526,7 +3524,7 @@ blo "-850,3750"
 )
 *118 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-850,4050,9550,5550"
 st "VhdlComponent"
@@ -3534,7 +3532,7 @@ blo "-850,5250"
 )
 *119 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-850,5550,150,7050"
 st "I0"
@@ -3549,7 +3547,6 @@ matrix (Matrix
 text (MLText
 va (VaSet
 isHidden 1
-font "Courier New,10,0"
 )
 xt "-7850,550,-7850,550"
 )
@@ -3576,7 +3573,7 @@ stg "VerticalLayoutStrategy"
 textVec [
 *120 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-1600,2550,2400,4050"
 st "Library"
@@ -3584,7 +3581,7 @@ blo "-1600,3750"
 )
 *121 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-1600,4050,10300,5550"
 st "VerilogComponent"
@@ -3592,7 +3589,7 @@ blo "-1600,5250"
 )
 *122 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "-1600,5550,-600,7050"
 st "I0"
@@ -3607,7 +3604,6 @@ matrix (Matrix
 text (MLText
 va (VaSet
 isHidden 1
-font "Courier New,10,0"
 )
 xt "-8600,550,-8600,550"
 )
@@ -3634,7 +3630,7 @@ stg "VerticalLayoutStrategy"
 textVec [
 *123 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "2950,3400,5050,4900"
 st "eb1"
@@ -3643,7 +3639,7 @@ tm "HdlTextNameMgr"
 )
 *124 (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "2950,4900,3650,6400"
 st "1"
@@ -3669,7 +3665,7 @@ xt "0,0,18000,5000"
 text (MLText
 va (VaSet
 )
-xt "200,200,3200,1400"
+xt "200,200,2600,1200"
 st "
 Text
 "
@@ -3986,7 +3982,7 @@ tm "BundleNameMgr"
 second (MLText
 va (VaSet
 )
-xt "0,1000,1500,2200"
+xt "0,1000,1200,2000"
 st "()"
 tm "BundleContentsMgr"
 )
@@ -4011,13 +4007,13 @@ stg "VerticalLayoutStrategy"
 first (MLText
 va (VaSet
 )
-xt "0,0,5000,1200"
+xt "0,0,5400,1000"
 st "Auto list"
 )
 second (MLText
 va (VaSet
 )
-xt "0,1000,9600,2200"
+xt "0,1000,10800,2000"
 st "User defined list"
 tm "PortMapTextMgr"
 )
@@ -4041,7 +4037,7 @@ text (MLText
 va (VaSet
 bg "49152,49152,49152"
 )
-xt "0,-1400,18500,-200"
+xt "0,-1400,17400,-400"
 st "g0: FOR i IN 0 TO n GENERATE"
 tm "FrameTitleTextMgr"
 )
@@ -4072,7 +4068,7 @@ textVec [
 *125 (Text
 va (VaSet
 bg "49152,49152,49152"
-font "Arial,10,1"
+font "courier,10,1"
 )
 xt "11800,20000,22600,21200"
 st "Frame Declarations"
@@ -4105,7 +4101,7 @@ text (MLText
 va (VaSet
 bg "49152,49152,49152"
 )
-xt "0,-1400,11000,-200"
+xt "0,-1400,10800,-400"
 st "b0: BLOCK (guard)"
 tm "FrameTitleTextMgr"
 )
@@ -4136,7 +4132,7 @@ textVec [
 *127 (Text
 va (VaSet
 bg "49152,49152,49152"
-font "Arial,10,1"
+font "courier,10,1"
 )
 xt "11800,20000,22600,21200"
 st "Frame Declarations"
@@ -4223,7 +4219,7 @@ declLabel (Text
 uid 2,0
 va (VaSet
 )
-xt "-11000,59000,-5900,60000"
+xt "-11000,59000,-3200,60000"
 st "Declarations"
 blo "-11000,59800"
 )
@@ -4231,7 +4227,7 @@ portLabel (Text
 uid 3,0
 va (VaSet
 )
-xt "-11000,60000,-8600,61000"
+xt "-11000,60000,-7400,61000"
 st "Ports:"
 blo "-11000,60800"
 )
@@ -4239,38 +4235,36 @@ preUserLabel (Text
 uid 4,0
 va (VaSet
 )
-xt "-11000,68200,-7300,69200"
+xt "-11000,67000,-5600,68000"
 st "Pre User:"
-blo "-11000,69000"
+blo "-11000,67800"
 )
 preUserText (MLText
 uid 5,0
 va (VaSet
 )
-xt "-9000,69200,11700,70400"
-st "constant phaseNbBits: positive := 5;"
+xt "-9000,68000,12600,69000"
 tm "BdDeclarativeTextMgr"
 )
 diagSignalLabel (Text
 uid 6,0
 va (VaSet
 )
-xt "-11000,70400,-4200,71400"
+xt "-11000,68000,-800,69000"
 st "Diagram Signals:"
-blo "-11000,71200"
+blo "-11000,68800"
 )
 postUserLabel (Text
 uid 7,0
 va (VaSet
 )
-xt "-11000,77400,-6600,78400"
+xt "-11000,74000,-4400,75000"
 st "Post User:"
-blo "-11000,78200"
+blo "-11000,74800"
 )
 postUserText (MLText
 uid 8,0
 va (VaSet
-font "Courier New,10,0"
 )
 xt "-9000,79400,-9000,79400"
 tm "BdDeclarativeTextMgr"
@@ -4345,7 +4339,7 @@ m 4
 decl (Decl
 n "phase"
 t "unsigned"
-b "(phaseNbBits-1 DOWNTO 0)"
+b "(phaseBitNb-1 DOWNTO 0)"
 o 10
 suid 3,0
 )
@@ -4358,7 +4352,7 @@ m 4
 decl (Decl
 n "sine"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 11
 suid 4,0
 )
@@ -4371,7 +4365,7 @@ m 1
 decl (Decl
 n "sineInverted"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 5
 suid 5,0
 )
@@ -4384,7 +4378,7 @@ m 1
 decl (Decl
 n "sineAdded"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 3
 suid 6,0
 )
@@ -4397,7 +4391,7 @@ m 4
 decl (Decl
 n "offset"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 9
 suid 7,0
 )
@@ -4410,7 +4404,7 @@ m 4
 decl (Decl
 n "gain"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 8
 suid 8,0
 )
@@ -4423,7 +4417,7 @@ m 1
 decl (Decl
 n "sineMultiplied"
 t "signed"
-b "(2*sineNbBits-1 DOWNTO 0)"
+b "(2*sineBitNb-1 DOWNTO 0)"
 o 6
 suid 9,0
 )
@@ -4436,7 +4430,7 @@ m 1
 decl (Decl
 n "sineConcatenated"
 t "signed"
-b "(2*sineNbBits-1 DOWNTO 0)"
+b "(2*sineBitNb-1 DOWNTO 0)"
 o 4
 suid 10,0
 )
@@ -4449,7 +4443,7 @@ m 4
 decl (Decl
 n "concatenate"
 t "signed"
-b "(sineNbBits-1 DOWNTO 0)"
+b "(sineBitNb-1 DOWNTO 0)"
 o 7
 suid 11,0
 )
@@ -4468,17 +4462,17 @@ sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 cellVa (MVa
 cellColor "65535,65535,65535"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 groupVa (MVa
 cellColor "39936,56832,65280"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 emptyMRCItem *154 (MRCItem
 litem &129
@@ -4578,7 +4572,7 @@ sheetCol (SheetCol
 propVa (MVa
 cellColor "0,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 textAngle 90
 )
 uid 1535,0
@@ -4682,65 +4676,79 @@ tm "GenericEolColHdrMgr"
 )
 *189 (LogGeneric
 generic (GiElement
-name "sineNbBits"
+name "sineBitNb"
 type "positive"
 value "8"
 )
-uid 1578,0
+uid 1939,0
+)
+*190 (LogGeneric
+generic (GiElement
+name "phaseBitNb"
+type "positive"
+value "8"
+)
+uid 1941,0
 )
 ]
 )
 pdm (PhysicalDM
 uid 1557,0
 optionalChildren [
-*190 (Sheet
+*191 (Sheet
 sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 cellVa (MVa
 cellColor "65535,65535,65535"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 groupVa (MVa
 cellColor "39936,56832,65280"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
-emptyMRCItem *191 (MRCItem
+emptyMRCItem *192 (MRCItem
 litem &177
-pos 1
+pos 2
 dimension 20
 )
 uid 1559,0
 optionalChildren [
-*192 (MRCItem
+*193 (MRCItem
 litem &178
 pos 0
 dimension 20
 uid 1560,0
 )
-*193 (MRCItem
+*194 (MRCItem
 litem &179
 pos 1
 dimension 23
 uid 1561,0
 )
-*194 (MRCItem
+*195 (MRCItem
 litem &180
 pos 2
 hidden 1
 dimension 20
 uid 1562,0
 )
-*195 (MRCItem
+*196 (MRCItem
 litem &189
+pos 1
+dimension 20
+uid 1938,0
+)
+*197 (MRCItem
+litem &190
 pos 0
 dimension 20
-uid 1577,0
+uid 1940,0
 )
 ]
 )
@@ -4748,48 +4756,48 @@ sheetCol (SheetCol
 propVa (MVa
 cellColor "0,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 textAngle 90
 )
 uid 1563,0
 optionalChildren [
-*196 (MRCItem
+*198 (MRCItem
 litem &181
 pos 0
 dimension 20
 uid 1564,0
 )
-*197 (MRCItem
+*199 (MRCItem
 litem &183
 pos 1
 dimension 50
 uid 1565,0
 )
-*198 (MRCItem
+*200 (MRCItem
 litem &184
 pos 2
 dimension 100
 uid 1566,0
 )
-*199 (MRCItem
+*201 (MRCItem
 litem &185
 pos 3
 dimension 100
 uid 1567,0
 )
-*200 (MRCItem
+*202 (MRCItem
 litem &186
 pos 4
 dimension 50
 uid 1568,0
 )
-*201 (MRCItem
+*203 (MRCItem
 litem &187
 pos 5
 dimension 50
 uid 1569,0
 )
-*202 (MRCItem
+*204 (MRCItem
 litem &188
 pos 6
 dimension 80

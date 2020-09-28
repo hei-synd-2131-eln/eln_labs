@@ -16,12 +16,12 @@ libraryRefs [
 "ieee"
 ]
 )
-version "26.1"
-appVersion "2018.1 (Build 12)"
+version "27.1"
+appVersion "2019.3 (Build 4)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 15,0
+suid 20,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -68,10 +68,10 @@ n "a"
 t "unsigned"
 b "(3 DOWNTO 0)"
 o 1
-suid 11,0
+suid 16,0
 )
 )
-uid 272,0
+uid 330,0
 )
 *15 (LogPort
 port (LogicalPort
@@ -81,10 +81,10 @@ n "b"
 t "unsigned"
 b "(3 DOWNTO 0)"
 o 2
-suid 12,0
+suid 17,0
 )
 )
-uid 274,0
+uid 332,0
 )
 *16 (LogPort
 port (LogicalPort
@@ -93,10 +93,10 @@ decl (Decl
 n "cin"
 t "std_uLogic"
 o 3
-suid 13,0
+suid 18,0
 )
 )
-uid 276,0
+uid 334,0
 )
 *17 (LogPort
 port (LogicalPort
@@ -104,10 +104,10 @@ decl (Decl
 n "cout"
 t "std_ulogic"
 o 4
-suid 14,0
+suid 19,0
 )
 )
-uid 278,0
+uid 336,0
 )
 *18 (LogPort
 port (LogicalPort
@@ -116,10 +116,10 @@ n "s"
 t "unsigned"
 b "(3 DOWNTO 0)"
 o 5
-suid 15,0
+suid 20,0
 )
 )
-uid 280,0
+uid 338,0
 )
 ]
 )
@@ -133,17 +133,17 @@ sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 cellVa (MVa
 cellColor "65535,65535,65535"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 groupVa (MVa
 cellColor "39936,56832,65280"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 emptyMRCItem *20 (MRCItem
 litem &1
@@ -175,31 +175,31 @@ uid 106,0
 litem &14
 pos 0
 dimension 20
-uid 273,0
+uid 331,0
 )
 *25 (MRCItem
 litem &15
 pos 1
 dimension 20
-uid 275,0
+uid 333,0
 )
 *26 (MRCItem
 litem &16
 pos 2
 dimension 20
-uid 277,0
+uid 335,0
 )
 *27 (MRCItem
 litem &17
 pos 3
 dimension 20
-uid 279,0
+uid 337,0
 )
 *28 (MRCItem
 litem &18
 pos 4
 dimension 20
-uid 281,0
+uid 339,0
 )
 ]
 )
@@ -207,7 +207,7 @@ sheetCol (SheetCol
 propVa (MVa
 cellColor "0,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 textAngle 90
 )
 uid 107,0
@@ -321,17 +321,17 @@ sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 cellVa (MVa
 cellColor "65535,65535,65535"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 groupVa (MVa
 cellColor "39936,56832,65280"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 emptyMRCItem *50 (MRCItem
 litem &37
@@ -365,7 +365,7 @@ sheetCol (SheetCol
 propVa (MVa
 cellColor "0,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 textAngle 90
 )
 uid 135,0
@@ -430,23 +430,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\ADD_test\\hdl"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../ADD_test/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\ADD_test\\hds"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../ADD_test/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\ADD_test\\hds\\add@look@a@head4_tester\\interface.info"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../ADD_test/hds/add@look@a@head4_tester/interface.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\ADD_test\\hds\\add@look@a@head4_tester\\interface.user"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../ADD_test/hds/add@look@a@head4_tester/interface.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\ADD_test\\hds"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../ADD_test/hds"
 )
 (vvPair
 variable "appl"
@@ -466,27 +466,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\ADD_test\\hds\\add@look@a@head4_tester"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../ADD_test/hds/add@look@a@head4_tester"
 )
 (vvPair
 variable "d_logical"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\ADD_test\\hds\\addLookAHead4_tester"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../ADD_test/hds/addLookAHead4_tester"
 )
 (vvPair
 variable "date"
-value "11.09.2019"
+value "09/22/20"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Tue"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Tuesday"
 )
 (vvPair
 variable "dd"
-value "11"
+value "22"
 )
 (vvPair
 variable "entity_name"
@@ -510,31 +510,31 @@ value "interface"
 )
 (vvPair
 variable "graphical_source_author"
-value "silvan.zahno"
+value "francois"
 )
 (vvPair
 variable "graphical_source_date"
-value "11.09.2019"
+value "09/22/20"
 )
 (vvPair
 variable "graphical_source_group"
-value "UNKNOWN"
+value "francois"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE6996"
+value "Aphelia"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:24:28"
+value "14:00:05"
 )
 (vvPair
 variable "group"
-value "UNKNOWN"
+value "francois"
 )
 (vvPair
 variable "host"
-value "WE6996"
+value "Aphelia"
 )
 (vvPair
 variable "language"
@@ -566,11 +566,11 @@ value "September"
 )
 (vvPair
 variable "p"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\ADD_test\\hds\\add@look@a@head4_tester\\interface"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../ADD_test/hds/add@look@a@head4_tester/interface"
 )
 (vvPair
 variable "p_logical"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\ADD_test\\hds\\addLookAHead4_tester\\interface"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../ADD_test/hds/addLookAHead4_tester/interface"
 )
 (vvPair
 variable "package_name"
@@ -598,7 +598,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "C:\\EDA\\Modelsim\\win32"
+value "/usr/opt/Modelsim/modeltech/bin"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -630,7 +630,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "14:24:28"
+value "14:00:05"
 )
 (vvPair
 variable "unit"
@@ -638,11 +638,11 @@ value "addLookAHead4_tester"
 )
 (vvPair
 variable "user"
-value "silvan.zahno"
+value "francois"
 )
 (vvPair
 variable "version"
-value "2018.1 (Build 12)"
+value "2019.3 (Build 4)"
 )
 (vvPair
 variable "view"
@@ -650,11 +650,11 @@ value "interface"
 )
 (vvPair
 variable "year"
-value "2019"
+value "2020"
 )
 (vvPair
 variable "yy"
-value "19"
+value "20"
 )
 ]
 )
@@ -665,10 +665,10 @@ optionalChildren [
 uid 8,0
 optionalChildren [
 *62 (CptPort
-uid 247,0
+uid 305,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 248,0
+uid 306,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
@@ -676,28 +676,28 @@ fg "0,65535,0"
 xt "46625,5250,47375,6000"
 )
 tg (CPTG
-uid 249,0
+uid 307,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 250,0
+uid 308,0
 ro 270
 va (VaSet
-font "Verdana,12,0"
+font "courier,8,0"
 )
-xt "46300,7000,47700,8600"
+xt "46550,7000,47450,7500"
 st "a"
 ju 2
-blo "47500,7000"
+blo "47250,7000"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 251,0
+uid 309,0
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
-xt "44000,3600,64000,4400"
+xt "44000,3600,63000,4500"
 st "a    : OUT    unsigned (3 DOWNTO 0) ;
 "
 )
@@ -708,15 +708,15 @@ n "a"
 t "unsigned"
 b "(3 DOWNTO 0)"
 o 1
-suid 11,0
+suid 16,0
 )
 )
 )
 *63 (CptPort
-uid 252,0
+uid 310,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 253,0
+uid 311,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
@@ -724,28 +724,28 @@ fg "0,65535,0"
 xt "44625,5250,45375,6000"
 )
 tg (CPTG
-uid 254,0
+uid 312,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 255,0
+uid 313,0
 ro 270
 va (VaSet
-font "Verdana,12,0"
+font "courier,8,0"
 )
-xt "44300,7000,45700,8600"
+xt "44550,7000,45450,7500"
 st "b"
 ju 2
-blo "45500,7000"
+blo "45250,7000"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 256,0
+uid 314,0
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
-xt "44000,4400,64000,5200"
+xt "44000,4500,63000,5400"
 st "b    : OUT    unsigned (3 DOWNTO 0) ;
 "
 )
@@ -756,15 +756,15 @@ n "b"
 t "unsigned"
 b "(3 DOWNTO 0)"
 o 2
-suid 12,0
+suid 17,0
 )
 )
 )
 *64 (CptPort
-uid 257,0
+uid 315,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 258,0
+uid 316,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
@@ -772,28 +772,28 @@ fg "0,65535,0"
 xt "40625,5250,41375,6000"
 )
 tg (CPTG
-uid 259,0
+uid 317,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 260,0
+uid 318,0
 ro 270
 va (VaSet
-font "Verdana,12,0"
+font "courier,8,0"
 )
-xt "40300,7000,41700,9500"
+xt "40550,7000,41450,8500"
 st "cin"
 ju 2
-blo "41500,7000"
+blo "41250,7000"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 261,0
+uid 319,0
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
-xt "44000,5200,58000,6000"
+xt "44000,5400,57000,6300"
 st "cin  : OUT    std_uLogic 
 "
 )
@@ -803,15 +803,15 @@ decl (Decl
 n "cin"
 t "std_uLogic"
 o 3
-suid 13,0
+suid 18,0
 )
 )
 )
 *65 (CptPort
-uid 262,0
+uid 320,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 263,0
+uid 321,0
 ro 180
 va (VaSet
 vasetType 1
@@ -820,28 +820,28 @@ fg "0,65535,0"
 xt "22625,5250,23375,6000"
 )
 tg (CPTG
-uid 264,0
+uid 322,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 265,0
+uid 323,0
 ro 270
 va (VaSet
-font "Verdana,12,0"
+font "courier,8,0"
 )
-xt "22300,7000,23700,10500"
+xt "22550,7000,23450,9000"
 st "cout"
 ju 2
-blo "23500,7000"
+blo "23250,7000"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 266,0
+uid 324,0
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
-xt "44000,2000,59000,2800"
+xt "44000,1800,58000,2700"
 st "cout : IN     std_ulogic  ;
 "
 )
@@ -850,15 +850,15 @@ decl (Decl
 n "cout"
 t "std_ulogic"
 o 4
-suid 14,0
+suid 19,0
 )
 )
 )
 *66 (CptPort
-uid 267,0
+uid 325,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 268,0
+uid 326,0
 ro 180
 va (VaSet
 vasetType 1
@@ -867,28 +867,28 @@ fg "0,65535,0"
 xt "31625,5250,32375,6000"
 )
 tg (CPTG
-uid 269,0
+uid 327,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 270,0
+uid 328,0
 ro 270
 va (VaSet
-font "Verdana,12,0"
+font "courier,8,0"
 )
-xt "31300,7000,32700,8500"
+xt "31550,7000,32450,7500"
 st "s"
 ju 2
-blo "32500,7000"
+blo "32250,7000"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 271,0
+uid 329,0
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
-xt "44000,2800,64000,3600"
+xt "44000,2700,63000,3600"
 st "s    : IN     unsigned (3 DOWNTO 0) ;
 "
 )
@@ -898,7 +898,7 @@ n "s"
 t "unsigned"
 b "(3 DOWNTO 0)"
 o 5
-suid 15,0
+suid 20,0
 )
 )
 )
@@ -920,20 +920,20 @@ stg "VerticalLayoutStrategy"
 first (Text
 uid 11,0
 va (VaSet
-font "Arial,8,1"
+font "courier,8,1"
 )
-xt "28100,9000,32000,10000"
+xt "27750,9050,31750,9950"
 st "ADD_test"
-blo "28100,9800"
+blo "27750,9750"
 )
 second (Text
 uid 12,0
 va (VaSet
-font "Arial,8,1"
+font "courier,8,1"
 )
-xt "28100,10000,37900,11000"
+xt "27750,9950,38250,10850"
 st "addLookAHead4_tester"
-blo "28100,10800"
+blo "27750,10650"
 )
 )
 gi *67 (GenericInterface
@@ -944,9 +944,9 @@ uid 14,0
 text (MLText
 uid 15,0
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
-xt "9000,6000,20500,6800"
+xt "9000,6000,19500,6900"
 st "Generic Declarations"
 )
 header "Generic Declarations"
@@ -986,7 +986,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "36200,48500,36200,48500"
+xt "36200,48000,52400,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1017,7 +1017,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "53200,44500,53200,44500"
+xt "53200,44000,56800,45000"
 st "
 Project:
 "
@@ -1048,7 +1048,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "36200,46500,36200,46500"
+xt "36200,46000,52400,47000"
 st "
 <enter diagram title here>
 "
@@ -1079,7 +1079,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "32200,46500,32200,46500"
+xt "32200,46000,35800,47000"
 st "
 Title:
 "
@@ -1110,7 +1110,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "53200,45200,67300,46400"
+xt "53200,45200,66400,46200"
 st "
 <enter comments here>
 "
@@ -1140,7 +1140,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "57200,44500,57200,44500"
+xt "57200,44000,59000,45000"
 st "
 %project_name
 "
@@ -1170,7 +1170,7 @@ uid 38,0
 va (VaSet
 fg "32768,0,0"
 )
-xt "37350,44400,47650,45600"
+xt "38000,44500,47000,45500"
 st "
 <company name>
 "
@@ -1202,7 +1202,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "32200,47500,32200,47500"
+xt "32200,47000,35200,48000"
 st "
 Path:
 "
@@ -1233,7 +1233,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "32200,48500,32200,48500"
+xt "32200,48000,35800,49000"
 st "
 Edited:
 "
@@ -1264,7 +1264,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "36200,47500,36200,47500"
+xt "36200,47000,46400,48000"
 st "
 %library/%unit/%view
 "
@@ -1309,17 +1309,17 @@ textVec [
 *80 (Text
 uid 49,0
 va (VaSet
-font "arial,8,1"
+font "courier,8,1"
 )
-xt "0,0,5400,1000"
+xt "0,0,6500,900"
 st "Package List"
-blo "0,800"
+blo "0,700"
 )
 *81 (MLText
 uid 50,0
 va (VaSet
 )
-xt "0,1000,16900,4600"
+xt "0,1000,17400,4000"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;"
@@ -1345,7 +1345,7 @@ text (MLText
 va (VaSet
 fg "0,0,32768"
 )
-xt "200,200,3200,1400"
+xt "200,200,2600,1200"
 st "
 Text
 "
@@ -1371,9 +1371,9 @@ autoResize 1
 text (MLText
 va (VaSet
 fg "0,0,32768"
-font "arial,8,0"
+font "courier,8,0"
 )
-xt "500,2150,1400,3150"
+xt "450,2150,1450,3050"
 st "
 Text
 "
@@ -1397,7 +1397,7 @@ title (TextAssociate
 ps "TopLeftStrategy"
 text (Text
 va (VaSet
-font "Arial,8,1"
+font "courier,8,1"
 )
 xt "1000,1000,3800,2000"
 st "Panel0"
@@ -1426,7 +1426,7 @@ ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 first (Text
 va (VaSet
-font "Arial,8,1"
+font "courier,8,1"
 )
 xt "22200,15000,25800,16000"
 st "<library>"
@@ -1434,7 +1434,7 @@ blo "22200,15800"
 )
 second (Text
 va (VaSet
-font "Arial,8,1"
+font "courier,8,1"
 )
 xt "22200,16000,24800,17000"
 st "<cell>"
@@ -1446,9 +1446,9 @@ ps "CenterOffsetStrategy"
 matrix (Matrix
 text (MLText
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
-xt "0,12000,11500,12800"
+xt "0,12000,10500,12900"
 st "Generic Declarations"
 )
 header "Generic Declarations"
@@ -1480,7 +1480,7 @@ ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
 xt "0,750,2900,2150"
 st "In0"
@@ -1490,7 +1490,7 @@ tm "CptPortNameMgr"
 )
 dt (MLText
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
 )
 thePort (LogicalPort
@@ -1518,7 +1518,7 @@ ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
 xt "0,750,5300,2150"
 st "Buffer0"
@@ -1528,7 +1528,7 @@ tm "CptPortNameMgr"
 )
 dt (MLText
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
 )
 thePort (LogicalPort
@@ -1548,58 +1548,58 @@ stg "SymDeclLayoutStrategy"
 declLabel (Text
 uid 2,0
 va (VaSet
-font "Arial,8,1"
+font "courier,8,1"
 )
-xt "42000,0,47400,1000"
+xt "42000,0,48500,900"
 st "Declarations"
-blo "42000,800"
+blo "42000,700"
 )
 portLabel (Text
 uid 3,0
 va (VaSet
-font "Arial,8,1"
+font "courier,8,1"
 )
-xt "42000,1000,44700,2000"
+xt "42000,900,45000,1800"
 st "Ports:"
-blo "42000,1800"
+blo "42000,1600"
 )
 externalLabel (Text
 uid 4,0
 va (VaSet
-font "Arial,8,1"
+font "courier,8,1"
 )
-xt "42000,6000,44400,7000"
+xt "42000,6300,44500,7200"
 st "User:"
-blo "42000,6800"
+blo "42000,7000"
 )
 internalLabel (Text
 uid 6,0
 va (VaSet
 isHidden 1
-font "Arial,8,1"
+font "courier,8,1"
 )
-xt "42000,0,47800,1000"
+xt "42000,0,49500,900"
 st "Internal User:"
-blo "42000,800"
+blo "42000,700"
 )
 externalText (MLText
 uid 5,0
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
-xt "44000,7000,44000,7000"
+xt "44000,7200,44000,7200"
 tm "SyDeclarativeTextMgr"
 )
 internalText (MLText
 uid 7,0
 va (VaSet
 isHidden 1
-font "Courier New,8,0"
+font "courier,8,0"
 )
 xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 281,0
+lastUid 339,0
 activeModelName "Symbol:CDM"
 )

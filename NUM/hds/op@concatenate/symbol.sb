@@ -16,8 +16,8 @@ libraryRefs [
 "ieee"
 ]
 )
-version "26.1"
-appVersion "2018.1 (Build 12)"
+version "27.1"
+appVersion "2019.3 (Build 4)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
@@ -33,7 +33,7 @@ m 1
 decl (Decl
 n "concatOut"
 t "signed"
-b "(2*nbBits-1 DOWNTO 0)"
+b "(2*bitNb-1 DOWNTO 0)"
 o 8
 suid 3,0
 )
@@ -45,7 +45,7 @@ port (LogicalPort
 decl (Decl
 n "concatIn"
 t "signed"
-b "(nbBits-1 DOWNTO 0)"
+b "(bitNb-1 DOWNTO 0)"
 o 11
 suid 1,0
 )
@@ -57,7 +57,7 @@ port (LogicalPort
 decl (Decl
 n "sine"
 t "signed"
-b "(nbBits-1 DOWNTO 0)"
+b "(bitNb-1 DOWNTO 0)"
 o 4
 suid 2,0
 )
@@ -107,17 +107,17 @@ sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 cellVa (MVa
 cellColor "65535,65535,65535"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 groupVa (MVa
 cellColor "39936,56832,65280"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 emptyMRCItem *18 (MRCItem
 litem &1
@@ -169,7 +169,7 @@ sheetCol (SheetCol
 propVa (MVa
 cellColor "0,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 textAngle 90
 )
 uid 156,0
@@ -273,7 +273,7 @@ tm "GenericEolColHdrMgr"
 )
 *45 (LogGeneric
 generic (GiElement
-name "nbBits"
+name "bitNb"
 type "positive"
 value "8"
 )
@@ -289,17 +289,17 @@ sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 cellVa (MVa
 cellColor "65535,65535,65535"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 groupVa (MVa
 cellColor "39936,56832,65280"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 )
 emptyMRCItem *47 (MRCItem
 litem &33
@@ -339,7 +339,7 @@ sheetCol (SheetCol
 propVa (MVa
 cellColor "0,49152,49152"
 fontColor "0,0,0"
-font "Tahoma,10,0"
+font "courier,10,0"
 textAngle 90
 )
 uid 186,0
@@ -408,23 +408,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hdl"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\op@concatenate\\symbol.sb.info"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/op@concatenate/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\op@concatenate\\symbol.sb.user"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/op@concatenate/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds"
 )
 (vvPair
 variable "appl"
@@ -444,27 +444,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\op@concatenate"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/op@concatenate"
 )
 (vvPair
 variable "d_logical"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\opConcatenate"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/opConcatenate"
 )
 (vvPair
 variable "date"
-value "11.09.2019"
+value "09/22/20"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Tue"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Tuesday"
 )
 (vvPair
 variable "dd"
-value "11"
+value "22"
 )
 (vvPair
 variable "entity_name"
@@ -488,31 +488,31 @@ value "symbol"
 )
 (vvPair
 variable "graphical_source_author"
-value "silvan.zahno"
+value "francois"
 )
 (vvPair
 variable "graphical_source_date"
-value "11.09.2019"
+value "09/22/20"
 )
 (vvPair
 variable "graphical_source_group"
-value "UNKNOWN"
+value "francois"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE6996"
+value "Aphelia"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:36:56"
+value "13:43:27"
 )
 (vvPair
 variable "group"
-value "UNKNOWN"
+value "francois"
 )
 (vvPair
 variable "host"
-value "WE6996"
+value "Aphelia"
 )
 (vvPair
 variable "language"
@@ -556,11 +556,11 @@ value "September"
 )
 (vvPair
 variable "p"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\op@concatenate\\symbol.sb"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/op@concatenate/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\..\\NUM\\hds\\opConcatenate\\symbol.sb"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../NUM/hds/opConcatenate/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -588,7 +588,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "C:\\EDA\\Modelsim\\win32"
+value "/usr/opt/Modelsim/modeltech/bin"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -620,7 +620,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "14:36:56"
+value "13:43:27"
 )
 (vvPair
 variable "unit"
@@ -628,11 +628,11 @@ value "opConcatenate"
 )
 (vvPair
 variable "user"
-value "silvan.zahno"
+value "francois"
 )
 (vvPair
 variable "version"
-value "2018.1 (Build 12)"
+value "2019.3 (Build 4)"
 )
 (vvPair
 variable "view"
@@ -640,11 +640,11 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2019"
+value "2020"
 )
 (vvPair
 variable "yy"
-value "19"
+value "20"
 )
 ]
 )
@@ -673,27 +673,27 @@ stg "VerticalLayoutStrategy"
 f (Text
 uid 140,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "37000,13400,43200,14800"
+xt "37000,13400,42600,14700"
 st "concatIn"
-blo "37000,14600"
+blo "37000,14400"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
 uid 141,0
 va (VaSet
-font "Courier New,10,0"
 )
-xt "2000,32200,32600,33400"
-st "concatIn  : IN     signed (nbBits-1 DOWNTO 0) ;"
+xt "2000,31800,30200,32800"
+st "concatIn  : IN     signed (bitNb-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "concatIn"
 t "signed"
-b "(nbBits-1 DOWNTO 0)"
+b "(bitNb-1 DOWNTO 0)"
 o 11
 suid 1,0
 )
@@ -718,27 +718,27 @@ stg "VerticalLayoutStrategy"
 f (Text
 uid 145,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "37000,9400,40400,10800"
+xt "37000,9400,39800,10700"
 st "sine"
-blo "37000,10600"
+blo "37000,10400"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
 uid 146,0
 va (VaSet
-font "Courier New,10,0"
 )
-xt "2000,33400,32600,34600"
-st "sine      : IN     signed (nbBits-1 DOWNTO 0) ;"
+xt "2000,32800,30200,33800"
+st "sine      : IN     signed (bitNb-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "sine"
 t "signed"
-b "(nbBits-1 DOWNTO 0)"
+b "(bitNb-1 DOWNTO 0)"
 o 4
 suid 2,0
 )
@@ -763,29 +763,29 @@ stg "RightVerticalLayoutStrategy"
 f (Text
 uid 150,0
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
-xt "39800,11300,47000,12700"
+xt "40700,11300,47000,12600"
 st "concatOut"
 ju 2
-blo "47000,12500"
+blo "47000,12300"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
 uid 151,0
 va (VaSet
-font "Courier New,10,0"
 )
-xt "2000,34600,32600,35800"
-st "concatOut : OUT    signed (2*nbBits-1 DOWNTO 0)"
+xt "2000,33800,30200,34800"
+st "concatOut : OUT    signed (2*bitNb-1 DOWNTO 0)
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "concatOut"
 t "signed"
-b "(2*nbBits-1 DOWNTO 0)"
+b "(2*bitNb-1 DOWNTO 0)"
 o 8
 suid 3,0
 )
@@ -811,17 +811,17 @@ first (Text
 uid 11,0
 va (VaSet
 )
-xt "36750,18400,39950,19600"
+xt "36750,18400,38550,19400"
 st "NUM"
-blo "36750,19400"
+blo "36750,19200"
 )
 second (Text
 uid 12,0
 va (VaSet
 )
-xt "36750,19600,45750,20800"
+xt "36750,19400,45150,20400"
 st "opConcatenate"
-blo "36750,20600"
+blo "36750,20200"
 )
 )
 gi *63 (GenericInterface
@@ -832,19 +832,18 @@ uid 14,0
 text (MLText
 uid 15,0
 va (VaSet
-font "Courier New,10,0"
 )
-xt "36000,22400,49800,26000"
+xt "36000,22400,48600,25400"
 st "Generic Declarations
 
-nbBits positive 8  "
+bitNb positive 8  "
 )
 header "Generic Declarations"
 showHdrWhenContentsEmpty 1
 )
 elements [
 (GiElement
-name "nbBits"
+name "bitNb"
 type "positive"
 value "8"
 )
@@ -881,7 +880,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "36200,48500,36200,48500"
+xt "36200,48000,52400,49000"
 st "
 by %user on %dd %month %year
 "
@@ -912,7 +911,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "53200,44500,53200,44500"
+xt "53200,44000,56800,45000"
 st "
 Project:
 "
@@ -943,7 +942,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "36200,46500,36200,46500"
+xt "36200,46000,52400,47000"
 st "
 <enter diagram title here>
 "
@@ -974,7 +973,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "32200,46500,32200,46500"
+xt "32200,46000,35800,47000"
 st "
 Title:
 "
@@ -1005,7 +1004,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "53200,45200,67300,46400"
+xt "53200,45200,66400,46200"
 st "
 <enter comments here>
 "
@@ -1035,7 +1034,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "57200,44500,57200,44500"
+xt "57200,44000,59000,45000"
 st "
 %project_name
 "
@@ -1065,7 +1064,7 @@ uid 265,0
 va (VaSet
 fg "32768,0,0"
 )
-xt "37350,44400,47650,45600"
+xt "38000,44500,47000,45500"
 st "
 <company name>
 "
@@ -1097,7 +1096,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "32200,47500,32200,47500"
+xt "32200,47000,35200,48000"
 st "
 Path:
 "
@@ -1128,7 +1127,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "32200,48500,32200,48500"
+xt "32200,48000,35800,49000"
 st "
 Edited:
 "
@@ -1159,7 +1158,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "36200,47500,36200,47500"
+xt "36200,47000,51200,48000"
 st "
 %library/%unit/%view
 "
@@ -1204,18 +1203,18 @@ textVec [
 *76 (Text
 uid 152,0
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
-xt "0,0,8800,1500"
+xt "0,0,9100,1300"
 st "Package List"
-blo "0,1200"
+blo "0,1000"
 )
 *77 (MLText
 uid 153,0
 va (VaSet
-font "Arial,12,0"
+font "courier,12,0"
 )
-xt "0,1500,18600,6000"
+xt "0,1500,21700,5400"
 st "LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;"
@@ -1223,9 +1222,26 @@ tm "PackageList"
 )
 ]
 )
-windowSize "16,40,1386,950"
-viewArea "-3000,-7650,83325,52050"
+windowSize "59,58,1429,968"
+viewArea "-1100,-1100,70014,46454"
 cachedDiagramExtent "0,0,73000,49000"
+pageSetupInfo (PageSetupInfo
+toPrinter 1
+xMargin 49
+yMargin 49
+paperWidth 595
+paperHeight 842
+unixPaperWidth 595
+unixPaperHeight 842
+paperType "A4  (210mm x 297mm)"
+unixPaperName "A4  (210mm x 297mm)"
+exportedDirectories [
+"$HDS_PROJECT_DIR/HTMLExport"
+]
+boundaryWidth 0
+exportStdIncludeRefs 1
+exportStdPackageRefs 1
+)
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
 defaultCommentText (CommentText
@@ -1243,7 +1259,7 @@ text (MLText
 va (VaSet
 fg "0,16384,32768"
 )
-xt "200,200,3200,1400"
+xt "200,200,2600,1200"
 st "
 Text
 "
@@ -1269,9 +1285,9 @@ autoResize 1
 text (MLText
 va (VaSet
 fg "0,0,32768"
-font "arial,8,0"
+font "courier,8,0"
 )
-xt "500,2150,1400,3150"
+xt "450,2150,1450,3050"
 st "
 Text
 "
@@ -1295,7 +1311,7 @@ title (TextAssociate
 ps "TopLeftStrategy"
 text (Text
 va (VaSet
-font "arial,10,1"
+font "courier,10,1"
 )
 xt "1000,1000,4400,2200"
 st "Panel0"
@@ -1324,7 +1340,7 @@ ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 first (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "30500,14400,35500,15900"
 st "<library>"
@@ -1332,7 +1348,7 @@ blo "30500,15600"
 )
 second (Text
 va (VaSet
-font "Arial,12,1"
+font "courier,12,1"
 )
 xt "30500,15900,33900,17400"
 st "<cell>"
@@ -1345,7 +1361,6 @@ matrix (Matrix
 text (MLText
 va (VaSet
 isHidden 1
-font "Courier New,10,0"
 )
 xt "0,12000,0,12000"
 )
@@ -1374,7 +1389,7 @@ ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
 xt "0,750,2900,2150"
 st "In0"
@@ -1384,7 +1399,7 @@ tm "CptPortNameMgr"
 )
 dt (MLText
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
 )
 thePort (LogicalPort
@@ -1412,7 +1427,7 @@ ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
 va (VaSet
-font "Verdana,12,0"
+font "courier,12,0"
 )
 xt "0,750,5300,2150"
 st "Buffer0"
@@ -1422,7 +1437,7 @@ tm "CptPortNameMgr"
 )
 dt (MLText
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
 )
 thePort (LogicalPort
@@ -1442,58 +1457,58 @@ stg "SymDeclLayoutStrategy"
 declLabel (Text
 uid 2,0
 va (VaSet
-font "Arial,10,1"
+font "courier,10,1"
 )
-xt "0,29800,7400,31000"
+xt "0,29800,7800,30800"
 st "Declarations"
-blo "0,30800"
+blo "0,30600"
 )
 portLabel (Text
 uid 3,0
 va (VaSet
-font "Arial,10,1"
+font "courier,10,1"
 )
-xt "0,31000,3500,32200"
+xt "0,30800,3600,31800"
 st "Ports:"
-blo "0,32000"
+blo "0,31600"
 )
 externalLabel (Text
 uid 4,0
 va (VaSet
-font "Arial,10,1"
+font "courier,10,1"
 )
-xt "0,35800,3200,37000"
+xt "0,34800,3000,35800"
 st "User:"
-blo "0,36800"
+blo "0,35600"
 )
 internalLabel (Text
 uid 6,0
 va (VaSet
 isHidden 1
-font "Arial,10,1"
+font "courier,10,1"
 )
-xt "0,29800,7800,31000"
+xt "0,29800,9000,30800"
 st "Internal User:"
-blo "0,30800"
+blo "0,30600"
 )
 externalText (MLText
 uid 5,0
 va (VaSet
-font "Courier New,8,0"
+font "courier,8,0"
 )
-xt "2000,37000,2000,37000"
+xt "2000,35800,2000,35800"
 tm "SyDeclarativeTextMgr"
 )
 internalText (MLText
 uid 7,0
 va (VaSet
 isHidden 1
-font "Courier New,8,0"
+font "courier,8,0"
 )
 xt "0,29800,0,29800"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 297,0
+lastUid 366,0
 activeModelName "Symbol"
 )

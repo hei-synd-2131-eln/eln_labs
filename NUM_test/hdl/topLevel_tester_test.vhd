@@ -1,4 +1,4 @@
-ARCHITECTURE test OF topLevel_tester IS
+ARCHITECTURE test OF sinewave_tester IS
 
   constant clockFrequency: real := 66.0E6;
   constant clockPeriod: time := 1.0 / clockFrequency * 1 sec;

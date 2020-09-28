@@ -1271,7 +1271,6 @@ projectPaths [
 "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\eln_labs.hdp"
 "C:\\work\\git\\Education\\eln\\labo\\solution\\eln_labs\\Prefs\\hds.hdp"
 "C:\\work\\edu\\eln\\labo\\eln_labs\\Prefs\\hds.hdp"
-"C:\\work\\edu\\eln\\labo\\synd_eln_labs_stud\\Prefs\\hds.hdp"
 ]
 libMappingsRootDir ""
 teamLibMappingsRootDir ""
@@ -6020,26 +6019,6 @@ declHierarchy [
 ]
 activeViewpointIdx 0
 )
-(WorkTab
-name "IND"
-showingHierarchy 0
-openLibs [
-"IND"
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "IND_test"
-showingHierarchy 0
-openLibs [
-"IND_test"
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
 ]
 ViewpointsOnOutlookBar [
 "Requirements"
@@ -6064,8 +6043,8 @@ size 180
 displayHierarchy 0
 xPos 643
 yPos 73
-width 1141
-height 913
+width 1068
+height 838
 activeSidePanelTab 2
 sidePanelSize 278
 showUnixHiddenFiles 0
