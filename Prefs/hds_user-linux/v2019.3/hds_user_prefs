@@ -5346,30 +5346,10 @@ declHierarchy [
 activeViewpointIdx 0
 )
 (WorkTab
-name "ADD_test"
+name "PHD_test"
 showingHierarchy 0
 openLibs [
-"ADD_test"
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "ADD"
-showingHierarchy 0
-openLibs [
-"ADD"
-]
-declHierarchy [
-]
-activeViewpointIdx 0
-)
-(WorkTab
-name "MUL_test"
-showingHierarchy 0
-openLibs [
-"MUL_test"
+"PHD_test"
 ]
 declHierarchy [
 ]
@@ -5393,16 +5373,17 @@ SplitterClientPrefs [
 (SplitterPreference
 hidden 0
 expand 0
-size 59
+size 44
 )
 ]
 displayHierarchy 0
-xPos 59
-yPos 117
+xPos 1772
+yPos 107
 width 1066
 height 937
-activeSidePanelTab 0
-sidePanelSize 20
+activeSidePanelTab 2
+activeLibraryTab 1
+sidePanelSize 273
 showUnixHiddenFiles 0
 componentBrowserXpos 817
 componentBrowserYpos 95

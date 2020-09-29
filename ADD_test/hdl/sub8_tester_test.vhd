@@ -7,7 +7,6 @@ BEGIN
 
   test: PROCESS
   BEGIN
-
                                                                     -- loop on a
     for a_int in 0 to 15 loop
       a   <=to_unsigned(a_int, a'length);

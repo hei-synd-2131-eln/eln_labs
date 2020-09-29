@@ -1,24 +1,27 @@
-library std_developersKit;
-  use std_developersKit.std_ioPak.To_String;
-
 ARCHITECTURE test OF mul4Unsigned_tester IS
 
   constant clockFrequency: real := 10.0E6;
   constant clockPeriod: time := 1.0 / clockFrequency * 1 sec;
 
 BEGIN
-
+                                                            -- testing all cases
   test: PROCESS
   BEGIN
-    -- test all cases!!
-    for i in 0 to 15 loop
-      for j in 0 to 15 loop
-        a   <=to_unsigned(i, a'length);
-        b   <=to_unsigned(j, b'length);
+                                                                    -- loop on a
+    for a_int in 0 to 2**a'length-1 loop
+      a   <=to_unsigned(a_int, a'length);
+                                                                    -- loop on b
+      for b_int in 0 to 2**b'length-1 loop
+        b   <= to_unsigned(b_int, b'length);
+                                                                  -- test result
         WAIT FOR clockPeriod;
-        assert (p = to_unsigned(i*j,8))
-          report "test for" & To_String(i,"%10d") & " *" & To_String(j,"%10d") & " wrong"
-          severity note;
+        assert p = a * b
+          report
+            "test for " &
+            "a = " & integer'image(a_int) & " " &
+            "b = " & integer'image(b_int) & " " &
+            "wrong"
+          severity error;
        end loop;
      end loop;
 
@@ -26,4 +29,3 @@ BEGIN
   END PROCESS test;
 
 END ARCHITECTURE test;
-
