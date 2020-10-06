@@ -2,25 +2,26 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate -divider {Group: XXX}
 add wave -noupdate -divider -height 30 {binary values}
-add wave -noupdate -format Logic /addlookahead4_tb/cin
-add wave -noupdate -format Literal /addlookahead4_tb/a
-add wave -noupdate -format Literal /addlookahead4_tb/b
-add wave -noupdate -format Literal /addlookahead4_tb/s
-add wave -noupdate -format Logic /addlookahead4_tb/cout
+add wave -noupdate -radixshowbase 0 /addlookahead4_tb/cin
+add wave -noupdate -radix binary -radixshowbase 0 /addlookahead4_tb/a
+add wave -noupdate -radix binary -radixshowbase 0 /addlookahead4_tb/b
+add wave -noupdate -radix binary -radixshowbase 0 /addlookahead4_tb/s
+add wave -noupdate -radixshowbase 0 /addlookahead4_tb/cout
 add wave -noupdate -divider -height 30 {unsigned values}
-add wave -noupdate -format Logic /addlookahead4_tb/cin
-add wave -noupdate -format Literal -radix unsigned /addlookahead4_tb/a
-add wave -noupdate -format Literal -radix unsigned /addlookahead4_tb/b
-add wave -noupdate -format Literal -radix unsigned /addlookahead4_tb/s
-add wave -noupdate -format Logic /addlookahead4_tb/cout
+add wave -noupdate -radixshowbase 0 /addlookahead4_tb/cin
+add wave -noupdate -radix unsigned -radixshowbase 0 /addlookahead4_tb/a
+add wave -noupdate -radix unsigned -radixshowbase 0 /addlookahead4_tb/b
+add wave -noupdate -radix unsigned -radixshowbase 0 /addlookahead4_tb/s
+add wave -noupdate -radixshowbase 0 /addlookahead4_tb/cout
 add wave -noupdate -divider -height 30 {signed values}
-add wave -noupdate -format Logic /addlookahead4_tb/cin
-add wave -noupdate -format Literal -radix decimal /addlookahead4_tb/a
-add wave -noupdate -format Literal -radix decimal /addlookahead4_tb/b
-add wave -noupdate -format Literal -radix decimal /addlookahead4_tb/s
-add wave -noupdate -format Logic /addlookahead4_tb/cout
+add wave -noupdate -radixshowbase 0 /addlookahead4_tb/cin
+add wave -noupdate -radix decimal -radixshowbase 0 /addlookahead4_tb/a
+add wave -noupdate -radix decimal -radixshowbase 0 /addlookahead4_tb/b
+add wave -noupdate -radix decimal -radixshowbase 0 /addlookahead4_tb/s
+add wave -noupdate -radixshowbase 0 /addlookahead4_tb/cout
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {315000 ps} 0}
+WaveRestoreCursors {{Cursor 1} {315 ns} 0}
+quietly wave cursor active 0
 configure wave -namecolwidth 210
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
@@ -35,4 +36,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {105 ns}
+WaveRestoreZoom {0 ns} {105 ns}

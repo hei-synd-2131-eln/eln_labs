@@ -23,7 +23,7 @@ BEGIN
                                                                   -- test result
           WAIT FOR clockPeriod;
           if cIn_int = 0 then
-            assert (s = a-b)
+            assert (to_integer(signed(s)) = a_int-b_int)
               report
                 "test for " &
                 "a = " & integer'image(a_int) & " " &
@@ -32,7 +32,7 @@ BEGIN
                 "wrong"
               severity error;
           else
-            assert (s = a-b-1)
+            assert (to_integer(signed(s)) = a_int-b_int-1)
               report
                 "test for " &
                 "a = " & integer'image(a_int) & " " &
