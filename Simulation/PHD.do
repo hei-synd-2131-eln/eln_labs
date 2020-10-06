@@ -4,18 +4,19 @@ add wave -noupdate -divider {Group: XXX}
 add wave -noupdate /phd_tb/reset
 add wave -noupdate /phd_tb/clock
 add wave -noupdate -divider Phases
-add wave -noupdate /phd_tb/phaseref
-add wave -noupdate /phd_tb/phasefb
-add wave -noupdate -radix unsigned /phd_tb/i_tb/fbfreqdivide
+add wave -noupdate -radix unsigned -radixshowbase 0 /phd_tb/I_TB/fbFreqDivide
+add wave -noupdate /phd_tb/phaseRef
+add wave -noupdate /phd_tb/phaseFb
 add wave -noupdate -divider Internals
-add wave -noupdate -format Analog-Step -height 50 -max 300.0 -radix unsigned /phd_tb/i_dut/phasecount
-add wave -noupdate -format Analog-Step -height 50 -max 300.0 -radix unsigned -subitemconfig {/phd_tb/i_dut/phasesampled(8) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(7) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(6) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(5) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(4) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(3) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(2) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(1) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(0) {-height 15 -radix unsigned}} /phd_tb/i_dut/phasesampled
-add wave -noupdate -radix unsigned -subitemconfig {/phd_tb/i_dut/phasesampled(8) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(7) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(6) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(5) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(4) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(3) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(2) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(1) {-height 15 -radix unsigned} /phd_tb/i_dut/phasesampled(0) {-height 15 -radix unsigned}} /phd_tb/i_dut/phasesampled
+add wave -noupdate -format Analog-Step -height 50 -max 220.0 -radix unsigned -radixshowbase 0 /phd_tb/I_DUT/refCount
+add wave -noupdate -format Analog-Step -height 50 -max 300.0 -radix unsigned -radixshowbase 0 /phd_tb/I_DUT/phaseSampled
+add wave -noupdate -radix unsigned -radixshowbase 0 /phd_tb/I_DUT/phaseSampled
 add wave -noupdate -divider {Phase difference}
-add wave -noupdate -format Analog-Step -height 50 -max 126.99999999999999 -min -127.0 -radix decimal /phd_tb/i_dut/phasediff1
-add wave -noupdate -format Analog-Step -height 100 -max 255.0 -min -255.0 -radix decimal /phd_tb/phasediff
+add wave -noupdate -format Analog-Step -height 50 -max 126.99999999999999 -min -127.0 -radix decimal -radixshowbase 0 /phd_tb/I_DUT/phaseDiff1
+add wave -noupdate -format Analog-Step -height 100 -max 255.0 -min -255.0 -radix decimal -radixshowbase 0 /phd_tb/phaseDiff
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+WaveRestoreCursors {{Cursor 1} {0 ns} 0}
+quietly wave cursor active 1
 configure wave -namecolwidth 186
 configure wave -valuecolwidth 64
 configure wave -justifyvalue left
@@ -30,4 +31,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits us
 update
-WaveRestoreZoom {0 ps} {105 us}
+WaveRestoreZoom {0 ns} {210 us}

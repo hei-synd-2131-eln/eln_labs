@@ -21,8 +21,8 @@ libraryRefs [
 "gates"
 ]
 )
-version "31.1"
-appVersion "2018.1 (Build 12)"
+version "32.1"
+appVersion "2019.3 (Build 4)"
 noEmbeddedEditors 1
 model (BlockDiag
 VExpander (VariableExpander
@@ -33,23 +33,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "/home/francois/Favorites/ElN_local/Labs/ElN_labs_1/Prefs/../PHD/hdl"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/francois/Favorites/ElN_local/Labs/ElN_labs_1/Prefs/../PHD/hds"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/francois/Favorites/ElN_local/Labs/ElN_labs_1/Prefs/../PHD/hds/phase@calculator/student@version.bd.info"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phase@calculator/student@version.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/francois/Favorites/ElN_local/Labs/ElN_labs_1/Prefs/../PHD/hds/phase@calculator/student@version.bd.user"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phase@calculator/student@version.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/francois/Favorites/ElN_local/Labs/ElN_labs_1/Prefs/../PHD/hds"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds"
 )
 (vvPair
 variable "appl"
@@ -69,27 +69,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/francois/Favorites/ElN_local/Labs/ElN_labs_1/Prefs/../PHD/hds/phase@calculator"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phase@calculator"
 )
 (vvPair
 variable "d_logical"
-value "/home/francois/Favorites/ElN_local/Labs/ElN_labs_1/Prefs/../PHD/hds/phaseCalculator"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phaseCalculator"
 )
 (vvPair
 variable "date"
-value "09/12/19"
+value "10/06/20"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Tue"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Tuesday"
 )
 (vvPair
 variable "dd"
-value "12"
+value "06"
 )
 (vvPair
 variable "designName"
@@ -121,7 +121,7 @@ value "francois"
 )
 (vvPair
 variable "graphical_source_date"
-value "09/12/19"
+value "10/06/20"
 )
 (vvPair
 variable "graphical_source_group"
@@ -133,7 +133,7 @@ value "Aphelia"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:39:18"
+value "13:15:25"
 )
 (vvPair
 variable "group"
@@ -165,7 +165,7 @@ value "$SCRATCH_DIR/ElN/PHD/work"
 )
 (vvPair
 variable "mm"
-value "09"
+value "10"
 )
 (vvPair
 variable "module_name"
@@ -173,19 +173,19 @@ value "phaseCalculator"
 )
 (vvPair
 variable "month"
-value "Sep"
+value "Oct"
 )
 (vvPair
 variable "month_long"
-value "September"
+value "October"
 )
 (vvPair
 variable "p"
-value "/home/francois/Favorites/ElN_local/Labs/ElN_labs_1/Prefs/../PHD/hds/phase@calculator/student@version.bd"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phase@calculator/student@version.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/francois/Favorites/ElN_local/Labs/ElN_labs_1/Prefs/../PHD/hds/phaseCalculator/studentVersion.bd"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phaseCalculator/studentVersion.bd"
 )
 (vvPair
 variable "package_name"
@@ -193,7 +193,7 @@ value "<Undefined Variable>"
 )
 (vvPair
 variable "project_name"
-value "ElN"
+value "hds"
 )
 (vvPair
 variable "series"
@@ -257,7 +257,7 @@ value "studentVersion"
 )
 (vvPair
 variable "time"
-value "13:39:18"
+value "13:15:25"
 )
 (vvPair
 variable "unit"
@@ -269,7 +269,7 @@ value "francois"
 )
 (vvPair
 variable "version"
-value "2018.1 (Build 12)"
+value "2019.3 (Build 4)"
 )
 (vvPair
 variable "view"
@@ -277,11 +277,11 @@ value "studentVersion"
 )
 (vvPair
 variable "year"
-value "2019"
+value "2020"
 )
 (vvPair
 variable "yy"
-value "19"
+value "20"
 )
 ]
 )
@@ -618,7 +618,8 @@ uid 3058,0
 va (VaSet
 )
 xt "-56000,-83600,-30200,-82600"
-st "phaseDiff  : signed(phaseBitNb-1 DOWNTO 0)"
+st "phaseDiff  : signed(phaseBitNb-1 DOWNTO 0)
+"
 )
 )
 *13 (PortIoOut
@@ -688,16 +689,16 @@ optionalChildren [
 uid 4568,0
 sl 0
 ro 270
-xt "-66000,-61375,-64500,-60625"
+xt "-66000,-64375,-64500,-63625"
 )
 (Line
 uid 4569,0
 sl 0
 ro 270
-xt "-64500,-61000,-64000,-61000"
+xt "-64500,-64000,-64000,-64000"
 pts [
-"-64500,-61000"
-"-64000,-61000"
+"-64500,-64000"
+"-64000,-64000"
 ]
 )
 ]
@@ -713,10 +714,10 @@ va (VaSet
 isHidden 1
 font "courier,12,0"
 )
-xt "-74700,-61500,-67000,-60200"
+xt "-74700,-64500,-67000,-63200"
 st "phaseCount"
 ju 2
-blo "-67000,-60500"
+blo "-67000,-63500"
 tm "WireNameMgr"
 )
 s (Text
@@ -724,9 +725,9 @@ uid 4572,0
 va (VaSet
 font "courier,12,0"
 )
-xt "-76300,-60100,-76300,-60100"
+xt "-76300,-63100,-76300,-63100"
 ju 2
-blo "-76300,-60100"
+blo "-76300,-63100"
 tm "SignalTypeMgr"
 )
 )
@@ -745,7 +746,8 @@ uid 4580,0
 va (VaSet
 )
 xt "-56000,-84600,-29000,-83600"
-st "phaseCount : unsigned(phaseBitNb-1 DOWNTO 0)"
+st "phaseCount : unsigned(phaseBitNb-1 DOWNTO 0)
+"
 )
 )
 *16 (PortIoIn
@@ -761,16 +763,16 @@ optionalChildren [
 uid 4693,0
 sl 0
 ro 270
-xt "-66000,-65375,-64500,-64625"
+xt "-66000,-56375,-64500,-55625"
 )
 (Line
 uid 4694,0
 sl 0
 ro 270
-xt "-64500,-65000,-64000,-65000"
+xt "-64500,-56000,-64000,-56000"
 pts [
-"-64500,-65000"
-"-64000,-65000"
+"-64500,-56000"
+"-64000,-56000"
 ]
 )
 ]
@@ -786,10 +788,10 @@ va (VaSet
 isHidden 1
 font "courier,12,0"
 )
-xt "-71200,-65500,-67000,-64200"
+xt "-71200,-56500,-67000,-55200"
 st "period"
 ju 2
-blo "-67000,-64500"
+blo "-67000,-55500"
 tm "WireNameMgr"
 )
 s (Text
@@ -797,9 +799,9 @@ uid 4697,0
 va (VaSet
 font "courier,12,0"
 )
-xt "-71800,-64100,-71800,-64100"
+xt "-71800,-55100,-71800,-55100"
 ju 2
-blo "-71800,-64100"
+blo "-71800,-55100"
 tm "SignalTypeMgr"
 )
 )
@@ -818,7 +820,8 @@ uid 4705,0
 va (VaSet
 )
 xt "-56000,-85600,-29000,-84600"
-st "period     : unsigned(phaseBitNb-1 DOWNTO 0)"
+st "period     : unsigned(phaseBitNb-1 DOWNTO 0)
+"
 )
 )
 *18 (Wire
@@ -868,10 +871,10 @@ va (VaSet
 vasetType 3
 lineWidth 2
 )
-xt "-64000,-61000,-54000,-61000"
+xt "-64000,-64000,-54000,-64000"
 pts [
-"-64000,-61000"
-"-54000,-61000"
+"-64000,-64000"
+"-54000,-64000"
 ]
 )
 start &14
@@ -891,9 +894,9 @@ uid 4578,0
 va (VaSet
 font "courier,12,0"
 )
-xt "-62000,-62400,-54300,-61100"
+xt "-62000,-65400,-54300,-64100"
 st "phaseCount"
-blo "-62000,-61400"
+blo "-62000,-64400"
 tm "WireNameMgr"
 )
 )
@@ -907,10 +910,10 @@ va (VaSet
 vasetType 3
 lineWidth 2
 )
-xt "-64000,-65000,-54000,-65000"
+xt "-64000,-56000,-54000,-56000"
 pts [
-"-64000,-65000"
-"-54000,-65000"
+"-64000,-56000"
+"-54000,-56000"
 ]
 )
 start &16
@@ -930,9 +933,9 @@ uid 4703,0
 va (VaSet
 font "courier,12,0"
 )
-xt "-62000,-66400,-57800,-65100"
+xt "-62000,-57400,-57800,-56100"
 st "period"
-blo "-62000,-65400"
+blo "-62000,-56400"
 tm "WireNameMgr"
 )
 )
@@ -1051,9 +1054,9 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "131,41,1348,997"
-viewArea "-73400,-89400,29128,-19268"
-cachedDiagramExtent "-76300,-88000,33500,8400"
+windowSize "123,47,1340,1003"
+viewArea "-73400,-89400,26824,-23367"
+cachedDiagramExtent "-74700,-88000,34400,8200"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
 toPrinter 1
@@ -1077,7 +1080,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-72000,-88000"
-lastUid 4850,0
+lastUid 4879,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
