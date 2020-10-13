@@ -133,11 +133,11 @@ value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phase@detector/master@version.bd.info"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phase@detector/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phase@detector/master@version.bd.user"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phase@detector/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
@@ -149,7 +149,7 @@ value "HDL Designer"
 )
 (vvPair
 variable "arch_name"
-value "masterVersion"
+value "struct"
 )
 (vvPair
 variable "concat_file"
@@ -169,19 +169,19 @@ value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phaseDet
 )
 (vvPair
 variable "date"
-value "09/22/20"
+value "10/12/20"
 )
 (vvPair
 variable "day"
-value "Tue"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Tuesday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "22"
+value "12"
 )
 (vvPair
 variable "designName"
@@ -197,15 +197,15 @@ value "<TBD>"
 )
 (vvPair
 variable "f"
-value "master@version.bd"
+value "struct.bd"
 )
 (vvPair
 variable "f_logical"
-value "masterVersion.bd"
+value "struct.bd"
 )
 (vvPair
 variable "f_noext"
-value "master@version"
+value "struct"
 )
 (vvPair
 variable "graphical_source_author"
@@ -213,7 +213,7 @@ value "francois"
 )
 (vvPair
 variable "graphical_source_date"
-value "09/22/20"
+value "10/12/20"
 )
 (vvPair
 variable "graphical_source_group"
@@ -225,7 +225,7 @@ value "Aphelia"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:16:09"
+value "16:24:50"
 )
 (vvPair
 variable "group"
@@ -257,7 +257,7 @@ value "$SCRATCH_DIR/ElN/PHD/work"
 )
 (vvPair
 variable "mm"
-value "09"
+value "10"
 )
 (vvPair
 variable "module_name"
@@ -265,19 +265,19 @@ value "phaseDetector"
 )
 (vvPair
 variable "month"
-value "Sep"
+value "Oct"
 )
 (vvPair
 variable "month_long"
-value "September"
+value "October"
 )
 (vvPair
 variable "p"
-value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phase@detector/master@version.bd"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phase@detector/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phaseDetector/masterVersion.bd"
+value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phaseDetector/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -341,15 +341,15 @@ value "bd"
 )
 (vvPair
 variable "this_file"
-value "master@version"
+value "struct"
 )
 (vvPair
 variable "this_file_logical"
-value "masterVersion"
+value "struct"
 )
 (vvPair
 variable "time"
-value "14:16:09"
+value "16:24:50"
 )
 (vvPair
 variable "unit"
@@ -365,7 +365,7 @@ value "2019.3 (Build 4)"
 )
 (vvPair
 variable "view"
-value "masterVersion"
+value "struct"
 )
 (vvPair
 variable "year"
@@ -641,7 +641,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "29200,8500,48400,9500"
+xt "29200,8500,44200,9500"
 st "
 %library/%unit/%view
 "
@@ -710,8 +710,7 @@ uid 3058,0
 va (VaSet
 )
 xt "-70000,-16000,-37600,-15000"
-st "phaseDiff    : signed(unwrappedPhaseBitNb-1 DOWNTO 0)
-"
+st "phaseDiff    : signed(unwrappedPhaseBitNb-1 DOWNTO 0)"
 )
 )
 *13 (PortIoOut
@@ -837,8 +836,7 @@ uid 4113,0
 va (VaSet
 )
 xt "-70000,-18000,-54400,-17000"
-st "phaseRef     : std_ulogic
-"
+st "phaseRef     : std_ulogic"
 )
 )
 *16 (Net
@@ -854,8 +852,7 @@ uid 4128,0
 va (VaSet
 )
 xt "-70000,-19000,-54400,-18000"
-st "phaseFb      : std_ulogic
-"
+st "phaseFb      : std_ulogic"
 )
 )
 *17 (PortIoIn
@@ -927,8 +924,7 @@ uid 4215,0
 va (VaSet
 )
 xt "-70000,-20000,-54400,-19000"
-st "clock        : std_ulogic
-"
+st "clock        : std_ulogic"
 )
 )
 *19 (PortIoIn
@@ -1000,8 +996,7 @@ uid 4230,0
 va (VaSet
 )
 xt "-70000,-17000,-54400,-16000"
-st "reset        : std_ulogic
-"
+st "reset        : std_ulogic"
 )
 )
 *21 (Net
@@ -1018,8 +1013,7 @@ uid 4427,0
 va (VaSet
 )
 xt "-70000,-13100,-37600,-12100"
-st "SIGNAL phaseSampled : unsigned(phaseBitNb-1 DOWNTO 0)
-"
+st "SIGNAL phaseSampled : unsigned(phaseBitNb-1 DOWNTO 0)"
 )
 )
 *22 (Net
@@ -1036,8 +1030,7 @@ uid 4857,0
 va (VaSet
 )
 xt "-70000,-11100,-37600,-10100"
-st "SIGNAL refPeriod    : unsigned(phaseBitNb-1 DOWNTO 0)
-"
+st "SIGNAL refPeriod    : unsigned(phaseBitNb-1 DOWNTO 0)"
 )
 )
 *23 (Net
@@ -1054,8 +1047,7 @@ uid 5054,0
 va (VaSet
 )
 xt "-70000,-14100,-38800,-13100"
-st "SIGNAL phaseDiff1   : signed(phaseBitNb-1 DOWNTO 0)
-"
+st "SIGNAL phaseDiff1   : signed(phaseBitNb-1 DOWNTO 0)"
 )
 )
 *24 (SaComponent
@@ -2132,8 +2124,7 @@ uid 6799,0
 va (VaSet
 )
 xt "-70000,-12100,-37600,-11100"
-st "SIGNAL refCount     : unsigned(phaseBitNb-1 DOWNTO 0)
-"
+st "SIGNAL refCount     : unsigned(phaseBitNb-1 DOWNTO 0)"
 )
 )
 *58 (PortIoIn
@@ -2462,8 +2453,7 @@ font "courier,8,0"
 )
 xt "39000,-33000,69000,-31200"
 st "phaseBitNb          = phaseBitNb             ( positive )  
-unwrappedPhaseBitNb = unwrappedPhaseBitNb    ( positive )  
-"
+unwrappedPhaseBitNb = unwrappedPhaseBitNb    ( positive )  "
 )
 header ""
 )
@@ -3376,8 +3366,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "212,129,1196,916"
-viewArea "-74146,-90081,81511,14593"
+windowSize "59,4,1608,1208"
+viewArea "-41780,-73151,38741,-15582"
 cachedDiagramExtent "-72000,-88000,75000,12000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -3403,7 +3393,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-72000,-88000"
-lastUid 7251,0
+lastUid 7290,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

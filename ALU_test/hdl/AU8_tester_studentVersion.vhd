@@ -7,7 +7,7 @@ ARCHITECTURE studentVersion OF AU8_tester IS
 
 BEGIN
 
-  sequence: process
+  testSequence: process
   begin
 
     ---------------------------------------------------------------------------
@@ -26,7 +26,7 @@ BEGIN
 
     wait;
 
-  end process sequence;
+  end process testSequence;
 
 END ARCHITECTURE studentVersion;
 

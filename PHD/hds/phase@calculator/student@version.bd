@@ -77,19 +77,19 @@ value "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/../PHD/hds/phaseCal
 )
 (vvPair
 variable "date"
-value "10/06/20"
+value "10/12/20"
 )
 (vvPair
 variable "day"
-value "Tue"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Tuesday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "06"
+value "12"
 )
 (vvPair
 variable "designName"
@@ -121,7 +121,7 @@ value "francois"
 )
 (vvPair
 variable "graphical_source_date"
-value "10/06/20"
+value "10/12/20"
 )
 (vvPair
 variable "graphical_source_group"
@@ -133,7 +133,7 @@ value "Aphelia"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:15:25"
+value "16:24:43"
 )
 (vvPair
 variable "group"
@@ -257,7 +257,7 @@ value "studentVersion"
 )
 (vvPair
 variable "time"
-value "13:15:25"
+value "16:24:43"
 )
 (vvPair
 variable "unit"
@@ -670,8 +670,8 @@ uid 4098,0
 va (VaSet
 font "courier,12,0"
 )
-xt "21000,-64300,21000,-64300"
-blo "21000,-64300"
+xt "21000,-64400,21000,-64400"
+blo "21000,-64400"
 tm "SignalTypeMgr"
 )
 )
@@ -725,9 +725,9 @@ uid 4572,0
 va (VaSet
 font "courier,12,0"
 )
-xt "-76300,-63100,-76300,-63100"
+xt "-74700,-63200,-74700,-63200"
 ju 2
-blo "-76300,-63100"
+blo "-74700,-63200"
 tm "SignalTypeMgr"
 )
 )
@@ -799,9 +799,9 @@ uid 4697,0
 va (VaSet
 font "courier,12,0"
 )
-xt "-71800,-55100,-71800,-55100"
+xt "-71200,-55200,-71200,-55200"
 ju 2
-blo "-71800,-55100"
+blo "-71200,-55200"
 tm "SignalTypeMgr"
 )
 )
@@ -1054,8 +1054,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "123,47,1340,1003"
-viewArea "-73400,-89400,26824,-23367"
+windowSize "59,4,1608,1208"
+viewArea "-73457,-89449,28062,-16867"
 cachedDiagramExtent "-74700,-88000,34400,8200"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -1080,7 +1080,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-72000,-88000"
-lastUid 4879,0
+lastUid 5054,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -2142,7 +2142,7 @@ tm "BdDeclarativeTextMgr"
 )
 commonDM (CommonDM
 ldm (LogicalDM
-suid 37,0
+suid 43,0
 usingSuid 1
 emptyRow *52 (LEmptyRow
 )
