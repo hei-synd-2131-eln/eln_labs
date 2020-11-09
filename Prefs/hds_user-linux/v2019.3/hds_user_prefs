@@ -258,6 +258,7 @@ projectPaths [
 "/home/francois/Documents/HEVs/SVN/ElN_cursor/Prefs/hds.hdp"
 "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs_SI/Prefs/hds.hdp"
 "/home/francois/Documents/HEVs/ElN/Labs/ElN_labs/Prefs/hds.hdp"
+"/home/francois/Documents/HEVs/ElN/ElN_labs/Prefs/hds.hdp"
 ]
 libMappingsRootDir ""
 teamLibMappingsRootDir ""
@@ -5387,22 +5388,22 @@ size 44
 )
 ]
 displayHierarchy 0
-xPos 1739
-yPos 107
+xPos 2755
+yPos 180
 width 1066
 height 937
 activeSidePanelTab 2
 activeLibraryTab 1
 sidePanelSize 273
 showUnixHiddenFiles 0
-componentBrowserXpos 801
-componentBrowserYpos 167
+componentBrowserXpos 2060
+componentBrowserYpos 291
 componentBrowserWidth 413
 componentBrowserHeight 846
 componentBrowserLibraryNames [
-"PHA"
 "gates"
 "operators"
+"sequential"
 ]
 )
 (SmPreferences

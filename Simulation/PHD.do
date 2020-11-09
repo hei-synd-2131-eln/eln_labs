@@ -8,7 +8,7 @@ add wave -noupdate -radix unsigned -radixshowbase 0 /phd_tb/I_TB/fbFreqDivide
 add wave -noupdate /phd_tb/phaseRef
 add wave -noupdate /phd_tb/phaseFb
 add wave -noupdate -divider Internals
-add wave -noupdate -format Analog-Step -height 50 -max 220.0 -radix unsigned -radixshowbase 0 /phd_tb/I_DUT/refCount
+add wave -noupdate -format Analog-Step -height 50 -max 220.00000000000003 -radix unsigned -radixshowbase 0 /phd_tb/I_DUT/refCount
 add wave -noupdate -format Analog-Step -height 50 -max 300.0 -radix unsigned -radixshowbase 0 /phd_tb/I_DUT/phaseSampled
 add wave -noupdate -radix unsigned -radixshowbase 0 /phd_tb/I_DUT/phaseSampled
 add wave -noupdate -divider {Phase difference}
@@ -17,7 +17,7 @@ add wave -noupdate -format Analog-Step -height 100 -max 255.0 -min -255.0 -radix
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ns} 0}
 quietly wave cursor active 1
-configure wave -namecolwidth 186
+configure wave -namecolwidth 230
 configure wave -valuecolwidth 64
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
@@ -31,4 +31,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits us
 update
-WaveRestoreZoom {0 ns} {210 us}
+WaveRestoreZoom {0 ns} {204631 ns}

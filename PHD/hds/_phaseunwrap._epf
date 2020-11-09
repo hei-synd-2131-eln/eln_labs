@@ -1,2 +1,2 @@
-DEFAULT_FILE atom phase@unwrap/student@version.bd
-DEFAULT_ARCHITECTURE atom studentVersion
+DEFAULT_FILE atom phase@unwrap/slow_student@version.bd
+DEFAULT_ARCHITECTURE atom slow_studentVersion
