@@ -979,7 +979,7 @@ second ""
 )
 (pair
 first "hierLevel"
-second "1"
+second "3"
 )
 (pair
 first "onPulldownMenu"
@@ -2405,7 +2405,7 @@ hdsWorkspaceLocation ""
 relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
-logWindowGeometry "768x918-291+82"
+logWindowGeometry "768x918-2861+74"
 diagramBrowserTabNo 0
 showContentFirstTime 0
 )
@@ -5386,12 +5386,12 @@ size 44
 )
 ]
 displayHierarchy 0
-xPos 2632
-yPos 423
+xPos 1289
+yPos 292
 width 1066
 height 937
 activeSidePanelTab 2
-activeLibraryTab 2
+activeLibraryTab 1
 sidePanelSize 273
 showUnixHiddenFiles 0
 componentBrowserXpos 1685

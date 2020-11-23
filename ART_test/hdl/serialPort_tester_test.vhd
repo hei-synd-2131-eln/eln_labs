@@ -21,6 +21,7 @@ BEGIN
     wait for 10*clockPeriod;
     send <= '1', '0' after clockPeriod;
     dataToSend <= std_ulogic_vector(to_unsigned(character'pos('H'), dataToSend'length));
+    dataToSend <= std_ulogic_vector(to_unsigned(character'pos('I'), dataToSend'length));
     wait until received = '1';
 
     wait for 10*clockPeriod;
