@@ -230,7 +230,6 @@ toolbarVisibility [
 "StdWindow:Appearance"
 "FcWindow:Appearance"
 "FcWindow:Appearance"
-"StdTabWindow:Appearance"
 "FcTabWindow:Appearance"
 "AsmTabWindow:Appearance"
 "BdTabWindow:Appearance"
@@ -2406,8 +2405,7 @@ hdsWorkspaceLocation ""
 relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
-logWindowGeometry "768x918-281+91"
-showDiagramBrowser 0
+logWindowGeometry "768x918-291+82"
 diagramBrowserTabNo 0
 showContentFirstTime 0
 )
@@ -5347,20 +5345,20 @@ declHierarchy [
 activeViewpointIdx 0
 )
 (WorkTab
-name "PWM"
+name "ART"
 showingHierarchy 0
 openLibs [
-"PWM"
+"ART"
 ]
 declHierarchy [
 ]
 activeViewpointIdx 0
 )
 (WorkTab
-name "PWM_test"
+name "ART_test"
 showingHierarchy 0
 openLibs [
-"PWM_test"
+"ART_test"
 ]
 declHierarchy [
 ]
@@ -5388,8 +5386,8 @@ size 44
 )
 ]
 displayHierarchy 0
-xPos 2634
-yPos 673
+xPos 2632
+yPos 423
 width 1066
 height 937
 activeSidePanelTab 2

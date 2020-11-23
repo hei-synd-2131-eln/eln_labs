@@ -1,0 +1,2 @@
+DEFAULT_FILE atom rxShiftRegister_masterversion.vhd
+DEFAULT_ARCHITECTURE atom studentVersion

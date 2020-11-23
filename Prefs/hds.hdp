@@ -5,6 +5,8 @@ COR_test = $HDS_PROJECT_DIR/../COR_test/designcheck
 [ModelSim]
 ADD = $SCRATCH_DIR/ElN/ADD/work
 ADD_test = $SCRATCH_DIR/ElN/ADD_test/work
+ART = $SCRATCH_DIR/ElN/ART/work
+ART_test = $SCRATCH_DIR/ElN/ART_test/work
 ALU = $SCRATCH_DIR/ElN/ALU/work
 ALU_test = $SCRATCH_DIR/ElN/ALU_test/work
 CNT = $SCRATCH_DIR/ElN/CNT/work
@@ -36,6 +38,8 @@ sequential = $SCRATCH_DIR/ElN/Libraries/Sequential/work
 [hdl]
 ADD = $HDS_PROJECT_DIR/../ADD/hdl
 ADD_test = $HDS_PROJECT_DIR/../ADD_test/hdl
+ART = $HDS_PROJECT_DIR/../ART/hdl
+ART_test = $HDS_PROJECT_DIR/../ART_test/hdl
 ALU = $HDS_PROJECT_DIR/../ALU/hdl
 ALU_test = $HDS_PROJECT_DIR/../ALU_test/hdl
 CNT = $HDS_PROJECT_DIR/../CNT/hdl
@@ -67,6 +71,8 @@ sequential = $HEI_LIBS_DIR/Sequential/hdl
 [hds]
 ADD = $HDS_PROJECT_DIR/../ADD/hds
 ADD_test = $HDS_PROJECT_DIR/../ADD_test/hds
+ART = $HDS_PROJECT_DIR/../ART/hds
+ART_test = $HDS_PROJECT_DIR/../ART_test/hds
 ALU = $HDS_PROJECT_DIR/../ALU/hds
 ALU_test = $HDS_PROJECT_DIR/../ALU_test/hds
 CNT = $HDS_PROJECT_DIR/../CNT/hds
