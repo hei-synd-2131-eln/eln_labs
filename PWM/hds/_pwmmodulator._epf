@@ -1,3 +1,3 @@
-DEFAULT_FILE atom pwm@modulator/student@version.bd
-DEFAULT_ARCHITECTURE atom student@version
+DEFAULT_FILE atom pwm@modulator/full_bridge_student@version.bd
+DEFAULT_ARCHITECTURE atom full_bridge_studentVersion
 TOP_MARKER atom 1
